@@ -1,0 +1,62 @@
+{
+ "exams": [
+  {
+   "id": "e1",
+   "title": "Radiology Physics Mock Exam 1",
+   "papers": [
+    {
+     "id": "p1",
+     "title": "Paper 1: Matter & Radiation",
+     "topics": [
+      "Atomic Structure",
+      "Interactions"
+     ]
+    },
+    {
+     "id": "p2",
+     "title": "Paper 2: Radiography & Fluoroscopy",
+     "topics": [
+      "X-ray Production",
+      "Radiography"
+     ]
+    },
+    {
+     "id": "p3",
+     "title": "Paper 3: Radionuclide Imaging",
+     "topics": [
+      "Nuclear Medicine"
+     ]
+    },
+    {
+     "id": "p4",
+     "title": "Paper 4: Radiation Safety",
+     "topics": [
+      "Radiation Protection",
+      "Dosimetry"
+     ]
+    },
+    {
+     "id": "p5",
+     "title": "Paper 5: CT",
+     "topics": [
+      "CT"
+     ]
+    },
+    {
+     "id": "p6",
+     "title": "Paper 6: MRI",
+     "topics": [
+      "MRI"
+     ]
+    },
+    {
+     "id": "p7",
+     "title": "Paper 7: Ultrasound",
+     "topics": [
+      "Ultrasound"
+     ]
+    }
+   ]
+  }
+ ]
+}

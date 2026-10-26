@@ -1,0 +1,447 @@
+[
+ {
+  "id": 1,
+  "topic": "Dosimetry",
+  "q": "SI unit of absorbed dose?",
+  "options": [
+   "Sievert (Sv)",
+   "Gray (Gy)",
+   "Becquerel (Bq)",
+   "Coulomb/kg"
+  ],
+  "answer": 1,
+  "explain": "Absorbed dose is energy per unit mass: 1 Gy = 1 J/kg. Sievert is for equivalent/effective dose."
+ },
+ {
+  "id": 2,
+  "topic": "Dosimetry",
+  "q": "1 Gy equals how many rad?",
+  "options": [
+   "1",
+   "10",
+   "100",
+   "1000"
+  ],
+  "answer": 2,
+  "explain": "1 Gy = 100 rad."
+ },
+ {
+  "id": 3,
+  "topic": "Dosimetry",
+  "q": "Radiation weighting factor (wR) for diagnostic X-rays is:",
+  "options": [
+   "1",
+   "5",
+   "10",
+   "20"
+  ],
+  "answer": 0,
+  "explain": "X-rays, gamma and beta have wR = 1; alpha particles have wR = 20."
+ },
+ {
+  "id": 4,
+  "topic": "Dosimetry",
+  "q": "Unit of radioactivity in SI?",
+  "options": [
+   "Gray",
+   "Sievert",
+   "Becquerel",
+   "Roentgen"
+  ],
+  "answer": 2,
+  "explain": "1 Bq = 1 disintegration per second."
+ },
+ {
+  "id": 5,
+  "topic": "X-ray Production",
+  "q": "Characteristic X-rays are produced when:",
+  "options": [
+   "An electron decelerates near the nucleus",
+   "An outer-shell electron fills an inner-shell vacancy",
+   "A photon is scattered by a free electron",
+   "A nucleus emits a gamma ray"
+  ],
+  "answer": 1,
+  "explain": "The energy difference between the two shells is emitted as a characteristic photon."
+ },
+ {
+  "id": 6,
+  "topic": "X-ray Production",
+  "q": "Bremsstrahlung radiation results from:",
+  "options": [
+   "Inner-shell ionisation",
+   "Deceleration of electrons near the nucleus",
+   "Positron annihilation",
+   "Nuclear decay"
+  ],
+  "answer": 1,
+  "explain": "It gives a continuous spectrum, maximum photon energy equals the kVp."
+ },
+ {
+  "id": 7,
+  "topic": "X-ray Production",
+  "q": "Approximate minimum kVp needed to produce tungsten K-characteristic X-rays?",
+  "options": [
+   "20 kVp",
+   "40 kVp",
+   "70 kVp",
+   "120 kVp"
+  ],
+  "answer": 2,
+  "explain": "The K-shell binding energy of tungsten is about 69.5 keV."
+ },
+ {
+  "id": 8,
+  "topic": "X-ray Production",
+  "q": "The anode heel effect causes the beam intensity to be:",
+  "options": [
+   "Lower on the anode side",
+   "Lower on the cathode side",
+   "Uniform",
+   "Higher at the centre only"
+  ],
+  "answer": 0,
+  "explain": "X-rays travel a longer path inside the target toward the anode side, so intensity is lower there."
+ },
+ {
+  "id": 9,
+  "topic": "X-ray Production",
+  "q": "Which target material is commonly used in mammography?",
+  "options": [
+   "Tungsten only",
+   "Molybdenum",
+   "Lead",
+   "Copper"
+  ],
+  "answer": 1,
+  "explain": "Mo (and Rh) give characteristic X-rays of about 17-20 keV, suited for breast tissue contrast."
+ },
+ {
+  "id": 10,
+  "topic": "Interactions",
+  "q": "Probability of photoelectric effect is approximately proportional to:",
+  "options": [
+   "Z/E",
+   "Z^3/E^3",
+   "E^2/Z",
+   "Independent of Z"
+  ],
+  "answer": 1,
+  "explain": "Photoelectric absorption varies as Z^3/E^3, which is why contrast media with high Z work."
+ },
+ {
+  "id": 11,
+  "topic": "Interactions",
+  "q": "Main source of scatter radiation fogging in diagnostic radiography:",
+  "options": [
+   "Photoelectric effect",
+   "Compton scatter",
+   "Pair production",
+   "Coherent absorption"
+  ],
+  "answer": 1,
+  "explain": "Compton scatter dominates in soft tissue at higher diagnostic energies."
+ },
+ {
+  "id": 12,
+  "topic": "Interactions",
+  "q": "Threshold energy for pair production is:",
+  "options": [
+   "511 keV",
+   "0.5 MeV",
+   "1.022 MeV",
+   "2.044 MeV"
+  ],
+  "answer": 2,
+  "explain": "Two electron rest masses: 2 x 511 keV = 1.022 MeV."
+ },
+ {
+  "id": 13,
+  "topic": "Interactions",
+  "q": "Half-value layer (HVL) is the thickness of material that:",
+  "options": [
+   "Stops all X-rays",
+   "Reduces beam intensity to half",
+   "Doubles the kVp",
+   "Halves the half-life"
+  ],
+  "answer": 1,
+  "explain": "After 3 HVLs the intensity falls to 1/8 (12.5%)."
+ },
+ {
+  "id": 14,
+  "topic": "Radiation Protection",
+  "q": "If distance from a point source is doubled, intensity becomes:",
+  "options": [
+   "1/2",
+   "1/4",
+   "1/8",
+   "Unchanged"
+  ],
+  "answer": 1,
+  "explain": "Inverse square law: I is proportional to 1/d^2."
+ },
+ {
+  "id": 15,
+  "topic": "Radiation Protection",
+  "q": "ICRP occupational effective dose limit (averaged over 5 years)?",
+  "options": [
+   "1 mSv/year",
+   "5 mSv/year",
+   "20 mSv/year",
+   "100 mSv/year"
+  ],
+  "answer": 2,
+  "explain": "20 mSv per year averaged over 5 years, with no single year above 50 mSv."
+ },
+ {
+  "id": 16,
+  "topic": "Radiation Protection",
+  "q": "Three basic principles of protection against external radiation:",
+  "options": [
+   "Time, distance, shielding",
+   "kVp, mAs, filtration",
+   "Dose, rate, energy",
+   "Grid, collimation, speed"
+  ],
+  "answer": 0,
+  "explain": "Minimise time, maximise distance, use shielding."
+ },
+ {
+  "id": 17,
+  "topic": "Nuclear Medicine",
+  "q": "Physical half-life of Tc-99m is about:",
+  "options": [
+   "6 minutes",
+   "6 hours",
+   "6 days",
+   "6 years"
+  ],
+  "answer": 1,
+  "explain": "About 6 hours, emitting 140 keV gamma rays."
+ },
+ {
+  "id": 18,
+  "topic": "Nuclear Medicine",
+  "q": "Gamma photon energy of Tc-99m?",
+  "options": [
+   "70 keV",
+   "140 keV",
+   "364 keV",
+   "511 keV"
+  ],
+  "answer": 1,
+  "explain": "140 keV, ideal for gamma cameras."
+ },
+ {
+  "id": 19,
+  "topic": "Nuclear Medicine",
+  "q": "Mo-99/Tc-99m generator operates in:",
+  "options": [
+   "Secular equilibrium",
+   "Transient equilibrium",
+   "No equilibrium",
+   "Pair equilibrium"
+  ],
+  "answer": 1,
+  "explain": "Parent half-life (66 h) is only moderately longer than daughter's (6 h): transient equilibrium."
+ },
+ {
+  "id": 20,
+  "topic": "Nuclear Medicine",
+  "q": "Positron annihilation produces:",
+  "options": [
+   "One 1.022 MeV photon",
+   "Two 511 keV photons at about 180 degrees",
+   "Two 140 keV photons",
+   "Three 511 keV photons"
+  ],
+  "answer": 1,
+  "explain": "This is the basis of PET coincidence detection."
+ },
+ {
+  "id": 21,
+  "topic": "Nuclear Medicine",
+  "q": "After 3 half-lives, the fraction of radioactivity remaining is:",
+  "options": [
+   "1/3",
+   "1/6",
+   "1/8",
+   "1/16"
+  ],
+  "answer": 2,
+  "explain": "(1/2)^3 = 1/8 = 12.5%."
+ },
+ {
+  "id": 22,
+  "topic": "MRI",
+  "q": "Larmor frequency of hydrogen at 1.5 T is approximately:",
+  "options": [
+   "21 MHz",
+   "42.6 MHz",
+   "63.9 MHz",
+   "127.8 MHz"
+  ],
+  "answer": 2,
+  "explain": "42.58 MHz/T x 1.5 T = about 63.9 MHz."
+ },
+ {
+  "id": 23,
+  "topic": "MRI",
+  "q": "T1 relaxation refers to:",
+  "options": [
+   "Decay of transverse magnetisation",
+   "Recovery of longitudinal magnetisation",
+   "Dephasing from field inhomogeneity",
+   "Gradient switching"
+  ],
+  "answer": 1,
+  "explain": "T1 is spin-lattice relaxation; T2 is decay of transverse magnetisation."
+ },
+ {
+  "id": 24,
+  "topic": "Ultrasound",
+  "q": "Average speed of sound in soft tissue assumed by scanners:",
+  "options": [
+   "330 m/s",
+   "1540 m/s",
+   "3000 m/s",
+   "4080 m/s"
+  ],
+  "answer": 1,
+  "explain": "1540 m/s is used for depth calculation."
+ },
+ {
+  "id": 25,
+  "topic": "Ultrasound",
+  "q": "Greatest reflection occurs at which interface?",
+  "options": [
+   "Fat-muscle",
+   "Soft tissue-bone/air",
+   "Liver-kidney",
+   "Blood-vessel wall"
+  ],
+  "answer": 1,
+  "explain": "Large acoustic impedance mismatch causes strong reflection, hence the need for coupling gel."
+ },
+ {
+  "id": 26,
+  "topic": "Ultrasound",
+  "q": "Doppler shift is zero when the beam-flow angle is:",
+  "options": [
+   "0 degrees",
+   "45 degrees",
+   "60 degrees",
+   "90 degrees"
+  ],
+  "answer": 3,
+  "explain": "Shift is proportional to cos(theta); cos 90 = 0."
+ },
+ {
+  "id": 27,
+  "topic": "CT",
+  "q": "Hounsfield unit of water and air respectively:",
+  "options": [
+   "0 and -1000",
+   "1000 and 0",
+   "0 and 1000",
+   "-1000 and 0"
+  ],
+  "answer": 0,
+  "explain": "Water = 0 HU, air = -1000 HU."
+ },
+ {
+  "id": 28,
+  "topic": "CT",
+  "q": "Fat typically measures approximately:",
+  "options": [
+   "+100 HU",
+   "0 HU",
+   "-100 HU",
+   "-1000 HU"
+  ],
+  "answer": 2,
+  "explain": "Fat is about -120 to -90 HU."
+ },
+ {
+  "id": 29,
+  "topic": "Radiography",
+  "q": "Grid ratio is defined as:",
+  "options": [
+   "Strip height / interspace width",
+   "Interspace width / strip height",
+   "Strips per cm",
+   "Lead thickness / height"
+  ],
+  "answer": 0,
+  "explain": "Higher ratio cleans more scatter but needs more exposure."
+ },
+ {
+  "id": 30,
+  "topic": "Radiography",
+  "q": "Unit used to express spatial resolution:",
+  "options": [
+   "mGy",
+   "Line pairs per mm",
+   "HU",
+   "dB"
+  ],
+  "answer": 1,
+  "explain": "Higher lp/mm means better spatial resolution."
+ },
+ {
+  "id": 31,
+  "topic": "Atomic Structure",
+  "q": "The number of protons in the nucleus determines the chemical identity of an atom.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The atomic number Z (number of protons) defines the element."
+ },
+ {
+  "id": 32,
+  "topic": "Atomic Structure",
+  "q": "Isotopes of an element have the same number of neutrons but different numbers of protons.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Isotopes have the same Z (protons) but different N (neutrons)."
+ },
+ {
+  "id": 33,
+  "topic": "Atomic Structure",
+  "q": "Alpha particles are more penetrating than gamma rays.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Alpha particles are heavy and charged and are stopped by paper or skin. Gamma rays penetrate far more."
+ },
+ {
+  "id": 34,
+  "topic": "X-ray Production",
+  "q": "X-rays are deflected by magnetic fields.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "X-rays are uncharged photons, so magnetic fields do not deflect them."
+ },
+ {
+  "id": 35,
+  "topic": "Ultrasound",
+  "q": "Ultrasound is a mechanical wave and cannot travel through a vacuum.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Sound needs a medium to propagate; electromagnetic waves do not."
+ }
+]

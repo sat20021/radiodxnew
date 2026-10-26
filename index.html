@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RadioDx Academy — Radiodiagnosis Learning Platform">
+<title>RadioDx Academy — Medical Imaging Education Platform</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="#home" aria-label="RadioDx Academy home">
+      <div class="brand-mark">R</div>
+      <div>
+        <div class="brand-name">RadioDx</div>
+        <div class="brand-sub">ACADEMY</div>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="nav-item active" href="#home">Home</a>
+      <a class="nav-item has-drop" href="#learn">Learn</a>
+      <a class="nav-item has-drop" href="#courses">Courses</a>
+      <a class="nav-item has-drop" href="#cases">Cases</a>
+      <a class="nav-item has-drop" href="#practice">Practice</a>
+      <a class="nav-item" href="mock-test/index.html">Mock Tests</a>
+      <a class="nav-item has-drop" href="#resources">Resources</a>
+      <a class="nav-item has-drop" href="#about">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <label class="search">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Search topics, courses, cases...">
+        <span class="clear" id="clearSearch">×</span>
+      </label>
+      <button class="login" onclick="openModal('Login')">Login</button>
+      <button class="btn btn-primary btn-small" onclick="showToast('Welcome to RadioDx Academy!')">Start Learning</button>
+    </div>
+
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#home">Home</a><a href="#learn">Learn</a><a href="#courses">Courses</a>
+    <a href="#cases">Cases</a><a href="#practice">Practice</a><a href="mock-test/index.html">Mock Tests</a><a href="#resources">Resources</a><a href="#about">About</a>
+    <div style="padding-top:10px;display:flex;gap:8px">
+      <button class="login" onclick="openModal('Login')">Login</button>
+      <button class="btn btn-primary btn-small">Start Learning</button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="kicker">MEDICAL IMAGING EDUCATION PLATFORM</div>
+      <h1>MASTER <span>MEDICAL IMAGING.</span></h1>
+      <p class="tagline">One concept. One image. One skill at a time.</p>
+      <p class="hero-desc">
+        Structured education in Radiography, MRI, CT, Mammography, DEXA,
+        Ultrasound, Nuclear Medicine and Interventional Radiology.
+      </p>
+      <div class="hero-buttons">
+        <a href="#learn" class="btn btn-primary">Explore Learning <span>→</span></a>
+        <a href="#courses" class="btn btn-outline">Explore Courses</a>
+      </div>
+      <div class="hero-features">
+        <div class="hero-feature"><span class="hf-icon">♧</span><span>Concept Based<br>Learning</span></div>
+        <div class="hero-feature"><span class="hf-icon">▧</span><span>Image-Based<br>Learning</span></div>
+        <div class="hero-feature"><span class="hf-icon">♧</span><span>Practical<br>Knowledge</span></div>
+        <div class="hero-feature"><span class="hf-icon">▤</span><span>Exam<br>Preparation</span></div>
+        <div class="hero-feature"><span class="hf-icon">▱</span><span>Structured<br>Courses</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="brain"></div><div class="brain-ring"></div>
+      <div class="scan-card scan-1"><img src="https://images.unsplash.com/photo-1530497610245-94d3c16c777d?auto=format&fit=crop&w=300&q=75" alt=""></div>
+      <div class="scan-card scan-2"><img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=300&q=75" alt=""></div>
+      <div class="scan-card scan-3"><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=300&q=75" alt=""></div>
+      <div class="scan-card scan-4"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=300&q=75" alt=""></div>
+      <div class="hero-list">
+        <div>MRI</div><div>CT</div><div>X-Ray</div><div>Mammography</div>
+        <div>DEXA</div><div>Ultrasound</div><div>Nuclear Medicine</div><div>Interventional Radiology</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     MODALITIES
+     ========================================================= -->
+<section class="section modality" id="learn">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>Explore Medical Imaging</h2>
+        <p>Choose a modality and start your learning journey with structured lessons,<br>real images and practical clinical knowledge.</p>
+      </div>
+      <a class="view-link" href="#courses">View All Modalities <span>→</span></a>
+    </div>
+
+    <div class="modality-grid">
+      <article class="mod-card" data-search="radiography xray physics positioning exposure image quality" onclick="location.href='Radiography.html'" style="cursor:pointer">
+        <div class="mod-img"><img class="medical-filter" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=500&q=80" alt="Radiography"></div>
+        <h3>Radiography</h3>
+        <ul><li>Physics</li><li>Positioning</li><li>Exposure Factors</li><li>Image Quality</li></ul>
+       <a class="explore" href="Radiography.html">Explore →</a>
+      </article>
+
+      <article class="mod-card" data-search="MRI physics sequences protocols artifacts">
+        <div class="mod-img"><img class="medical-filter" src="https://images.unsplash.com/photo-1530497610245-94d3c16c777d?auto=format&fit=crop&w=500&q=80" alt="MRI"></div>
+        <h3>MRI</h3>
+        <ul><li>Physics</li><li>Sequences</li><li>Protocols</li><li>Artifacts</li></ul>
+        <a class="explore" href="#courses">Explore →</a>
+      </article>
+
+      <article class="mod-card" data-search="CT technology hounsfield units contrast dose">
+        <div class="mod-img"><img class="medical-filter" src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=500&q=80" alt="CT"></div>
+        <h3>CT</h3>
+        <ul><li>Physics</li><li>Technology</li><li>Hounsfield Units</li><li>Contrast &amp; Dose</li></ul>
+        <a class="explore" href="#courses">Explore →</a>
+      </article>
+
+      <article class="mod-card" data-search="mammography physics positioning BI-RADS screening">
+        <div class="mod-img"><img class="medical-filter" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=500&q=80" alt="Mammography"></div>
+        <h3>Mammography</h3>
+        <ul><li>Physics</li><li>Positioning</li><li>BI-RADS</li><li>Screening</li></ul>
+        <a class="explore" href="#courses">Explore →</a>
+      </article>
+
+      <article class="mod-card" data-search="DEXA BMD T score Z score positioning quality control">
+        <div class="mod-img"><img class="medical-filter" src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=500&q=80" alt="DEXA"></div>
+        <h3>DEXA</h3>
+        <ul><li>BMD</li><li>T-score / Z-score</li><li>Positioning</li><li>Quality Control</li></ul>
+        <a class="explore" href="#courses">Explore →</a>
+      </article>
+
+      <article class="mod-card" data-search="ultrasound physics doppler artifacts applications">
+        <div class="mod-img"><img class="medical-filter" src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=500&q=80" alt="Ultrasound"></div>
+        <h3>Ultrasound</h3>
+        <ul><li>Physics</li><li>Doppler</li><li>Artifacts</li><li>Applications</li></ul>
+        <a class="explore" href="#courses">Explore →</a>
+      </article>
+
+      <article class="mod-card" data-search="nuclear medicine radiopharmaceuticals gamma camera SPECT PET radiation safety">
+        <div class="mod-img"><img class="medical-filter" src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=500&q=80" alt="Nuclear Medicine"></div>
+        <h3>Nuclear Medicine</h3>
+        <ul><li>Radiopharmaceuticals</li><li>Gamma Camera</li><li>SPECT / PET</li><li>Radiation Safety</li></ul>
+        <a class="explore" href="#courses">Explore →</a>
+      </article>
+
+      <article class="mod-card" data-search="interventional biopsy RFA MWA cryoablation image guidance">
+        <div class="mod-img"><img class="medical-filter" src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=500&q=80" alt="Interventional Radiology"></div>
+        <h3>Interventional</h3>
+        <ul><li>Biopsy</li><li>RFA / MWA</li><li>Cryoablation</li><li>Image Guidance</li></ul>
+        <a class="explore" href="#courses">Explore →</a>
+      </article>
+
+      <article class="mod-card" data-search="radiation protection ALARA dose shielding occupational safety">
+        <div class="mod-img" style="display:grid;place-items:center;background:linear-gradient(135deg,#eef8fc,#d9edf6);font-size:40px">☢</div>
+        <h3>Radiation Protection</h3>
+        <ul><li>ALARA</li><li>Dose</li><li>Shielding</li><li>Occupational Safety</li></ul>
+        <a class="explore" href="#courses">Explore →</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     LEARNING METHOD
+     ========================================================= -->
+<section class="method" id="practice">
+  <div class="container">
+    <div class="method-title">
+      <h2>The RadioDx Learning Method</h2>
+      <p>A step-by-step approach to build your concepts, confidence and clinical skills.</p>
+    </div>
+
+    <div class="method-grid">
+      <div class="steps">
+        <div class="step">
+          <div class="step-circle">♙</div>
+          <div class="step-num">01</div><h4>Learn</h4><p>Understand the concept</p>
+        </div>
+        <div class="step">
+          <div class="step-circle">◉</div>
+          <div class="step-num">02</div><h4>Visualize</h4><p>See it in real images</p>
+        </div>
+        <div class="step">
+          <div class="step-circle">▧</div>
+          <div class="step-num">03</div><h4>Apply</h4><p>Explore clinical cases</p>
+        </div>
+        <div class="step">
+          <div class="step-circle">♧</div>
+          <div class="step-num">04</div><h4>Practice</h4><p>Solve MCQs &amp; Questions</p>
+        </div>
+        <div class="step">
+          <div class="step-circle">▤</div>
+          <div class="step-num">05</div><h4>Master</h4><p>Track progress &amp; revise</p>
+        </div>
+      </div>
+
+      <div class="method-video">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=500&q=80" alt="">
+        <div class="video-caption">Learn<br>Visualize<br>Apply<br>Practice<br>Master</div>
+        <div class="play">▶</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CASE OF THE DAY + WHY CHOOSE
+     ========================================================= -->
+<section class="section" id="cases">
+  <div class="container">
+    <div class="case-wrap">
+      <div>
+        <div class="section-title" style="margin-bottom:12px">
+          <div><h2>Case of the Day <small style="font-size:8px;color:#6b8393;font-weight:600">IMAGE-BASED LEARNING</small></h2></div>
+        </div>
+        <div class="case-box">
+          <div class="case-image">
+            <img src="https://images.unsplash.com/photo-1530497610245-94d3c16c777d?auto=format&fit=crop&w=650&q=85" alt="Brain imaging case">
+          </div>
+          <div class="case-content">
+            <div class="case-meta"><span class="pill">Case #0247</span><span class="pill">MRI</span><span class="pill">Brain</span><span class="pill">Intermediate</span></div>
+            <p class="case-question">What is the most likely finding?</p>
+            <ul class="options">
+              <li><b>A.</b> Glioblastoma</li>
+              <li><b>B.</b> PCNSL</li>
+              <li><b>C.</b> Metastasis</li>
+              <li><b>D.</b> Abscess</li>
+            </ul>
+            <button class="btn btn-primary reveal" onclick="revealAnswer()">Reveal Answer →</button>
+            <div class="answer" id="answer">Answer: A — Glioblastoma (educational example).</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why">
+        <div class="section-title" style="margin-bottom:12px">
+          <div><h2>Why Choose RadioDx Academy?</h2><p>More than just courses — it's a complete learning ecosystem.</p></div>
+        </div>
+        <div class="why-grid">
+          <div class="why-card"><div class="icon">♧</div><div><h4>Expert Educators</h4><p>Learn from qualified professionals</p></div></div>
+          <div class="why-card"><div class="icon">✓</div><div><h4>Structured Curriculum</h4><p>From basics to advanced</p></div></div>
+          <div class="why-card"><div class="icon">▧</div><div><h4>High-Quality Content</h4><p>Updated &amp; evidence-based</p></div></div>
+          <div class="why-card"><div class="icon">◫</div><div><h4>Interactive Learning</h4><p>Images, cases &amp; MCQs</p></div></div>
+          <div class="why-card"><div class="icon">✓</div><div><h4>Progress Tracking</h4><p>Stay on track</p></div></div>
+          <div class="why-card"><div class="icon">♢</div><div><h4>Lifetime Access</h4><p>Learn at your own pace</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- INTERACTIVE LABS & PRACTICE -->
+<style>
+.labs-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,280px));gap:16px}
+.lab{display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;transition:transform .2s,box-shadow .2s}
+.lab:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.lab-img{height:140px;border-radius:8px;overflow:hidden;margin-bottom:12px;background:linear-gradient(135deg,#031b2e,#0a4a6e)}
+.lab-img.mock{background:linear-gradient(135deg,#06324f,#0a7a9b)}
+.lab-img svg{display:block;width:100%;height:100%}
+.lab h4{margin:0 2px 3px;font:800 15px/1.25 Manrope,Inter,sans-serif;color:#0d3551}
+.lab p{margin:0 2px 4px;font-size:11px;color:#728394}
+</style>
+<section class="section" id="labs">
+  <div class="container">
+    <div class="section-title"><div><h2>Interactive Labs &amp; Practice</h2><p>Hands-on simulators and exam practice for radiology physics</p></div></div>
+    <div class="labs-row">
+
+      <a class="lab" href="Contrast.html">
+        <div class="lab-img">
+          <svg viewBox="0 0 280 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs><linearGradient id="bolusG" x1="0" x2="1"><stop offset="0" stop-color="#ff6b00"/><stop offset="1" stop-color="#ffc08a"/></linearGradient></defs>
+            <g stroke="#ffffff22"><path d="M140 112H262M140 82H262M140 52H262"/></g>
+            <circle cx="72" cy="70" r="44" fill="none" stroke="#38bdf8" stroke-width="9" opacity=".9"/>
+            <circle cx="72" cy="70" r="28" fill="#06253c" stroke="#38bdf8" stroke-width="2"/>
+            <path d="M48 98Q72 52 96 98" fill="none" stroke="#ffffff66" stroke-width="3" stroke-linecap="round"/>
+            <path d="M148 112C170 112 176 34 198 34S234 94 260 94" fill="none" stroke="url(#bolusG)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="198" cy="34" r="6" fill="#fff7ed"/><circle cx="198" cy="34" r="12" fill="#ff6b00" opacity=".25"/>
+          </svg>
+        </div>
+        <h4>Contrast Lab</h4><p>Interactive Simulator</p>
+      </a>
+
+      <a class="lab" href="mock-test/index.html">
+        <div class="lab-img mock">
+          <svg viewBox="0 0 280 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <rect x="30" y="18" width="118" height="104" rx="8" fill="#fff"/>
+            <g fill="#d7e5ef"><rect x="68" y="35" width="66" height="7" rx="3.5"/><rect x="68" y="58" width="52" height="7" rx="3.5"/><rect x="68" y="81" width="60" height="7" rx="3.5"/><rect x="68" y="104" width="42" height="7" rx="3.5"/></g>
+            <g fill="none" stroke="#1a9d5a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M42 38l4 4 7-9"/><path d="M42 61l4 4 7-9"/><path d="M42 84l4 4 7-9"/></g>
+            <rect x="42" y="102" width="11" height="11" rx="2.5" fill="none" stroke="#0a7a9b" stroke-width="1.8"/>
+            <circle cx="213" cy="70" r="34" fill="none" stroke="#ffffff30" stroke-width="10"/>
+            <circle cx="213" cy="70" r="34" fill="none" stroke="#19d3e6" stroke-width="10" stroke-linecap="round" stroke-dasharray="182 214" transform="rotate(-90 213 70)"/>
+            <text x="213" y="77" text-anchor="middle" fill="#fff" font-size="19" font-weight="800" font-family="Inter,Arial,sans-serif">85%</text>
+          </svg>
+        </div>
+        <h4>Mock Test Centre</h4><p>Practice Exams</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+   <nav>
+
+<!-- =========================================================
+     FREE LEARNING LIBRARY
+     ========================================================= -->
+<section class="section library" id="resources">
+  <div class="container">
+    <div class="library-grid">
+      <div class="library-copy">
+        <h2>Free Learning Library</h2>
+        <p class="mini">Get started with high-quality free resources and experience the RadioDx way of learning.</p>
+        <a class="btn btn-primary btn-small" href="#courses">Explore Free Resources →</a>
+      </div>
+
+      <div class="resource-grid">
+        <article class="resource">
+          <div class="resource-img"><img src="https://images.unsplash.com/photo-1530497610245-94d3c16c777d?auto=format&fit=crop&w=400&q=80" alt=""></div>
+          <h4>MRI Physics</h4><p>Free Lesson</p>
+        </article>
+        <article class="resource">
+          <div class="resource-img"><img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=400&q=80" alt=""></div>
+          <h4>T1 vs T2</h4><p>Quick Guide</p>
+        </article>
+        <article class="resource">
+          <div class="resource-img"><img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80" alt=""></div>
+          <h4>CT Windowing</h4><p>Interactive Guide</p>
+        </article>
+        <article class="resource">
+          <div class="resource-img"><div style="height:100%;display:grid;place-items:center;background:#eaf4f8;font-size:28px">☢</div></div>
+          <h4>Radiation Protection</h4><p>Study Notes</p>
+        </article>
+        <article class="resource">
+          <div class="resource-img"><img src="https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&fit=crop&w=400&q=80" alt=""></div>
+          <h4>MCQs</h4><p>Practice Questions</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FEATURED COURSES
+     ========================================================= -->
+<section class="section" id="courses">
+  <div class="container">
+    <div class="section-title">
+      <div><h2>Featured Courses</h2><p>Structured courses for every level — from foundation to advanced.</p></div>
+      <a class="view-link" href="#courses">View All Courses <span>→</span></a>
+    </div>
+
+    <div class="course-grid">
+      <article class="course">
+        <div class="course-img"><img src="https://images.unsplash.com/photo-1530497610245-94d3c16c777d?auto=format&fit=crop&w=500&q=80" alt=""><span class="course-tag">Popular</span></div>
+        <div class="course-body"><h3>MRI Foundation</h3><div class="course-info">Beginner – Intermediate<br>12 Modules · 8.5 hrs</div><div class="price-row"><span class="price">₹4,999</span><button class="btn btn-primary btn-small" onclick="courseModal('MRI Foundation')">View Details →</button></div></div>
+      </article>
+      <article class="course">
+        <div class="course-img"><img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=500&q=80" alt=""><span class="course-tag">New</span></div>
+        <div class="course-body"><h3>CT Masterclass</h3><div class="course-info">Intermediate – Advanced<br>10 Modules · 6.2 hrs</div><div class="price-row"><span class="price">₹4,999</span><button class="btn btn-primary btn-small" onclick="courseModal('CT Masterclass')">View Details →</button></div></div>
+      </article>
+      <article class="course">
+        <div class="course-img"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=500&q=80" alt=""></div>
+        <div class="course-body"><h3>Radiography Masterclass</h3><div class="course-info">Beginner – Intermediate<br>10 Modules · 7.5 hrs</div><div class="price-row"><span class="price">₹3,999</span><button class="btn btn-primary btn-small" onclick="courseModal('Radiography Masterclass')">View Details →</button></div></div>
+      </article>
+      <article class="course">
+        <div class="course-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=500&q=80" alt=""></div>
+        <div class="course-body"><h3>Mammography Essentials</h3><div class="course-info">Intermediate – Advanced<br>8 Modules · 5.8 hrs</div><div class="price-row"><span class="price">₹3,999</span><button class="btn btn-primary btn-small" onclick="courseModal('Mammography Essentials')">View Details →</button></div></div>
+      </article>
+      <article class="course">
+        <div class="course-img"><img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=500&q=80" alt=""></div>
+        <div class="course-body"><h3>DEXA &amp; Bone Health</h3><div class="course-info">Intermediate – Advanced<br>6 Modules · 4.2 hrs</div><div class="price-row"><span class="price">₹3,499</span><button class="btn btn-primary btn-small" onclick="courseModal('DEXA & Bone Health')">View Details →</button></div></div>
+      </article>
+      <article class="course">
+        <div class="course-img"><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=500&q=80" alt=""></div>
+        <div class="course-body"><h3>Nuclear Medicine Basics</h3><div class="course-info">Intermediate – Advanced<br>8 Modules · 6.1 hrs</div><div class="price-row"><span class="price">₹4,499</span><button class="btn btn-primary btn-small" onclick="courseModal('Nuclear Medicine Basics')">View Details →</button></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     EDUCATORS
+     ========================================================= -->
+<section class="educators" id="about">
+  <div class="container">
+    <div class="edu-head">
+      <div><h2>Meet Our Educators</h2><p>Learn from experienced professionals with real-world clinical and academic experience.</p></div>
+      <a href="#" class="btn btn-outline btn-small">View All Educators →</a>
+    </div>
+
+    <div class="edu-grid">
+      <article class="edu-card">
+        <div class="edu-photo"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=150&q=80" alt=""></div>
+        <div><h4>Dr. Priya Sharma</h4><p>MD, Radiology<br>MRI &amp; CT</p></div>
+      </article>
+      <article class="edu-card">
+        <div class="edu-photo"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=150&q=80" alt=""></div>
+        <div><h4>Dr. Rohan Mehta</h4><p>MD, Radiology<br>Nuclear Medicine</p></div>
+      </article>
+      <article class="edu-card">
+        <div class="edu-photo"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=150&q=80" alt=""></div>
+        <div><h4>Dr. Neha Verma</h4><p>MD, Radiology<br>Mammography &amp; Women's Imaging</p></div>
+      </article>
+      <article class="edu-card">
+        <div class="edu-photo"><img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=150&q=80" alt=""></div>
+        <div><h4>Dr. Arjun Patel</h4><p>MD, Medical Imaging<br>Radiography &amp; DEXA</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="footer">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <a class="brand" href="#home">
+        <div class="brand-mark">R</div><div><div class="brand-name">RadioDx</div><div class="brand-sub">ACADEMY</div></div>
+      </a>
+      <p>Learn Radiology. See the Difference.</p>
+      <div class="social"><a href="#">◉</a><a href="#">◎</a><a href="#">in</a><a href="#">𝕏</a></div>
+    </div>
+
+    <div><h4>Academy</h4><a href="#about">About Us</a><a href="#about">Our Educators</a><a href="#practice">Learning Method</a><a href="#">Editorial Standards</a></div>
+    <div><h4>Resources</h4><a href="#resources">Articles</a><a href="#resources">Protocols</a><a href="#resources">Image Library</a><a href="#resources">Quick Revision</a><a href="#resources">Formula Sheets</a></div>
+    <div><h4>Practice</h4><a href="#practice">MCQs</a><a href="#practice">PYQs</a><a href="mock-test/index.html">Mock Tests</a><a href="#cases">Case Library</a><a href="#practice">Tools &amp; Calculators</a></div>
+    <div><h4>Support</h4><a href="#">Contact Us</a><a href="#">FAQ</a><a href="#">Refund Policy</a><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></div>
+    <div><h4>Verification</h4><a class="verify" href="#" onclick="showToast('Certificate verification will be connected here.')">Certificate Verification</a></div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 RadioDx Academy. All rights reserved.</span>
+    <span>Medical Disclaimer &nbsp; | &nbsp; Report an Error</span>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <div class="modal-head"><h3 id="modalTitle">RadioDx</h3><button class="modal-close" onclick="closeModal()">×</button></div>
+    <div class="modal-body" id="modalBody"></div>
+    <button class="btn btn-primary" onclick="closeModal()">Continue</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

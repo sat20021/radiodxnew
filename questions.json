@@ -1,0 +1,3229 @@
+[
+ {
+  "id": 1,
+  "topic": "Dosimetry",
+  "q": "SI unit of absorbed dose?",
+  "options": [
+   "Sievert (Sv)",
+   "Gray (Gy)",
+   "Becquerel (Bq)",
+   "Coulomb/kg"
+  ],
+  "answer": 1,
+  "explain": "Absorbed dose is energy per unit mass: 1 Gy = 1 J/kg. Sievert is for equivalent/effective dose."
+ },
+ {
+  "id": 2,
+  "topic": "Dosimetry",
+  "q": "1 Gy equals how many rad?",
+  "options": [
+   "1",
+   "10",
+   "100",
+   "1000"
+  ],
+  "answer": 2,
+  "explain": "1 Gy = 100 rad."
+ },
+ {
+  "id": 3,
+  "topic": "Dosimetry",
+  "q": "Radiation weighting factor (wR) for diagnostic X-rays is:",
+  "options": [
+   "1",
+   "5",
+   "10",
+   "20"
+  ],
+  "answer": 0,
+  "explain": "X-rays, gamma and beta have wR = 1; alpha particles have wR = 20."
+ },
+ {
+  "id": 4,
+  "topic": "Dosimetry",
+  "q": "Unit of radioactivity in SI?",
+  "options": [
+   "Gray",
+   "Sievert",
+   "Becquerel",
+   "Roentgen"
+  ],
+  "answer": 2,
+  "explain": "1 Bq = 1 disintegration per second."
+ },
+ {
+  "id": 5,
+  "topic": "X-ray Production",
+  "q": "Characteristic X-rays are produced when:",
+  "options": [
+   "An electron decelerates near the nucleus",
+   "An outer-shell electron fills an inner-shell vacancy",
+   "A photon is scattered by a free electron",
+   "A nucleus emits a gamma ray"
+  ],
+  "answer": 1,
+  "explain": "The energy difference between the two shells is emitted as a characteristic photon."
+ },
+ {
+  "id": 6,
+  "topic": "X-ray Production",
+  "q": "Bremsstrahlung radiation results from:",
+  "options": [
+   "Inner-shell ionisation",
+   "Deceleration of electrons near the nucleus",
+   "Positron annihilation",
+   "Nuclear decay"
+  ],
+  "answer": 1,
+  "explain": "It gives a continuous spectrum, maximum photon energy equals the kVp."
+ },
+ {
+  "id": 7,
+  "topic": "X-ray Production",
+  "q": "Approximate minimum kVp needed to produce tungsten K-characteristic X-rays?",
+  "options": [
+   "20 kVp",
+   "40 kVp",
+   "70 kVp",
+   "120 kVp"
+  ],
+  "answer": 2,
+  "explain": "The K-shell binding energy of tungsten is about 69.5 keV."
+ },
+ {
+  "id": 8,
+  "topic": "X-ray Production",
+  "q": "The anode heel effect causes the beam intensity to be:",
+  "options": [
+   "Lower on the anode side",
+   "Lower on the cathode side",
+   "Uniform",
+   "Higher at the centre only"
+  ],
+  "answer": 0,
+  "explain": "X-rays travel a longer path inside the target toward the anode side, so intensity is lower there."
+ },
+ {
+  "id": 9,
+  "topic": "X-ray Production",
+  "q": "Which target material is commonly used in mammography?",
+  "options": [
+   "Tungsten only",
+   "Molybdenum",
+   "Lead",
+   "Copper"
+  ],
+  "answer": 1,
+  "explain": "Mo (and Rh) give characteristic X-rays of about 17-20 keV, suited for breast tissue contrast."
+ },
+ {
+  "id": 10,
+  "topic": "Interactions",
+  "q": "Probability of photoelectric effect is approximately proportional to:",
+  "options": [
+   "Z/E",
+   "Z^3/E^3",
+   "E^2/Z",
+   "Independent of Z"
+  ],
+  "answer": 1,
+  "explain": "Photoelectric absorption varies as Z^3/E^3, which is why contrast media with high Z work."
+ },
+ {
+  "id": 11,
+  "topic": "Interactions",
+  "q": "Main source of scatter radiation fogging in diagnostic radiography:",
+  "options": [
+   "Photoelectric effect",
+   "Compton scatter",
+   "Pair production",
+   "Coherent absorption"
+  ],
+  "answer": 1,
+  "explain": "Compton scatter dominates in soft tissue at higher diagnostic energies."
+ },
+ {
+  "id": 12,
+  "topic": "Interactions",
+  "q": "Threshold energy for pair production is:",
+  "options": [
+   "511 keV",
+   "0.5 MeV",
+   "1.022 MeV",
+   "2.044 MeV"
+  ],
+  "answer": 2,
+  "explain": "Two electron rest masses: 2 x 511 keV = 1.022 MeV."
+ },
+ {
+  "id": 13,
+  "topic": "Interactions",
+  "q": "Half-value layer (HVL) is the thickness of material that:",
+  "options": [
+   "Stops all X-rays",
+   "Reduces beam intensity to half",
+   "Doubles the kVp",
+   "Halves the half-life"
+  ],
+  "answer": 1,
+  "explain": "After 3 HVLs the intensity falls to 1/8 (12.5%)."
+ },
+ {
+  "id": 14,
+  "topic": "Radiation Protection",
+  "q": "If distance from a point source is doubled, intensity becomes:",
+  "options": [
+   "1/2",
+   "1/4",
+   "1/8",
+   "Unchanged"
+  ],
+  "answer": 1,
+  "explain": "Inverse square law: I is proportional to 1/d^2."
+ },
+ {
+  "id": 15,
+  "topic": "Radiation Protection",
+  "q": "ICRP occupational effective dose limit (averaged over 5 years)?",
+  "options": [
+   "1 mSv/year",
+   "5 mSv/year",
+   "20 mSv/year",
+   "100 mSv/year"
+  ],
+  "answer": 2,
+  "explain": "20 mSv per year averaged over 5 years, with no single year above 50 mSv."
+ },
+ {
+  "id": 16,
+  "topic": "Radiation Protection",
+  "q": "Three basic principles of protection against external radiation:",
+  "options": [
+   "Time, distance, shielding",
+   "kVp, mAs, filtration",
+   "Dose, rate, energy",
+   "Grid, collimation, speed"
+  ],
+  "answer": 0,
+  "explain": "Minimise time, maximise distance, use shielding."
+ },
+ {
+  "id": 17,
+  "topic": "Nuclear Medicine",
+  "q": "Physical half-life of Tc-99m is about:",
+  "options": [
+   "6 minutes",
+   "6 hours",
+   "6 days",
+   "6 years"
+  ],
+  "answer": 1,
+  "explain": "About 6 hours, emitting 140 keV gamma rays."
+ },
+ {
+  "id": 18,
+  "topic": "Nuclear Medicine",
+  "q": "Gamma photon energy of Tc-99m?",
+  "options": [
+   "70 keV",
+   "140 keV",
+   "364 keV",
+   "511 keV"
+  ],
+  "answer": 1,
+  "explain": "140 keV, ideal for gamma cameras."
+ },
+ {
+  "id": 19,
+  "topic": "Nuclear Medicine",
+  "q": "Mo-99/Tc-99m generator operates in:",
+  "options": [
+   "Secular equilibrium",
+   "Transient equilibrium",
+   "No equilibrium",
+   "Pair equilibrium"
+  ],
+  "answer": 1,
+  "explain": "Parent half-life (66 h) is only moderately longer than daughter's (6 h): transient equilibrium."
+ },
+ {
+  "id": 20,
+  "topic": "Nuclear Medicine",
+  "q": "Positron annihilation produces:",
+  "options": [
+   "One 1.022 MeV photon",
+   "Two 511 keV photons at about 180 degrees",
+   "Two 140 keV photons",
+   "Three 511 keV photons"
+  ],
+  "answer": 1,
+  "explain": "This is the basis of PET coincidence detection."
+ },
+ {
+  "id": 21,
+  "topic": "Nuclear Medicine",
+  "q": "After 3 half-lives, the fraction of radioactivity remaining is:",
+  "options": [
+   "1/3",
+   "1/6",
+   "1/8",
+   "1/16"
+  ],
+  "answer": 2,
+  "explain": "(1/2)^3 = 1/8 = 12.5%."
+ },
+ {
+  "id": 22,
+  "topic": "MRI",
+  "q": "Larmor frequency of hydrogen at 1.5 T is approximately:",
+  "options": [
+   "21 MHz",
+   "42.6 MHz",
+   "63.9 MHz",
+   "127.8 MHz"
+  ],
+  "answer": 2,
+  "explain": "42.58 MHz/T x 1.5 T = about 63.9 MHz."
+ },
+ {
+  "id": 23,
+  "topic": "MRI",
+  "q": "T1 relaxation refers to:",
+  "options": [
+   "Decay of transverse magnetisation",
+   "Recovery of longitudinal magnetisation",
+   "Dephasing from field inhomogeneity",
+   "Gradient switching"
+  ],
+  "answer": 1,
+  "explain": "T1 is spin-lattice relaxation; T2 is decay of transverse magnetisation."
+ },
+ {
+  "id": 24,
+  "topic": "Ultrasound",
+  "q": "Average speed of sound in soft tissue assumed by scanners:",
+  "options": [
+   "330 m/s",
+   "1540 m/s",
+   "3000 m/s",
+   "4080 m/s"
+  ],
+  "answer": 1,
+  "explain": "1540 m/s is used for depth calculation."
+ },
+ {
+  "id": 25,
+  "topic": "Ultrasound",
+  "q": "Greatest reflection occurs at which interface?",
+  "options": [
+   "Fat-muscle",
+   "Soft tissue-bone/air",
+   "Liver-kidney",
+   "Blood-vessel wall"
+  ],
+  "answer": 1,
+  "explain": "Large acoustic impedance mismatch causes strong reflection, hence the need for coupling gel."
+ },
+ {
+  "id": 26,
+  "topic": "Ultrasound",
+  "q": "Doppler shift is zero when the beam-flow angle is:",
+  "options": [
+   "0 degrees",
+   "45 degrees",
+   "60 degrees",
+   "90 degrees"
+  ],
+  "answer": 3,
+  "explain": "Shift is proportional to cos(theta); cos 90 = 0."
+ },
+ {
+  "id": 27,
+  "topic": "CT",
+  "q": "Hounsfield unit of water and air respectively:",
+  "options": [
+   "0 and -1000",
+   "1000 and 0",
+   "0 and 1000",
+   "-1000 and 0"
+  ],
+  "answer": 0,
+  "explain": "Water = 0 HU, air = -1000 HU."
+ },
+ {
+  "id": 28,
+  "topic": "CT",
+  "q": "Fat typically measures approximately:",
+  "options": [
+   "+100 HU",
+   "0 HU",
+   "-100 HU",
+   "-1000 HU"
+  ],
+  "answer": 2,
+  "explain": "Fat is about -120 to -90 HU."
+ },
+ {
+  "id": 29,
+  "topic": "Radiography",
+  "q": "Grid ratio is defined as:",
+  "options": [
+   "Strip height / interspace width",
+   "Interspace width / strip height",
+   "Strips per cm",
+   "Lead thickness / height"
+  ],
+  "answer": 0,
+  "explain": "Higher ratio cleans more scatter but needs more exposure."
+ },
+ {
+  "id": 30,
+  "topic": "Radiography",
+  "q": "Unit used to express spatial resolution:",
+  "options": [
+   "mGy",
+   "Line pairs per mm",
+   "HU",
+   "dB"
+  ],
+  "answer": 1,
+  "explain": "Higher lp/mm means better spatial resolution."
+ },
+ {
+  "id": 31,
+  "topic": "Atomic Structure",
+  "q": "The number of protons in the nucleus determines the chemical identity of an atom.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The atomic number Z (number of protons) defines the element."
+ },
+ {
+  "id": 32,
+  "topic": "Atomic Structure",
+  "q": "Isotopes of an element have the same number of neutrons but different numbers of protons.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Isotopes have the same Z (protons) but different N (neutrons)."
+ },
+ {
+  "id": 33,
+  "topic": "Atomic Structure",
+  "q": "Alpha particles are more penetrating than gamma rays.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Alpha particles are heavy and charged and are stopped by paper or skin. Gamma rays penetrate far more."
+ },
+ {
+  "id": 34,
+  "topic": "X-ray Production",
+  "q": "X-rays are deflected by magnetic fields.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "X-rays are uncharged photons, so magnetic fields do not deflect them."
+ },
+ {
+  "id": 35,
+  "topic": "Ultrasound",
+  "q": "Ultrasound is a mechanical wave and cannot travel through a vacuum.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Sound needs a medium to propagate; electromagnetic waves do not."
+ },
+ {
+  "id": 36,
+  "topic": "Radiography",
+  "q": "The source of electrons in an X-ray tube is the:",
+  "options": [
+   "Cathode filament",
+   "Anode target",
+   "Rotor",
+   "Glass envelope"
+  ],
+  "answer": 0,
+  "explain": "Electrons are released from the heated filament (cathode) by thermionic emission."
+ },
+ {
+  "id": 37,
+  "topic": "Radiography",
+  "q": "The filament of a diagnostic X-ray tube is made of:",
+  "options": [
+   "Copper",
+   "Thoriated tungsten",
+   "Molybdenum",
+   "Lead"
+  ],
+  "answer": 1,
+  "explain": "Thoriated tungsten gives efficient thermionic emission and has a very high melting point."
+ },
+ {
+  "id": 38,
+  "topic": "Radiography",
+  "q": "Tungsten is used as the target material in general radiography mainly because of its:",
+  "options": [
+   "Low atomic number and low cost",
+   "High thermal expansion",
+   "High atomic number and high melting point",
+   "Low density"
+  ],
+  "answer": 2,
+  "explain": "Efficiency of X-ray production rises with Z, and a high melting point tolerates intense heating."
+ },
+ {
+  "id": 39,
+  "topic": "Radiography",
+  "q": "Approximate melting point of tungsten?",
+  "options": [
+   "1500 °C",
+   "2200 °C",
+   "5000 °C",
+   "3400 °C"
+  ],
+  "answer": 3,
+  "explain": "Tungsten melts at about 3422 °C, which suits the high heat load on the anode."
+ },
+ {
+  "id": 40,
+  "topic": "Radiography",
+  "q": "Approximately what percentage of the electron kinetic energy is converted to heat at the anode?",
+  "options": [
+   "99%",
+   "1%",
+   "50%",
+   "90%"
+  ],
+  "answer": 0,
+  "explain": "Only about 1% becomes X-rays; the rest (about 99%) is heat."
+ },
+ {
+  "id": 41,
+  "topic": "Radiography",
+  "q": "Tube current (mA) is controlled mainly by changing the:",
+  "options": [
+   "Tube voltage",
+   "Filament current (filament heating)",
+   "Anode rotation speed",
+   "Target angle"
+  ],
+  "answer": 1,
+  "explain": "Raising filament current heats the filament more and releases more electrons, so mA rises."
+ },
+ {
+  "id": 42,
+  "topic": "Radiography",
+  "q": "The space charge effect is the:",
+  "options": [
+   "Positive charge on the anode",
+   "Leakage of X-rays from the housing",
+   "Electron cloud around the filament that limits further electron emission",
+   "Loss of vacuum in the tube"
+  ],
+  "answer": 2,
+  "explain": "The negative electron cloud repels further electrons, mainly at low kVp."
+ },
+ {
+  "id": 43,
+  "topic": "Radiography",
+  "q": "Saturation current in an X-ray tube means that:",
+  "options": [
+   "The filament has melted",
+   "The anode has stopped rotating",
+   "The tube produces no X-rays",
+   "All emitted electrons reach the anode and mA no longer rises with kVp"
+  ],
+  "answer": 3,
+  "explain": "At high kVp the space charge is overcome; tube current then depends only on filament temperature."
+ },
+ {
+  "id": 44,
+  "topic": "Radiography",
+  "q": "Rhenium is alloyed with tungsten in the target to:",
+  "options": [
+   "Reduce surface roughening and cracking",
+   "Increase the atomic number to above 100",
+   "Lower the melting point",
+   "Absorb scatter radiation"
+  ],
+  "answer": 0,
+  "explain": "Tungsten-rhenium (about 10% Re) resists thermal damage and pitting."
+ },
+ {
+  "id": 45,
+  "topic": "Radiography",
+  "q": "The main purpose of a rotating anode is to:",
+  "options": [
+   "Reduce kVp needed",
+   "Spread heat over a larger area and allow higher tube loading",
+   "Increase the filament emission",
+   "Remove the heel effect"
+  ],
+  "answer": 1,
+  "explain": "The electron beam strikes a continuously changing area, the focal track, so heat is not concentrated."
+ },
+ {
+  "id": 46,
+  "topic": "Radiography",
+  "q": "Typical rotation speed of a standard rotating anode is about:",
+  "options": [
+   "300 rpm",
+   "30,000 rpm",
+   "3,000-3,600 rpm",
+   "100 rpm"
+  ],
+  "answer": 2,
+  "explain": "Standard stators run at about 3,400 rpm; high-speed stators run at about 9,000-10,000 rpm."
+ },
+ {
+  "id": 47,
+  "topic": "Radiography",
+  "q": "The line-focus principle states that:",
+  "options": [
+   "The actual focal spot is smaller than the effective one",
+   "X-rays travel in curved lines",
+   "Heat is produced only in a line",
+   "The effective focal spot is smaller than the actual focal spot"
+  ],
+  "answer": 3,
+  "explain": "Because the target is angled, the focal spot seen from the image receptor is foreshortened."
+ },
+ {
+  "id": 48,
+  "topic": "Radiography",
+  "q": "Effective focal spot size is approximately equal to:",
+  "options": [
+   "Actual focal spot size × sin (anode angle)",
+   "Actual focal spot size × cos (anode angle)",
+   "Actual focal spot size ÷ sin (anode angle)",
+   "Actual focal spot size + anode angle"
+  ],
+  "answer": 0,
+  "explain": "Reducing the target angle reduces the effective focal spot."
+ },
+ {
+  "id": 49,
+  "topic": "Radiography",
+  "q": "Typical anode (target) angles in diagnostic tubes are:",
+  "options": [
+   "30-45 degrees",
+   "7-15 degrees",
+   "0-1 degree",
+   "60-90 degrees"
+  ],
+  "answer": 1,
+  "explain": "Angles of about 12 degrees are common in general radiography tubes."
+ },
+ {
+  "id": 50,
+  "topic": "Radiography",
+  "q": "Decreasing the anode angle will:",
+  "options": [
+   "Increase the effective focal spot and reduce the heel effect",
+   "Have no effect on either",
+   "Decrease the effective focal spot size but increase the heel effect",
+   "Increase the heat capacity"
+  ],
+  "answer": 2,
+  "explain": "A smaller angle gives sharper images but a larger anode heel effect and less field coverage."
+ },
+ {
+  "id": 51,
+  "topic": "Radiography",
+  "q": "The anode heel effect is greatest with:",
+  "options": [
+   "Large anode angle and long SID",
+   "High mAs only",
+   "Small field size",
+   "Small anode angle and short SID"
+  ],
+  "answer": 3,
+  "explain": "A steep target and a large field near the tube make intensity differences obvious."
+ },
+ {
+  "id": 52,
+  "topic": "Radiography",
+  "q": "In an AP thoracic spine exposure, to use the heel effect best the cathode should be placed over the:",
+  "options": [
+   "Lower (thicker) thoracic region",
+   "Upper (thinner) thoracic region",
+   "Anywhere, as it makes no difference",
+   "Patient's head only"
+  ],
+  "answer": 0,
+  "explain": "The cathode side has higher intensity, so it should cover the thicker, denser part."
+ },
+ {
+  "id": 53,
+  "topic": "Radiography",
+  "q": "Where is the beam intensity highest in the X-ray field?",
+  "options": [
+   "Anode side",
+   "Cathode side",
+   "Exactly at the centre",
+   "It is uniform"
+  ],
+  "answer": 1,
+  "explain": "On the anode side the photons travel through more target material and are absorbed (the heel effect)."
+ },
+ {
+  "id": 54,
+  "topic": "Radiography",
+  "q": "The small focal spot size in mammography (for magnification) is typically:",
+  "options": [
+   "1.0 mm",
+   "2.0 mm",
+   "0.1 mm",
+   "0.6 mm"
+  ],
+  "answer": 2,
+  "explain": "Mammography uses 0.3 mm (contact) and 0.1 mm (magnification) focal spots."
+ },
+ {
+  "id": 55,
+  "topic": "Radiography",
+  "q": "Typical nominal focal spot sizes in general radiography are:",
+  "options": [
+   "0.01 mm and 0.05 mm",
+   "5 mm and 10 mm",
+   "0.1 mm and 0.3 mm",
+   "0.6 mm (small) and 1.2 mm (large)"
+  ],
+  "answer": 3,
+  "explain": "The small spot gives sharper images; the large spot tolerates higher loading."
+ },
+ {
+  "id": 56,
+  "topic": "Radiography",
+  "q": "The K-characteristic X-rays of tungsten have energies of approximately:",
+  "options": [
+   "59 and 67 keV",
+   "10 and 12 keV",
+   "15 and 20 keV",
+   "100 and 120 keV"
+  ],
+  "answer": 0,
+  "explain": "K-shell transitions in tungsten give photons of about 58-69 keV."
+ },
+ {
+  "id": 57,
+  "topic": "Radiography",
+  "q": "For an 80 kVp exposure the maximum photon energy in the beam is:",
+  "options": [
+   "40 keV",
+   "80 keV",
+   "160 keV",
+   "69.5 keV"
+  ],
+  "answer": 1,
+  "explain": "The maximum photon energy in keV equals the peak tube voltage in kVp."
+ },
+ {
+  "id": 58,
+  "topic": "Radiography",
+  "q": "The average photon energy of a diagnostic X-ray beam is about:",
+  "options": [
+   "Equal to the peak energy",
+   "Twice the peak energy",
+   "One-third to one-half of the peak energy",
+   "One-tenth of the peak energy"
+  ],
+  "answer": 2,
+  "explain": "The spectrum is continuous, with most photons at lower energies."
+ },
+ {
+  "id": 59,
+  "topic": "Radiography",
+  "q": "The efficiency of X-ray production increases with:",
+  "options": [
+   "Decreasing kVp",
+   "Decreasing atomic number",
+   "Increasing filtration",
+   "Increasing atomic number of target and increasing kVp"
+  ],
+  "answer": 3,
+  "explain": "Efficiency is proportional to Z × kVp."
+ },
+ {
+  "id": 60,
+  "topic": "Radiography",
+  "q": "The function of the rectifier in an X-ray generator is to:",
+  "options": [
+   "Convert alternating current to direct (unidirectional) current",
+   "Increase the voltage",
+   "Decrease the current",
+   "Filter the beam"
+  ],
+  "answer": 0,
+  "explain": "Rectifiers let current flow in one direction only, so the tube conducts only from cathode to anode."
+ },
+ {
+  "id": 61,
+  "topic": "Radiography",
+  "q": "Voltage ripple of single-phase full-wave rectified output is:",
+  "options": [
+   "0%",
+   "100%",
+   "13%",
+   "3.5%"
+  ],
+  "answer": 1,
+  "explain": "The voltage swings from zero to the peak 120 times per second."
+ },
+ {
+  "id": 62,
+  "topic": "Radiography",
+  "q": "Approximate ripple of a 12-pulse three-phase generator is:",
+  "options": [
+   "100%",
+   "13.5%",
+   "3.5%",
+   "50%"
+  ],
+  "answer": 2,
+  "explain": "Six-pulse gives about 13.5% ripple and 12-pulse about 3.5%."
+ },
+ {
+  "id": 63,
+  "topic": "Radiography",
+  "q": "Which generator type is most common in modern radiography and gives near-constant potential?",
+  "options": [
+   "Single-phase half-wave",
+   "Self-rectified generator",
+   "Single-phase full-wave",
+   "High-frequency generator"
+  ],
+  "answer": 3,
+  "explain": "High-frequency generators have under 1-2% ripple, are compact and give accurate exposures."
+ },
+ {
+  "id": 64,
+  "topic": "Radiography",
+  "q": "A step-up transformer in the X-ray circuit:",
+  "options": [
+   "Increases voltage and decreases current",
+   "Increases both voltage and current",
+   "Decreases voltage and increases current",
+   "Converts AC to DC"
+  ],
+  "answer": 0,
+  "explain": "The high-voltage transformer has more turns in the secondary coil than in the primary."
+ },
+ {
+  "id": 65,
+  "topic": "Radiography",
+  "q": "The transformer law states that:",
+  "options": [
+   "Vs × Vp = Ns × Np",
+   "Vs/Vp = Ns/Np",
+   "Vs/Vp = Np/Ns",
+   "Is/Ip = Ns/Np"
+  ],
+  "answer": 1,
+  "explain": "Voltage ratio equals the turns ratio; current changes inversely."
+ },
+ {
+  "id": 66,
+  "topic": "Radiography",
+  "q": "The filament circuit uses a:",
+  "options": [
+   "Step-up transformer only",
+   "Rectifier only",
+   "Step-down transformer",
+   "Capacitor only"
+  ],
+  "answer": 2,
+  "explain": "The filament needs a low voltage (about 10 V) but a high current (3-5 A)."
+ },
+ {
+  "id": 67,
+  "topic": "Radiography",
+  "q": "Kilovoltage is selected by the:",
+  "options": [
+   "Filament transformer",
+   "Rectifier",
+   "Exposure timer",
+   "Autotransformer"
+  ],
+  "answer": 3,
+  "explain": "The autotransformer varies the voltage applied to the primary of the high-voltage transformer."
+ },
+ {
+  "id": 68,
+  "topic": "Radiography",
+  "q": "How many pulses per second does a single-phase full-wave rectified generator produce on a 60 Hz supply?",
+  "options": [
+   "120",
+   "60",
+   "360",
+   "720"
+  ],
+  "answer": 0,
+  "explain": "Full-wave rectification gives two pulses per cycle."
+ },
+ {
+  "id": 69,
+  "topic": "Radiography",
+  "q": "A tube rating chart shows:",
+  "options": [
+   "The tube cost",
+   "The maximum safe exposure combinations that will not damage the tube",
+   "The patient dose",
+   "The filament life"
+  ],
+  "answer": 1,
+  "explain": "Charts plot kVp, mA and time limits for a given focal spot and generator type."
+ },
+ {
+  "id": 70,
+  "topic": "Radiography",
+  "q": "The heat unit (single-phase) is calculated as:",
+  "options": [
+   "kVp ÷ mA × time",
+   "mA × time ÷ kVp",
+   "kVp × mA × time (s)",
+   "kVp + mA + time"
+  ],
+  "answer": 2,
+  "explain": "Three-phase 6-pulse multiplies by 1.35, and 12-pulse by 1.41."
+ },
+ {
+  "id": 71,
+  "topic": "Radiography",
+  "q": "Heat is dissipated from the anode in a vacuum mainly by:",
+  "options": [
+   "Conduction through the rotor",
+   "Convection",
+   "Evaporation",
+   "Radiation"
+  ],
+  "answer": 3,
+  "explain": "The anode glows and radiates heat to the housing oil, where it is carried away by conduction and convection."
+ },
+ {
+  "id": 72,
+  "topic": "Radiography",
+  "q": "Oil is placed around the glass tube in the housing to:",
+  "options": [
+   "Provide electrical insulation and cooling",
+   "Increase tube current",
+   "Absorb all X-rays",
+   "Create the vacuum"
+  ],
+  "answer": 0,
+  "explain": "Oil insulates the high voltage and carries heat away."
+ },
+ {
+  "id": 73,
+  "topic": "Radiography",
+  "q": "Maximum permitted leakage radiation from the tube housing at 1 m is:",
+  "options": [
+   "10 mGy/h",
+   "1 mGy/h (100 mR/h)",
+   "0.1 mGy/h",
+   "0 mGy/h"
+  ],
+  "answer": 1,
+  "explain": "The lead lining in the housing limits leakage radiation to this level."
+ },
+ {
+  "id": 74,
+  "topic": "Radiography",
+  "q": "The vacuum inside the X-ray tube is needed to:",
+  "options": [
+   "Increase photon energy",
+   "Reduce scatter",
+   "Prevent electron collisions with gas molecules and filament oxidation",
+   "Provide filtration"
+  ],
+  "answer": 2,
+  "explain": "Gas would stop electrons and oxidise the filament."
+ },
+ {
+  "id": 75,
+  "topic": "Radiography",
+  "q": "Off-focus radiation is produced by:",
+  "options": [
+   "Gamma rays from the housing",
+   "The filament",
+   "The collimator",
+   "Electrons striking areas of the anode outside the focal spot"
+  ],
+  "answer": 3,
+  "explain": "It reduces image sharpness and increases patient dose; collimation near the tube reduces it."
+ },
+ {
+  "id": 76,
+  "topic": "Radiography",
+  "q": "Vaporised tungsten deposited on the inner glass envelope can cause:",
+  "options": [
+   "Arcing and tube failure",
+   "Better heat dissipation",
+   "Lower patient dose",
+   "Higher image contrast"
+  ],
+  "answer": 0,
+  "explain": "Over time the metal coating changes the potential inside the tube and the tube may fail."
+ },
+ {
+  "id": 77,
+  "topic": "Radiography",
+  "q": "A tube warm-up procedure is performed to:",
+  "options": [
+   "Cool the filament",
+   "Heat the anode gradually and avoid thermal shock",
+   "Increase kVp accuracy",
+   "Erase the image receptor"
+  ],
+  "answer": 1,
+  "explain": "Gradual heating prevents cracking of the cold anode."
+ },
+ {
+  "id": 78,
+  "topic": "Radiography",
+  "q": "Inherent filtration of an X-ray tube is typically equivalent to about:",
+  "options": [
+   "5 mm aluminium",
+   "10 mm lead",
+   "0.5-1 mm aluminium",
+   "0 mm"
+  ],
+  "answer": 2,
+  "explain": "It comes from the glass window, the oil and the housing window."
+ },
+ {
+  "id": 79,
+  "topic": "Radiography",
+  "q": "Minimum total filtration for tubes operating above 70 kVp is:",
+  "options": [
+   "0.5 mm aluminium",
+   "5 mm aluminium",
+   "1 mm lead",
+   "2.5 mm aluminium equivalent"
+  ],
+  "answer": 3,
+  "explain": "Regulations require at least 2.5 mm Al to remove low-energy photons."
+ },
+ {
+  "id": 80,
+  "topic": "Radiography",
+  "q": "The focusing cup surrounding the filament is:",
+  "options": [
+   "Negatively charged and focuses electrons toward the target",
+   "Positively charged",
+   "Made of lead",
+   "Used only in mammography"
+  ],
+  "answer": 0,
+  "explain": "The negative cup repels the electrons into a narrow beam."
+ },
+ {
+  "id": 81,
+  "topic": "Radiography",
+  "q": "The Duane-Hunt law relates:",
+  "options": [
+   "Heat to current",
+   "The minimum wavelength of the X-ray spectrum to the tube voltage",
+   "Scatter to field size",
+   "Grid ratio to contrast"
+  ],
+  "answer": 1,
+  "explain": "λmin (nm) = 1.24 / kVp, which sets the maximum photon energy."
+ },
+ {
+  "id": 82,
+  "topic": "Radiography",
+  "q": "If mAs is doubled and everything else is constant, X-ray output (intensity) will:",
+  "options": [
+   "Remain the same",
+   "Halve",
+   "Double",
+   "Quadruple"
+  ],
+  "answer": 2,
+  "explain": "The number of photons is directly proportional to mAs."
+ },
+ {
+  "id": 83,
+  "topic": "Radiography",
+  "q": "X-ray beam intensity is approximately proportional to:",
+  "options": [
+   "kVp",
+   "1/kVp",
+   "kVp cubed only",
+   "kVp squared"
+  ],
+  "answer": 3,
+  "explain": "Small changes in kVp change the output substantially."
+ },
+ {
+  "id": 84,
+  "topic": "Radiography",
+  "q": "Increasing kVp shifts the X-ray spectrum:",
+  "options": [
+   "To higher energies with greater total intensity",
+   "To lower energies with less intensity",
+   "To lower energies with greater intensity",
+   "Without any change"
+  ],
+  "answer": 0,
+  "explain": "The maximum and average photon energies, and the photon number, all increase."
+ },
+ {
+  "id": 85,
+  "topic": "Radiography",
+  "q": "Adding filtration to the beam will:",
+  "options": [
+   "Decrease average energy and increase intensity",
+   "Increase average energy and decrease intensity",
+   "Increase both",
+   "Decrease both"
+  ],
+  "answer": 1,
+  "explain": "Low-energy photons are preferentially removed, so the beam is hardened."
+ },
+ {
+  "id": 86,
+  "topic": "Radiography",
+  "q": "Characteristic X-rays of tungsten appear in the spectrum only when kVp is:",
+  "options": [
+   "Below 20 kVp",
+   "Exactly 50 kVp",
+   "Above about 70 kVp",
+   "Any kVp"
+  ],
+  "answer": 2,
+  "explain": "The tube voltage must exceed the K-shell binding energy (69.5 keV)."
+ },
+ {
+  "id": 87,
+  "topic": "Radiography",
+  "q": "Stationary anode tubes are used in:",
+  "options": [
+   "CT scanners",
+   "High-power angiography",
+   "Interventional suites",
+   "Dental and some portable units where loading is low"
+  ],
+  "answer": 3,
+  "explain": "They are simple and cheap, but their heat capacity is limited."
+ },
+ {
+  "id": 88,
+  "topic": "Radiography",
+  "q": "The focal track of a rotating anode is:",
+  "options": [
+   "The circular area of the target struck by electrons",
+   "The filament coil",
+   "The glass envelope region",
+   "The housing window"
+  ],
+  "answer": 0,
+  "explain": "Heat is spread over this ring as the anode rotates."
+ },
+ {
+  "id": 89,
+  "topic": "Radiography",
+  "q": "The molybdenum stem of a rotating anode helps to:",
+  "options": [
+   "Increase the X-ray yield",
+   "Reduce heat conduction to the rotor bearings",
+   "Absorb scatter",
+   "Increase kVp"
+  ],
+  "answer": 1,
+  "explain": "Molybdenum is a poor heat conductor and also lightweight."
+ },
+ {
+  "id": 90,
+  "topic": "Radiography",
+  "q": "A graphite backing on the anode disc:",
+  "options": [
+   "Increases the heel effect",
+   "Filters the beam",
+   "Stores heat and increases the heat capacity",
+   "Increases the focal spot"
+  ],
+  "answer": 2,
+  "explain": "Graphite has high heat capacity and low weight, so it improves heat storage."
+ },
+ {
+  "id": 91,
+  "topic": "Radiography",
+  "q": "Half-value layer (HVL) is the thickness of a material that:",
+  "options": [
+   "Stops all the radiation",
+   "Doubles the beam intensity",
+   "Reduces the kVp to half",
+   "Reduces beam intensity to half its original value"
+  ],
+  "answer": 3,
+  "explain": "HVL is a measure of beam quality (penetrating power)."
+ },
+ {
+  "id": 92,
+  "topic": "Radiography",
+  "q": "A higher HVL for a given beam indicates:",
+  "options": [
+   "A harder, more penetrating beam",
+   "A softer beam",
+   "A lower kVp",
+   "A smaller focal spot"
+  ],
+  "answer": 0,
+  "explain": "More material is needed to halve the intensity of a high-energy beam."
+ },
+ {
+  "id": 93,
+  "topic": "Radiography",
+  "q": "HVL is most commonly expressed in:",
+  "options": [
+   "mm of lead only",
+   "mm of aluminium",
+   "cm of water only",
+   "Gy"
+  ],
+  "answer": 1,
+  "explain": "Aluminium is the reference material for diagnostic X-ray beam quality."
+ },
+ {
+  "id": 94,
+  "topic": "Radiography",
+  "q": "Beam quality in diagnostic radiography is primarily determined by:",
+  "options": [
+   "mAs",
+   "Exposure time",
+   "kVp and filtration",
+   "Focal spot size"
+  ],
+  "answer": 2,
+  "explain": "These two set the spectrum and therefore the penetrating ability."
+ },
+ {
+  "id": 95,
+  "topic": "Radiography",
+  "q": "Beam quantity (intensity) is mainly controlled by:",
+  "options": [
+   "Filtration",
+   "Grid ratio",
+   "Focal spot size",
+   "mAs"
+  ],
+  "answer": 3,
+  "explain": "Photon number is proportional to mA × time."
+ },
+ {
+  "id": 96,
+  "topic": "Radiography",
+  "q": "According to the inverse square law, if the distance from the source doubles, the intensity becomes:",
+  "options": [
+   "One-quarter",
+   "Half",
+   "Double",
+   "Unchanged"
+  ],
+  "answer": 0,
+  "explain": "I1/I2 = (d2/d1)^2."
+ },
+ {
+  "id": 97,
+  "topic": "Radiography",
+  "q": "An exposure of 10 mAs at 100 cm SID. To keep the same receptor exposure at 200 cm SID, the mAs required is:",
+  "options": [
+   "20 mAs",
+   "40 mAs",
+   "80 mAs",
+   "10 mAs"
+  ],
+  "answer": 1,
+  "explain": "mAs must be multiplied by (200/100)^2 = 4."
+ },
+ {
+  "id": 98,
+  "topic": "Radiography",
+  "q": "The 15% rule states that:",
+  "options": [
+   "Increasing kVp by 15% halves the mAs",
+   "Increasing mAs by 15% doubles contrast",
+   "Increasing kVp by 15% has about the same effect on exposure as doubling mAs",
+   "kVp must never change by more than 15%"
+  ],
+  "answer": 2,
+  "explain": "A 15% rise in kVp doubles receptor exposure; a 15% fall halves it."
+ },
+ {
+  "id": 99,
+  "topic": "Radiography",
+  "q": "To halve the receptor exposure using the 15% rule, you would:",
+  "options": [
+   "Increase kVp by 15%",
+   "Double mAs",
+   "Halve SID",
+   "Decrease kVp by 15%"
+  ],
+  "answer": 3,
+  "explain": "A 15% reduction in kVp halves the exposure."
+ },
+ {
+  "id": 100,
+  "topic": "Radiography",
+  "q": "The reciprocity law states that the receptor exposure depends on:",
+  "options": [
+   "The product of mA and time (mAs), not on the individual values",
+   "mA only",
+   "Time only",
+   "kVp only"
+  ],
+  "answer": 0,
+  "explain": "Different mA/time combinations that give the same mAs produce the same exposure (for digital and screen-film at ordinary times)."
+ },
+ {
+  "id": 101,
+  "topic": "Radiography",
+  "q": "The best way to reduce motion unsharpness is to:",
+  "options": [
+   "Reduce kVp",
+   "Reduce exposure time",
+   "Increase SID only",
+   "Use a larger focal spot"
+  ],
+  "answer": 1,
+  "explain": "A shorter exposure freezes patient movement; mA is increased to compensate."
+ },
+ {
+  "id": 102,
+  "topic": "Radiography",
+  "q": "Compared with a low-kVp technique, a high-kVp technique gives:",
+  "options": [
+   "Higher patient dose and higher contrast",
+   "Higher dose and lower contrast",
+   "Lower patient dose and lower subject contrast",
+   "No difference"
+  ],
+  "answer": 2,
+  "explain": "More penetrating beams give less absorption (lower dose) and less differential attenuation."
+ },
+ {
+  "id": 103,
+  "topic": "Radiography",
+  "q": "The primary purpose of beam collimation is to:",
+  "options": [
+   "Increase the tube output",
+   "Increase the contrast of the grid",
+   "Increase the focal spot size",
+   "Reduce patient dose and scatter radiation"
+  ],
+  "answer": 3,
+  "explain": "A smaller irradiated volume produces less scatter and a lower integral dose."
+ },
+ {
+  "id": 104,
+  "topic": "Radiography",
+  "q": "Positive beam limitation (PBL) automatically:",
+  "options": [
+   "Adjusts the collimator to the size of the image receptor",
+   "Selects kVp",
+   "Selects the grid",
+   "Selects the focal spot"
+  ],
+  "answer": 0,
+  "explain": "Sensors in the cassette holder detect cassette size, and the shutters follow it."
+ },
+ {
+  "id": 105,
+  "topic": "Radiography",
+  "q": "Which of the following is NOT a beam-restricting device?",
+  "options": [
+   "Aperture diaphragm",
+   "Compensating filter",
+   "Cone",
+   "Collimator"
+  ],
+  "answer": 1,
+  "explain": "Compensating filters change beam intensity across the field and do not restrict its size."
+ },
+ {
+  "id": 106,
+  "topic": "Radiography",
+  "q": "The light beam of a collimator must coincide with the X-ray field within:",
+  "options": [
+   "10% of SID",
+   "0.5% of SID",
+   "2% of SID",
+   "20% of SID"
+  ],
+  "answer": 2,
+  "explain": "This is a standard QA tolerance for collimator alignment."
+ },
+ {
+  "id": 107,
+  "topic": "Radiography",
+  "q": "The usual SID for a PA chest radiograph is:",
+  "options": [
+   "50 cm",
+   "100 cm",
+   "250 cm",
+   "180 cm"
+  ],
+  "answer": 3,
+  "explain": "The longer SID reduces heart magnification and geometric blur."
+ },
+ {
+  "id": 108,
+  "topic": "Radiography",
+  "q": "The standard SID for most general radiographic examinations is:",
+  "options": [
+   "100 cm",
+   "50 cm",
+   "180 cm",
+   "250 cm"
+  ],
+  "answer": 0,
+  "explain": "Most routine projections use about 100 cm (40 inches); chest uses 180 cm (72 inches)."
+ },
+ {
+  "id": 109,
+  "topic": "Radiography",
+  "q": "The minimum source-to-skin distance generally required for mobile X-ray units is:",
+  "options": [
+   "5 cm",
+   "30 cm (12 in)",
+   "15 cm",
+   "100 cm"
+  ],
+  "answer": 1,
+  "explain": "A minimum distance prevents high skin entrance doses; fixed fluoroscopy units need at least 38 cm (15 in)."
+ },
+ {
+  "id": 110,
+  "topic": "Radiography",
+  "q": "Why is the object placed as close to the image receptor as possible?",
+  "options": [
+   "To increase magnification",
+   "To increase contrast only",
+   "To reduce magnification and geometric unsharpness",
+   "To reduce kVp"
+  ],
+  "answer": 2,
+  "explain": "A short OID reduces penumbra and magnification."
+ },
+ {
+  "id": 111,
+  "topic": "Radiography",
+  "q": "Wedge (compensating) filters are used to:",
+  "options": [
+   "Increase patient dose",
+   "Reduce scatter only",
+   "Select kVp",
+   "Even out receptor exposure across parts of differing thickness"
+  ],
+  "answer": 3,
+  "explain": "They attenuate the beam more over thin parts."
+ },
+ {
+  "id": 112,
+  "topic": "Radiography",
+  "q": "Which element is mostly used for added filtration in general radiography?",
+  "options": [
+   "Aluminium",
+   "Lead",
+   "Tungsten",
+   "Iron"
+  ],
+  "answer": 0,
+  "explain": "Aluminium removes low-energy photons effectively without too much beam attenuation."
+ },
+ {
+  "id": 113,
+  "topic": "Radiography",
+  "q": "Copper filters are sometimes added to aluminium in fluoroscopy and paediatric work to:",
+  "options": [
+   "Increase the soft beam",
+   "Remove more low-energy photons and reduce skin dose",
+   "Increase scatter",
+   "Lengthen the exposure"
+  ],
+  "answer": 1,
+  "explain": "Copper is more efficient at hardening the beam."
+ },
+ {
+  "id": 114,
+  "topic": "Radiography",
+  "q": "Entrance skin dose is lowered most efficiently by:",
+  "options": [
+   "Using a larger focal spot",
+   "Using lower kVp and higher mAs",
+   "Filtering the beam",
+   "Reducing SID"
+  ],
+  "answer": 2,
+  "explain": "Low-energy photons add skin dose but do not reach the receptor."
+ },
+ {
+  "id": 115,
+  "topic": "Radiography",
+  "q": "Automatic exposure control (AEC) terminates the exposure when:",
+  "options": [
+   "The set time ends",
+   "The anode rotation stops",
+   "The collimator closes",
+   "A preset dose reaches the detector"
+  ],
+  "answer": 3,
+  "explain": "Ionisation chambers (or solid-state sensors) measure the radiation and end the exposure."
+ },
+ {
+  "id": 116,
+  "topic": "Radiography",
+  "q": "Where are AEC ionisation chambers positioned?",
+  "options": [
+   "Between the patient and the image receptor",
+   "Behind the receptor only",
+   "Inside the X-ray tube",
+   "On the patient's skin"
+  ],
+  "answer": 0,
+  "explain": "They are radiolucent and sit in front of the receptor."
+ },
+ {
+  "id": 117,
+  "topic": "Radiography",
+  "q": "The 'backup time' on an AEC system is designed to:",
+  "options": [
+   "Reduce kVp",
+   "Terminate the exposure if the AEC fails",
+   "Select the focal spot",
+   "Warm up the tube"
+  ],
+  "answer": 1,
+  "explain": "It protects the patient from overexposure if the chamber is incorrectly positioned."
+ },
+ {
+  "id": 118,
+  "topic": "Radiography",
+  "q": "Which statement is correct for AEC use?",
+  "options": [
+   "Positioning is irrelevant",
+   "AEC adjusts kVp automatically",
+   "Correct selection of the chamber and positioning of the patient over it is essential",
+   "AEC removes the need for collimation"
+  ],
+  "answer": 2,
+  "explain": "The chamber must be covered by the area of interest."
+ },
+ {
+  "id": 119,
+  "topic": "Radiography",
+  "q": "In a fixed kVp (variable mAs) technique chart:",
+  "options": [
+   "mAs is fixed and kVp varies",
+   "Both are fixed",
+   "Neither is used",
+   "kVp is set for the body part and mAs is changed with patient thickness"
+  ],
+  "answer": 3,
+  "explain": "It gives consistent contrast across patient sizes."
+ },
+ {
+  "id": 120,
+  "topic": "Radiography",
+  "q": "Which exposure factor mainly affects the penetration of the beam through the patient?",
+  "options": [
+   "kVp",
+   "mAs",
+   "Time only",
+   "Focal spot size"
+  ],
+  "answer": 0,
+  "explain": "Higher kVp increases photon energy."
+ },
+ {
+  "id": 121,
+  "topic": "Radiography",
+  "q": "Increasing mAs will primarily change:",
+  "options": [
+   "Subject contrast",
+   "Image receptor exposure (and noise)",
+   "Penetration",
+   "Beam energy"
+  ],
+  "answer": 1,
+  "explain": "More photons reduce quantum noise; contrast is largely unchanged."
+ },
+ {
+  "id": 122,
+  "topic": "Radiography",
+  "q": "Doubling the mAs approximately doubles the:",
+  "options": [
+   "Beam energy",
+   "HVL",
+   "Patient dose",
+   "kVp"
+  ],
+  "answer": 2,
+  "explain": "Dose is proportional to the number of photons."
+ },
+ {
+  "id": 123,
+  "topic": "Radiography",
+  "q": "The intensity of scatter radiation produced increases with:",
+  "options": [
+   "Decreasing kVp",
+   "Decreasing field size",
+   "Decreasing thickness",
+   "Increasing kVp, field size and patient thickness"
+  ],
+  "answer": 3,
+  "explain": "More tissue irradiated and more high-energy photons produce more Compton scatter."
+ },
+ {
+  "id": 124,
+  "topic": "Radiography",
+  "q": "Backscatter from the patient's skin surface contributes to:",
+  "options": [
+   "Entrance skin dose",
+   "Image contrast",
+   "Beam hardening",
+   "HVL"
+  ],
+  "answer": 0,
+  "explain": "The skin exposure is about 1.3-1.4 times higher than the incident air kerma because of backscatter."
+ },
+ {
+  "id": 125,
+  "topic": "Radiography",
+  "q": "The inverse square law applies to:",
+  "options": [
+   "Any source in tissue",
+   "A point source with no attenuation",
+   "Only gamma rays",
+   "Only electrons"
+  ],
+  "answer": 1,
+  "explain": "It holds in air for a small source."
+ },
+ {
+  "id": 126,
+  "topic": "Radiography",
+  "q": "A radiograph is taken at 90 cm SID with 12 mAs. For the same receptor exposure at 120 cm SID the new mAs is approximately:",
+  "options": [
+   "16 mAs",
+   "9 mAs",
+   "21 mAs",
+   "27 mAs"
+  ],
+  "answer": 2,
+  "explain": "12 × (120/90)^2 = 21.3 mAs."
+ },
+ {
+  "id": 127,
+  "topic": "Radiography",
+  "q": "The 'mAs' of an exposure of 200 mA for 0.05 s is:",
+  "options": [
+   "4 mAs",
+   "20 mAs",
+   "100 mAs",
+   "10 mAs"
+  ],
+  "answer": 3,
+  "explain": "mAs = mA × s = 200 × 0.05 = 10."
+ },
+ {
+  "id": 128,
+  "topic": "Radiography",
+  "q": "Which exposure time is needed for 25 mAs at 500 mA?",
+  "options": [
+   "0.05 s",
+   "0.5 s",
+   "0.02 s",
+   "5 s"
+  ],
+  "answer": 0,
+  "explain": "time = mAs / mA = 25/500 = 0.05 s."
+ },
+ {
+  "id": 129,
+  "topic": "Radiography",
+  "q": "The kVp is increased from 60 to 69 kVp. The mAs should be changed by what factor to maintain the same receptor exposure?",
+  "options": [
+   "Doubled",
+   "Halved",
+   "Unchanged",
+   "Increased by 15%"
+  ],
+  "answer": 1,
+  "explain": "69 is 15% above 60, so exposure doubles and mAs is halved."
+ },
+ {
+  "id": 130,
+  "topic": "Radiography",
+  "q": "Rise in kVp has what effect on exposure latitude in film-screen imaging?",
+  "options": [
+   "Decreases latitude",
+   "None",
+   "Increases latitude (wider range of acceptable exposure)",
+   "Eliminates fog"
+  ],
+  "answer": 2,
+  "explain": "A flatter scale of contrast tolerates more exposure variation."
+ },
+ {
+  "id": 131,
+  "topic": "Radiography",
+  "q": "Air kerma is measured in:",
+  "options": [
+   "Sievert",
+   "Becquerel",
+   "Curie",
+   "Gray (Gy)"
+  ],
+  "answer": 3,
+  "explain": "Kerma is the kinetic energy released in a mass of air, 1 Gy = 1 J/kg."
+ },
+ {
+  "id": 132,
+  "topic": "Radiography",
+  "q": "Dose-area product (DAP) is expressed in:",
+  "options": [
+   "Gy·cm²",
+   "Gy",
+   "Sv",
+   "mA·s"
+  ],
+  "answer": 0,
+  "explain": "DAP is the air kerma multiplied by the beam area, and it is independent of distance."
+ },
+ {
+  "id": 133,
+  "topic": "Radiography",
+  "q": "The advantage of DAP meters is that they:",
+  "options": [
+   "Measure organ dose directly",
+   "Are independent of the distance from the source",
+   "Replace TLDs for all uses",
+   "Measure kVp"
+  ],
+  "answer": 1,
+  "explain": "Dose falls by the inverse square and the area rises by the same factor."
+ },
+ {
+  "id": 134,
+  "topic": "Radiography",
+  "q": "Diagnostic reference levels (DRLs) are used to:",
+  "options": [
+   "Set legal dose limits for patients",
+   "Select kVp",
+   "Identify unusually high patient doses for a typical examination",
+   "Reduce scatter"
+  ],
+  "answer": 2,
+  "explain": "They are investigation levels for optimisation, not dose limits."
+ },
+ {
+  "id": 135,
+  "topic": "Radiography",
+  "q": "Which one is a patient dose-reduction technique?",
+  "options": [
+   "Using the smallest SID",
+   "Repeating the exposure",
+   "Reducing filtration to zero",
+   "Gonad shielding where appropriate and tight collimation"
+  ],
+  "answer": 3,
+  "explain": "Collimation and shielding reduce unnecessary irradiation."
+ },
+ {
+  "id": 136,
+  "topic": "Radiography",
+  "q": "Compared to PA, an AP projection of the chest gives the heart:",
+  "options": [
+   "Greater magnification",
+   "Less magnification",
+   "No magnification",
+   "Smaller dose only"
+  ],
+  "answer": 0,
+  "explain": "The heart is farther from the receptor in AP projections."
+ },
+ {
+  "id": 137,
+  "topic": "Radiography",
+  "q": "Why is a PA chest preferred to an AP chest?",
+  "options": [
+   "It needs a higher kVp",
+   "Less heart magnification and less dose to the breast and thyroid region",
+   "It uses a grid always",
+   "It needs a smaller SID"
+  ],
+  "answer": 1,
+  "explain": "The heart is closer to the receptor, and the PA direction lowers dose to anterior organs such as the breast and thyroid."
+ },
+ {
+  "id": 138,
+  "topic": "Radiography",
+  "q": "The angle of the central ray for the tube angulation is measured relative to:",
+  "options": [
+   "The floor",
+   "The patient's skin",
+   "The image receptor",
+   "The collimator"
+  ],
+  "answer": 2,
+  "explain": "Angulation is described with respect to the perpendicular to the receptor."
+ },
+ {
+  "id": 139,
+  "topic": "Radiography",
+  "q": "The typical exposure time for chest radiography is very short mainly to:",
+  "options": [
+   "Increase contrast",
+   "Lower kVp",
+   "Increase magnification",
+   "Reduce motion of the heart and lungs"
+  ],
+  "answer": 3,
+  "explain": "Short exposures freeze cardiac and respiratory movement."
+ },
+ {
+  "id": 140,
+  "topic": "Radiography",
+  "q": "A high-kVp chest technique (110-125 kVp) is used to:",
+  "options": [
+   "Demonstrate lung markings with reduced rib contrast",
+   "Increase the dose",
+   "Improve bone detail only",
+   "Increase scatter on purpose"
+  ],
+  "answer": 0,
+  "explain": "High kVp reduces bone-soft tissue contrast so the lungs are better seen."
+ },
+ {
+  "id": 141,
+  "topic": "Radiography",
+  "q": "Mobile radiography units typically use which type of generator?",
+  "options": [
+   "Three-phase only",
+   "Battery-powered or capacitor-discharge",
+   "None, they use only gamma rays",
+   "Cold-cathode generators only"
+  ],
+  "answer": 1,
+  "explain": "They need to operate without a high-capacity mains supply."
+ },
+ {
+  "id": 142,
+  "topic": "Radiography",
+  "q": "A capacitor-discharge mobile unit has a falling kVp during the exposure because:",
+  "options": [
+   "The filament cools",
+   "The anode stops rotating",
+   "The capacitor voltage drops as it discharges",
+   "The collimator closes"
+  ],
+  "answer": 2,
+  "explain": "The charge is depleted as the exposure goes on."
+ },
+ {
+  "id": 143,
+  "topic": "Radiography",
+  "q": "The relationship between photon energy (keV) and wavelength (nm) is:",
+  "options": [
+   "E = 12.4 × λ",
+   "E = λ²",
+   "E = λ / 1.24",
+   "E = 1.24 / λ"
+  ],
+  "answer": 3,
+  "explain": "Wavelength in nm equals 1.24 divided by the energy in keV."
+ },
+ {
+  "id": 144,
+  "topic": "Radiography",
+  "q": "The unit used for the output of a diagnostic X-ray tube per mAs is typically:",
+  "options": [
+   "µGy/mAs at 1 m",
+   "Sv/h",
+   "Bq",
+   "kVp/mm"
+  ],
+  "answer": 0,
+  "explain": "Tube output is measured as air kerma per mAs at a set distance."
+ },
+ {
+  "id": 145,
+  "topic": "Radiography",
+  "q": "Subject contrast is determined mainly by:",
+  "options": [
+   "Film processing only",
+   "Differences in attenuation within the patient and beam energy (kVp)",
+   "Monitor brightness only",
+   "Grid frequency"
+  ],
+  "answer": 1,
+  "explain": "It depends on the object (thickness, density, atomic number) and the beam quality."
+ },
+ {
+  "id": 146,
+  "topic": "Radiography",
+  "q": "Photoelectric absorption in tissue is proportional to approximately:",
+  "options": [
+   "Z/E",
+   "Z²E",
+   "Z³/E³",
+   "E²"
+  ],
+  "answer": 2,
+  "explain": "It rises rapidly with atomic number and falls rapidly with energy, which gives good contrast at low kVp."
+ },
+ {
+  "id": 147,
+  "topic": "Radiography",
+  "q": "The dominant interaction in soft tissue at diagnostic energies of about 60-100 keV is:",
+  "options": [
+   "Pair production",
+   "Photodisintegration",
+   "Coherent scatter only",
+   "Compton scattering"
+  ],
+  "answer": 3,
+  "explain": "Compton scattering predominates in soft tissue above about 30 keV."
+ },
+ {
+  "id": 148,
+  "topic": "Radiography",
+  "q": "The Compton effect depends mainly on:",
+  "options": [
+   "Electron density of the tissue",
+   "Atomic number cubed",
+   "Wavelength squared",
+   "Tube current"
+  ],
+  "answer": 0,
+  "explain": "It is largely independent of Z, and depends on the number of electrons per gram."
+ },
+ {
+  "id": 149,
+  "topic": "Radiography",
+  "q": "Which statement about lowering kVp is correct?",
+  "options": [
+   "Contrast falls and dose falls",
+   "Contrast rises and patient dose rises",
+   "Contrast rises and dose falls",
+   "Neither changes"
+  ],
+  "answer": 1,
+  "explain": "More photoelectric absorption raises contrast but also absorbed dose."
+ },
+ {
+  "id": 150,
+  "topic": "Radiography",
+  "q": "K-edge of iodine is approximately:",
+  "options": [
+   "10 keV",
+   "69 keV",
+   "33 keV",
+   "88 keV"
+  ],
+  "answer": 2,
+  "explain": "Iodine contrast attenuates strongly just above 33 keV."
+ },
+ {
+  "id": 151,
+  "topic": "Radiography",
+  "q": "K-edge of barium is approximately:",
+  "options": [
+   "15 keV",
+   "88 keV",
+   "100 keV",
+   "37 keV"
+  ],
+  "answer": 3,
+  "explain": "Barium has a K-edge of about 37.4 keV."
+ },
+ {
+  "id": 152,
+  "topic": "Radiography",
+  "q": "The spatial resolution of a system is commonly expressed as:",
+  "options": [
+   "Line pairs per millimetre (lp/mm)",
+   "Gray per mm",
+   "mAs per cm",
+   "Hounsfield units"
+  ],
+  "answer": 0,
+  "explain": "A higher number of line pairs means finer detail."
+ },
+ {
+  "id": 153,
+  "topic": "Radiography",
+  "q": "The modulation transfer function (MTF) describes:",
+  "options": [
+   "Dose to the patient",
+   "How well a system reproduces contrast at different spatial frequencies",
+   "Tube heat capacity",
+   "Total filtration"
+  ],
+  "answer": 1,
+  "explain": "An MTF of 1 means perfect transfer; it falls with increasing spatial frequency."
+ },
+ {
+  "id": 154,
+  "topic": "Radiography",
+  "q": "The limiting spatial resolution is usually quoted at an MTF of about:",
+  "options": [
+   "50%",
+   "90%",
+   "10% (0.1)",
+   "100%"
+  ],
+  "answer": 2,
+  "explain": "Beyond 10% the contrast is usually too low to be perceived."
+ },
+ {
+  "id": 155,
+  "topic": "Radiography",
+  "q": "Geometric unsharpness (penumbra) is calculated as:",
+  "options": [
+   "Focal spot size × SOD / OID",
+   "OID × SID",
+   "Focal spot size ÷ SID",
+   "Focal spot size × OID / SOD"
+  ],
+  "answer": 3,
+  "explain": "Penumbra widens with a large focal spot and a large object-image distance."
+ },
+ {
+  "id": 156,
+  "topic": "Radiography",
+  "q": "Magnification factor (MF) equals:",
+  "options": [
+   "SID / SOD",
+   "SOD / SID",
+   "OID / SID",
+   "SID × SOD"
+  ],
+  "answer": 0,
+  "explain": "Magnification is the image size over the object size, which equals SID/SOD."
+ },
+ {
+  "id": 157,
+  "topic": "Radiography",
+  "q": "An object lies 80 cm from the focal spot and the SID is 100 cm. The magnification factor is:",
+  "options": [
+   "0.8",
+   "1.25",
+   "1.5",
+   "2.0"
+  ],
+  "answer": 1,
+  "explain": "MF = SID / SOD = 100 / 80 = 1.25."
+ },
+ {
+  "id": 158,
+  "topic": "Radiography",
+  "q": "To reduce geometric unsharpness one should:",
+  "options": [
+   "Use a larger focal spot",
+   "Reduce SID",
+   "Use a smaller focal spot and increase SID",
+   "Increase OID"
+  ],
+  "answer": 2,
+  "explain": "These reduce the width of the penumbra."
+ },
+ {
+  "id": 159,
+  "topic": "Radiography",
+  "q": "Which of the following improves spatial resolution?",
+  "options": [
+   "Larger pixel size",
+   "Higher scatter",
+   "Longer exposure time",
+   "Smaller pixel size"
+  ],
+  "answer": 3,
+  "explain": "Smaller pixels sample finer detail."
+ },
+ {
+  "id": 160,
+  "topic": "Radiography",
+  "q": "The Nyquist frequency of a digital detector with a pixel pitch of 0.1 mm is:",
+  "options": [
+   "5 lp/mm",
+   "10 lp/mm",
+   "2.5 lp/mm",
+   "20 lp/mm"
+  ],
+  "answer": 0,
+  "explain": "fN = 1 / (2 × pitch) = 1 / 0.2 mm = 5 lp/mm."
+ },
+ {
+  "id": 161,
+  "topic": "Radiography",
+  "q": "A digital detector with a 0.2 mm pixel pitch has a Nyquist frequency of:",
+  "options": [
+   "5 lp/mm",
+   "2.5 lp/mm",
+   "10 lp/mm",
+   "0.5 lp/mm"
+  ],
+  "answer": 1,
+  "explain": "fN = 1 / (2 × 0.2) = 2.5 lp/mm."
+ },
+ {
+  "id": 162,
+  "topic": "Radiography",
+  "q": "Quantum mottle is caused by:",
+  "options": [
+   "Too many photons",
+   "Film fog",
+   "Too few X-ray photons forming the image",
+   "Processing errors"
+  ],
+  "answer": 2,
+  "explain": "Statistical fluctuation in photon number appears as noise."
+ },
+ {
+  "id": 163,
+  "topic": "Radiography",
+  "q": "Increasing the number of photons detected by a factor of 4 changes the signal-to-noise ratio (SNR) by a factor of:",
+  "options": [
+   "4",
+   "16",
+   "1",
+   "2"
+  ],
+  "answer": 3,
+  "explain": "SNR is proportional to the square root of the number of photons."
+ },
+ {
+  "id": 164,
+  "topic": "Radiography",
+  "q": "The contrast-to-noise ratio (CNR) is:",
+  "options": [
+   "The difference in signal between two regions divided by the noise",
+   "Dose divided by time",
+   "kVp divided by mAs",
+   "Pixel size divided by thickness"
+  ],
+  "answer": 0,
+  "explain": "It determines detectability of low-contrast lesions."
+ },
+ {
+  "id": 165,
+  "topic": "Radiography",
+  "q": "Detective quantum efficiency (DQE) expresses:",
+  "options": [
+   "Tube efficiency",
+   "How efficiently a detector converts input photon information to output signal",
+   "Grid efficiency",
+   "Patient dose"
+  ],
+  "answer": 1,
+  "explain": "A higher DQE gives better image quality at the same dose."
+ },
+ {
+  "id": 166,
+  "topic": "Radiography",
+  "q": "The major sources of noise in a radiograph include:",
+  "options": [
+   "Magnification only",
+   "Anode angle only",
+   "Quantum mottle and electronic noise",
+   "Collimation only"
+  ],
+  "answer": 2,
+  "explain": "Quantum mottle dominates at low exposure; electronic noise matters in digital detectors."
+ },
+ {
+  "id": 167,
+  "topic": "Radiography",
+  "q": "Which change will reduce image noise?",
+  "options": [
+   "Decrease mAs",
+   "Decrease kVp and mAs together",
+   "Increase SID without changing mAs",
+   "Increase mAs"
+  ],
+  "answer": 3,
+  "explain": "More photons reach the detector."
+ },
+ {
+  "id": 168,
+  "topic": "Radiography",
+  "q": "The use of a grid is mainly to:",
+  "options": [
+   "Reduce scattered radiation reaching the receptor and improve contrast",
+   "Increase patient dose to zero",
+   "Reduce focal spot size",
+   "Increase beam energy"
+  ],
+  "answer": 0,
+  "explain": "Absorbing scatter improves contrast, at the cost of a higher dose."
+ },
+ {
+  "id": 169,
+  "topic": "Radiography",
+  "q": "Typical grid ratios in general radiography are:",
+  "options": [
+   "1:1 to 2:1",
+   "8:1 to 12:1",
+   "30:1 to 50:1",
+   "100:1"
+  ],
+  "answer": 1,
+  "explain": "Higher ratios clean up scatter better but need more exposure."
+ },
+ {
+  "id": 170,
+  "topic": "Radiography",
+  "q": "The grid frequency is:",
+  "options": [
+   "The speed of the grid movement",
+   "The kVp for the grid",
+   "The number of lead strips per centimetre",
+   "The grid ratio squared"
+  ],
+  "answer": 2,
+  "explain": "Usual values are about 40-80 lines/cm."
+ },
+ {
+  "id": 171,
+  "topic": "Radiography",
+  "q": "The Bucky factor (grid conversion factor) is:",
+  "options": [
+   "The ratio of kVp with and without a grid",
+   "The ratio of SID to SOD",
+   "The grid height",
+   "The ratio of exposure with a grid to the exposure without a grid for the same receptor dose"
+  ],
+  "answer": 3,
+  "explain": "It reflects the increase in patient dose; typical values are 3-5."
+ },
+ {
+  "id": 172,
+  "topic": "Radiography",
+  "q": "If an exposure of 10 mAs is used without a grid and the Bucky factor is 5, the mAs with the grid is:",
+  "options": [
+   "50 mAs",
+   "15 mAs",
+   "5 mAs",
+   "2 mAs"
+  ],
+  "answer": 0,
+  "explain": "mAs = 10 × 5 = 50."
+ },
+ {
+  "id": 173,
+  "topic": "Radiography",
+  "q": "Which statement is TRUE of a higher-ratio grid?",
+  "options": [
+   "It reduces patient dose",
+   "It has better scatter removal but more positioning sensitivity",
+   "It is positioning-insensitive",
+   "It lowers contrast"
+  ],
+  "answer": 1,
+  "explain": "Alignment tolerances get tighter with increasing grid ratio."
+ },
+ {
+  "id": 174,
+  "topic": "Radiography",
+  "q": "Grid cut-off is caused by:",
+  "options": [
+   "Too high mAs",
+   "Using a small focal spot",
+   "Misalignment of the grid, wrong SID or off-centring",
+   "Too long a processing time"
+  ],
+  "answer": 2,
+  "explain": "Primary photons are absorbed by the lead strips."
+ },
+ {
+  "id": 175,
+  "topic": "Radiography",
+  "q": "A focused grid must be used at the:",
+  "options": [
+   "Any distance",
+   "Only at 50 cm",
+   "Only at 200 cm",
+   "Specified focal distance range"
+  ],
+  "answer": 3,
+  "explain": "The lead strips are angled to align with the diverging beam at a given distance."
+ },
+ {
+  "id": 176,
+  "topic": "Radiography",
+  "q": "Using a focused grid at the wrong SID (off-focus error) produces:",
+  "options": [
+   "Progressive loss of exposure toward the edges of the image",
+   "Increased exposure at the edges",
+   "No effect on the image",
+   "Loss of exposure at the centre only"
+  ],
+  "answer": 0,
+  "explain": "The angled lead strips no longer line up with the diverging beam, so peripheral primary photons are absorbed."
+ },
+ {
+  "id": 177,
+  "topic": "Radiography",
+  "q": "The interspace material in modern grids is usually:",
+  "options": [
+   "Lead",
+   "Carbon fibre or aluminium",
+   "Water",
+   "Tungsten"
+  ],
+  "answer": 1,
+  "explain": "These absorb less primary radiation than older materials like paper or wood."
+ },
+ {
+  "id": 178,
+  "topic": "Radiography",
+  "q": "The lead strips in a grid are made of:",
+  "options": [
+   "Aluminium",
+   "Copper",
+   "Lead",
+   "Plastic"
+  ],
+  "answer": 2,
+  "explain": "Lead strongly absorbs the oblique scattered photons."
+ },
+ {
+  "id": 179,
+  "topic": "Radiography",
+  "q": "A moving grid (Potter-Bucky) is used to:",
+  "options": [
+   "Reduce the heel effect",
+   "Reduce kVp",
+   "Increase the SID",
+   "Blur out grid lines"
+  ],
+  "answer": 3,
+  "explain": "Movement during the exposure blurs the strips so they are not visible."
+ },
+ {
+  "id": 180,
+  "topic": "Radiography",
+  "q": "A grid is generally recommended when the part thickness exceeds about:",
+  "options": [
+   "10 cm",
+   "2 cm",
+   "5 cm",
+   "1 cm"
+  ],
+  "answer": 0,
+  "explain": "Thicker parts and above 60 kVp produce considerable scatter."
+ },
+ {
+  "id": 181,
+  "topic": "Radiography",
+  "q": "The air-gap technique reduces scatter by:",
+  "options": [
+   "Absorbing the scatter in lead",
+   "Increasing the object-to-receptor distance so scatter misses the receptor",
+   "Lowering the kVp",
+   "Removing the patient"
+  ],
+  "answer": 1,
+  "explain": "It is the alternative to the grid but causes magnification."
+ },
+ {
+  "id": 182,
+  "topic": "Radiography",
+  "q": "Which will increase the scatter radiation reaching the receptor?",
+  "options": [
+   "Using tight collimation",
+   "Using a grid",
+   "Increasing the field size",
+   "Reducing kVp"
+  ],
+  "answer": 2,
+  "explain": "More tissue volume is irradiated."
+ },
+ {
+  "id": 183,
+  "topic": "Radiography",
+  "q": "Scatter fraction is the:",
+  "options": [
+   "Ratio of kVp to mAs",
+   "Proportion of heat in the anode",
+   "Ratio of OID to SID",
+   "Proportion of scattered photons in the total radiation reaching the receptor"
+  ],
+  "answer": 3,
+  "explain": "A high scatter fraction lowers image contrast."
+ },
+ {
+  "id": 184,
+  "topic": "Radiography",
+  "q": "Image distortion due to unequal magnification results from:",
+  "options": [
+   "Object parts at different distances from the receptor or tilting",
+   "Large focal spot only",
+   "High kVp only",
+   "High mAs only"
+  ],
+  "answer": 0,
+  "explain": "Parts further from the receptor are magnified more."
+ },
+ {
+  "id": 185,
+  "topic": "Radiography",
+  "q": "Elongation distortion occurs when:",
+  "options": [
+   "The tube and receptor are parallel to the part",
+   "The tube or the receptor is angled to the part",
+   "kVp is too high",
+   "mAs is too low"
+  ],
+  "answer": 1,
+  "explain": "The image is longer than the object."
+ },
+ {
+  "id": 186,
+  "topic": "Radiography",
+  "q": "Foreshortening is caused by:",
+  "options": [
+   "Increased mAs",
+   "Increased SID",
+   "Angulation of the object (the part is not parallel to the receptor)",
+   "Increased filtration"
+  ],
+  "answer": 2,
+  "explain": "The part appears shorter than its true length."
+ },
+ {
+  "id": 187,
+  "topic": "Radiography",
+  "q": "The primary factor affecting motion unsharpness is:",
+  "options": [
+   "Focal spot",
+   "Grid ratio",
+   "kVp",
+   "Patient movement during the exposure"
+  ],
+  "answer": 3,
+  "explain": "Both voluntary and involuntary motion cause blur."
+ },
+ {
+  "id": 188,
+  "topic": "Radiography",
+  "q": "Which of these gives the sharpest image?",
+  "options": [
+   "Small focal spot, long SID, short OID",
+   "Large focal spot, short SID, long OID",
+   "Large focal spot, long SID, short OID",
+   "Small focal spot, short SID, long OID"
+  ],
+  "answer": 0,
+  "explain": "These choices all minimise geometric unsharpness."
+ },
+ {
+  "id": 189,
+  "topic": "Radiography",
+  "q": "The 'Anode-side' of the field has better sharpness because the:",
+  "options": [
+   "Intensity is higher there",
+   "Effective focal spot is smaller on the anode side",
+   "Grid is aligned there",
+   "Collimator is closer there"
+  ],
+  "answer": 1,
+  "explain": "The effective focal spot size varies along the anode-cathode axis; it is smaller toward the anode."
+ },
+ {
+  "id": 190,
+  "topic": "Radiography",
+  "q": "Beam hardening is:",
+  "options": [
+   "A fall in the average energy",
+   "A rise in the number of photons",
+   "A rise in the average energy of the beam as it passes through material",
+   "A fall in kVp"
+  ],
+  "answer": 2,
+  "explain": "Low-energy photons are preferentially absorbed."
+ },
+ {
+  "id": 191,
+  "topic": "Radiography",
+  "q": "Which type of contrast may be changed after the exposure in digital radiography?",
+  "options": [
+   "Subject contrast",
+   "Scatter contrast",
+   "Beam hardening",
+   "Display contrast (windowing)"
+  ],
+  "answer": 3,
+  "explain": "Digital post-processing adjusts the displayed greyscale."
+ },
+ {
+  "id": 192,
+  "topic": "Radiography",
+  "q": "Rise in patient thickness leads to:",
+  "options": [
+   "Increased attenuation and increased scatter",
+   "Decreased attenuation",
+   "Decreased scatter",
+   "Increased contrast"
+  ],
+  "answer": 0,
+  "explain": "More tissue absorbs more primary photons and produces more scatter."
+ },
+ {
+  "id": 193,
+  "topic": "Radiography",
+  "q": "The phosphor most widely used in modern rare-earth intensifying screens is:",
+  "options": [
+   "Calcium tungstate",
+   "Gadolinium oxysulphide (Gd2O2S:Tb)",
+   "Barium fluorobromide",
+   "Caesium iodide only"
+  ],
+  "answer": 1,
+  "explain": "Rare-earth screens convert X-rays to light with greater efficiency than calcium tungstate."
+ },
+ {
+  "id": 194,
+  "topic": "Radiography",
+  "q": "Gd2O2S:Tb screens emit light mainly in the:",
+  "options": [
+   "Blue region",
+   "Infrared region",
+   "Green region",
+   "Ultraviolet region"
+  ],
+  "answer": 2,
+  "explain": "They require green-sensitive film (orthochromatic)."
+ },
+ {
+  "id": 195,
+  "topic": "Radiography",
+  "q": "Calcium tungstate screens emit light mainly in the:",
+  "options": [
+   "Green region",
+   "Red region",
+   "Infrared region",
+   "Blue-violet region"
+  ],
+  "answer": 3,
+  "explain": "They need blue-sensitive film."
+ },
+ {
+  "id": 196,
+  "topic": "Radiography",
+  "q": "Compared to direct X-ray exposure, intensifying screens:",
+  "options": [
+   "Reduce the radiation required to expose the film",
+   "Increase patient dose",
+   "Improve spatial resolution",
+   "Remove noise"
+  ],
+  "answer": 0,
+  "explain": "Light from screens produces more than 95% of the film blackening."
+ },
+ {
+  "id": 197,
+  "topic": "Radiography",
+  "q": "Increasing screen speed generally:",
+  "options": [
+   "Increases dose and sharpness",
+   "Reduces patient dose but reduces spatial resolution",
+   "Increases sharpness and reduces dose",
+   "Has no effect"
+  ],
+  "answer": 1,
+  "explain": "Thicker phosphor layers are more efficient but spread light more."
+ },
+ {
+  "id": 198,
+  "topic": "Radiography",
+  "q": "A speed-400 screen-film system compared with speed 200 needs:",
+  "options": [
+   "Twice the exposure",
+   "The same exposure",
+   "Half the exposure",
+   "Four times the exposure"
+  ],
+  "answer": 2,
+  "explain": "Relative speed is inversely proportional to the exposure required."
+ },
+ {
+  "id": 199,
+  "topic": "Radiography",
+  "q": "The characteristic (H&D) curve of film shows the relationship between:",
+  "options": [
+   "kVp and mAs",
+   "Time and temperature",
+   "SID and OID",
+   "Exposure and optical density"
+  ],
+  "answer": 3,
+  "explain": "It is a plot of density against the log of relative exposure."
+ },
+ {
+  "id": 200,
+  "topic": "Radiography",
+  "q": "The slope of the straight-line portion of the characteristic curve is the film's:",
+  "options": [
+   "Gamma (contrast)",
+   "Speed",
+   "Fog",
+   "Latitude"
+  ],
+  "answer": 0,
+  "explain": "A steep curve means high contrast and low latitude."
+ },
+ {
+  "id": 201,
+  "topic": "Radiography",
+  "q": "Optical density of 2.0 transmits what fraction of the light?",
+  "options": [
+   "10%",
+   "1%",
+   "50%",
+   "0.1%"
+  ],
+  "answer": 1,
+  "explain": "OD = log10 (I0/It), so OD 2 means 1/100 is transmitted."
+ },
+ {
+  "id": 202,
+  "topic": "Radiography",
+  "q": "The order of the steps in manual film processing is:",
+  "options": [
+   "Fixer, developer, wash, dry",
+   "Wash, developer, fixer, dry",
+   "Developer, rinse/stop, fixer, wash, dry",
+   "Dry, developer, fixer, wash"
+  ],
+  "answer": 2,
+  "explain": "The latent image is developed first and then fixed."
+ },
+ {
+  "id": 203,
+  "topic": "Radiography",
+  "q": "The role of the fixer is to:",
+  "options": [
+   "Convert exposed crystals to silver",
+   "Wash out the developer",
+   "Dry the film",
+   "Remove unexposed silver halide and harden the emulsion"
+  ],
+  "answer": 3,
+  "explain": "The fixer clears the film and makes the image permanent."
+ },
+ {
+  "id": 204,
+  "topic": "Radiography",
+  "q": "The developing agents in film developer are:",
+  "options": [
+   "Phenidone and hydroquinone",
+   "Ammonium thiosulphate",
+   "Silver bromide",
+   "Potassium alum"
+  ],
+  "answer": 0,
+  "explain": "These reduce exposed silver halide crystals to metallic silver."
+ },
+ {
+  "id": 205,
+  "topic": "Radiography",
+  "q": "Film fog is:",
+  "options": [
+   "High contrast",
+   "Unwanted density not caused by the image exposure",
+   "High speed",
+   "Increased sharpness"
+  ],
+  "answer": 1,
+  "explain": "Causes include age, heat, scatter and safelight leakage."
+ },
+ {
+  "id": 206,
+  "topic": "Radiography",
+  "q": "Film latitude is:",
+  "options": [
+   "The film's maximum density",
+   "The film's speed",
+   "The range of exposures that give acceptable densities",
+   "The film base thickness"
+  ],
+  "answer": 2,
+  "explain": "Low-contrast films have wide latitude."
+ },
+ {
+  "id": 207,
+  "topic": "Radiography",
+  "q": "The photostimulable phosphor used in computed radiography (CR) is:",
+  "options": [
+   "Gadolinium oxysulphide",
+   "Amorphous selenium",
+   "Caesium iodide",
+   "Barium fluorohalide activated with europium"
+  ],
+  "answer": 3,
+  "explain": "BaFBr:Eu stores the energy of absorbed X-rays as a latent image."
+ },
+ {
+  "id": 208,
+  "topic": "Radiography",
+  "q": "In CR, the latent image on the imaging plate is read out by:",
+  "options": [
+   "A scanning laser (red light)",
+   "X-rays",
+   "Heat",
+   "Sound waves"
+  ],
+  "answer": 0,
+  "explain": "The stimulated phosphor emits blue light that is collected and digitised."
+ },
+ {
+  "id": 209,
+  "topic": "Radiography",
+  "q": "Light emitted from a CR plate during readout is:",
+  "options": [
+   "Red",
+   "Blue-violet",
+   "Infrared",
+   "Green"
+  ],
+  "answer": 1,
+  "explain": "A red laser (about 633 nm) stimulates emission of blue light (about 400 nm)."
+ },
+ {
+  "id": 210,
+  "topic": "Radiography",
+  "q": "After readout a CR imaging plate is:",
+  "options": [
+   "Developed in chemicals",
+   "Discarded",
+   "Erased with bright light so it can be reused",
+   "Cooled in liquid nitrogen"
+  ],
+  "answer": 2,
+  "explain": "Intense white light removes residual energy."
+ },
+ {
+  "id": 211,
+  "topic": "Radiography",
+  "q": "Which describes direct-conversion digital radiography (DR)?",
+  "options": [
+   "X-rays are first converted to light by caesium iodide",
+   "Image is read out by a laser",
+   "Film is scanned",
+   "X-rays are converted directly into electric charge by amorphous selenium"
+  ],
+  "answer": 3,
+  "explain": "No intermediate light step means less lateral spreading."
+ },
+ {
+  "id": 212,
+  "topic": "Radiography",
+  "q": "Indirect-conversion flat-panel detectors typically use:",
+  "options": [
+   "A caesium iodide scintillator with an amorphous silicon photodiode array",
+   "Amorphous selenium with a capacitor",
+   "Barium fluorobromide",
+   "Film and a scanner"
+  ],
+  "answer": 0,
+  "explain": "The scintillator converts X-rays to light, and photodiodes convert the light to charge."
+ },
+ {
+  "id": 213,
+  "topic": "Radiography",
+  "q": "The thin-film transistor (TFT) in a flat-panel detector is used to:",
+  "options": [
+   "Generate X-rays",
+   "Read out the charge from each detector element",
+   "Filter the beam",
+   "Cool the panel"
+  ],
+  "answer": 1,
+  "explain": "A TFT switch on each pixel allows readout."
+ },
+ {
+  "id": 214,
+  "topic": "Radiography",
+  "q": "Fill factor of a flat-panel detector is the:",
+  "options": [
+   "Total number of pixels",
+   "Number of grey levels",
+   "Fraction of the pixel area that is sensitive to radiation",
+   "Thickness of the panel"
+  ],
+  "answer": 2,
+  "explain": "A higher fill factor increases efficiency and dose utilisation."
+ },
+ {
+  "id": 215,
+  "topic": "Radiography",
+  "q": "The bit depth of a digital image determines the:",
+  "options": [
+   "Spatial resolution",
+   "Field of view",
+   "Patient dose",
+   "Number of grey levels that can be displayed"
+  ],
+  "answer": 3,
+  "explain": "A 12-bit image has 2^12 = 4096 grey levels."
+ },
+ {
+  "id": 216,
+  "topic": "Radiography",
+  "q": "The number of grey levels in a 14-bit image is:",
+  "options": [
+   "16,384",
+   "1,024",
+   "4,096",
+   "256"
+  ],
+  "answer": 0,
+  "explain": "2^14 = 16,384."
+ },
+ {
+  "id": 217,
+  "topic": "Radiography",
+  "q": "Image matrix size of 2048 × 2048 contains how many pixels in total?",
+  "options": [
+   "About 2,048",
+   "About 4.2 million",
+   "About 0.4 million",
+   "About 40 million"
+  ],
+  "answer": 1,
+  "explain": "2048² = 4,194,304."
+ },
+ {
+  "id": 218,
+  "topic": "Radiography",
+  "q": "Windowing in digital imaging adjusts the:",
+  "options": [
+   "Patient dose",
+   "Tube voltage",
+   "Contrast and brightness of the displayed image",
+   "Filament current"
+  ],
+  "answer": 2,
+  "explain": "Window width controls contrast and window level controls brightness."
+ },
+ {
+  "id": 219,
+  "topic": "Radiography",
+  "q": "In digital radiography, a wide dynamic range means that the detector:",
+  "options": [
+   "Has large pixels",
+   "Needs film",
+   "Has no noise",
+   "Responds linearly across a large range of exposures"
+  ],
+  "answer": 3,
+  "explain": "It reduces retakes caused by incorrect exposure."
+ },
+ {
+  "id": 220,
+  "topic": "Radiography",
+  "q": "Under-exposure in digital imaging typically results in:",
+  "options": [
+   "A noisy (grainy) image",
+   "A very dark image",
+   "Higher contrast",
+   "A reduced field of view"
+  ],
+  "answer": 0,
+  "explain": "Fewer photons increase quantum mottle; the image brightness is adjusted automatically."
+ },
+ {
+  "id": 221,
+  "topic": "Radiography",
+  "q": "Over-exposure in digital radiography:",
+  "options": [
+   "Always makes the image very dark",
+   "May go unnoticed because of automatic rescaling, but increases the patient dose",
+   "Reduces the patient dose",
+   "Increases noise"
+  ],
+  "answer": 1,
+  "explain": "This is known as 'dose creep'."
+ },
+ {
+  "id": 222,
+  "topic": "Radiography",
+  "q": "Exposure index (EI) in digital radiography indicates:",
+  "options": [
+   "The patient dose directly",
+   "The tube voltage",
+   "The detector exposure level for the image",
+   "The grid ratio"
+  ],
+  "answer": 2,
+  "explain": "It helps technologists to detect under- or over-exposure."
+ },
+ {
+  "id": 223,
+  "topic": "Radiography",
+  "q": "Image archiving and communication in hospitals is handled by:",
+  "options": [
+   "TLD",
+   "AEC",
+   "DAP",
+   "PACS"
+  ],
+  "answer": 3,
+  "explain": "Picture Archiving and Communication System."
+ },
+ {
+  "id": 224,
+  "topic": "Radiography",
+  "q": "The standard format for exchanging medical images is:",
+  "options": [
+   "DICOM",
+   "JPEG only",
+   "PDF only",
+   "HTML"
+  ],
+  "answer": 0,
+  "explain": "Digital Imaging and Communications in Medicine."
+ },
+ {
+  "id": 225,
+  "topic": "Radiography",
+  "q": "Unlike film, a digital image processed with an edge-enhancement algorithm shows:",
+  "options": [
+   "Reduced sharpness",
+   "Improved visibility of edges but possibly increased noise",
+   "Reduced contrast",
+   "No change"
+  ],
+  "answer": 1,
+  "explain": "Edge enhancement emphasises high spatial frequencies, including noise."
+ },
+ {
+  "id": 226,
+  "topic": "Radiography",
+  "q": "In an image intensifier, the input phosphor is made of:",
+  "options": [
+   "Zinc cadmium sulphide",
+   "Gadolinium oxysulphide",
+   "Caesium iodide",
+   "Barium"
+  ],
+  "answer": 2,
+  "explain": "Needle-like CsI crystals give high absorption and little light spread."
+ },
+ {
+  "id": 227,
+  "topic": "Radiography",
+  "q": "The output phosphor of an image intensifier is:",
+  "options": [
+   "Caesium iodide",
+   "Calcium tungstate",
+   "Amorphous selenium",
+   "Zinc cadmium sulphide"
+  ],
+  "answer": 3,
+  "explain": "ZnCdS:Ag produces light for the video camera or optics."
+ },
+ {
+  "id": 228,
+  "topic": "Radiography",
+  "q": "The photocathode in an image intensifier:",
+  "options": [
+   "Converts light photons to photoelectrons",
+   "Converts X-rays to light",
+   "Converts electrons to X-rays",
+   "Stores the image"
+  ],
+  "answer": 0,
+  "explain": "It is made of antimony-caesium compounds."
+ },
+ {
+  "id": 229,
+  "topic": "Radiography",
+  "q": "Electrons in an image intensifier are accelerated through approximately:",
+  "options": [
+   "2-3 kV",
+   "25-30 kV",
+   "100 kV",
+   "250 kV"
+  ],
+  "answer": 1,
+  "explain": "This raises the electron energy and so the brightness."
+ },
+ {
+  "id": 230,
+  "topic": "Radiography",
+  "q": "Brightness gain of an image intensifier equals:",
+  "options": [
+   "Minification gain ÷ flux gain",
+   "Minification gain + flux gain",
+   "Minification gain × flux gain",
+   "Flux gain only"
+  ],
+  "answer": 2,
+  "explain": "Minification gain is the ratio of the input and output screen areas."
+ },
+ {
+  "id": 231,
+  "topic": "Radiography",
+  "q": "If the input diameter is 25 cm and the output diameter is 2.5 cm, the minification gain is:",
+  "options": [
+   "10",
+   "25",
+   "625",
+   "100"
+  ],
+  "answer": 3,
+  "explain": "The ratio of areas = (25/2.5)² = 100."
+ },
+ {
+  "id": 232,
+  "topic": "Radiography",
+  "q": "Switching an image intensifier to a smaller field-of-view (magnification) mode will:",
+  "options": [
+   "Increase the patient dose and improve the resolution",
+   "Reduce the dose and resolution",
+   "Not change the dose",
+   "Reduce the dose and improve the resolution"
+  ],
+  "answer": 0,
+  "explain": "Less minification means that more radiation is needed to maintain brightness."
+ },
+ {
+  "id": 233,
+  "topic": "Radiography",
+  "q": "Automatic brightness control (ABC) in fluoroscopy adjusts:",
+  "options": [
+   "The patient position",
+   "kVp and/or mA to maintain image brightness",
+   "The grid ratio only",
+   "The processing time"
+  ],
+  "answer": 1,
+  "explain": "It is a feedback system based on the output brightness."
+ },
+ {
+  "id": 234,
+  "topic": "Radiography",
+  "q": "Pincushion distortion is associated with:",
+  "options": [
+   "Flat-panel detectors",
+   "CR plates",
+   "Image intensifiers",
+   "Film-screen cassettes"
+  ],
+  "answer": 2,
+  "explain": "The curved input screen causes distortion at the periphery; flat panels avoid this."
+ },
+ {
+  "id": 235,
+  "topic": "Radiography",
+  "q": "Which fluoroscopic detector avoids vignetting and geometric distortion?",
+  "options": [
+   "Image intensifier",
+   "Photographic film",
+   "Fluorescent screen",
+   "Flat-panel detector"
+  ],
+  "answer": 3,
+  "explain": "Flat panels have a uniform response across the field."
+ },
+ {
+  "id": 236,
+  "topic": "Radiography",
+  "q": "Pulsed fluoroscopy reduces patient dose by:",
+  "options": [
+   "Decreasing the number of exposures per second",
+   "Increasing the kVp to its maximum",
+   "Increasing the filtration to zero",
+   "Increasing the SID"
+  ],
+  "answer": 0,
+  "explain": "Fewer pulses mean less radiation in a given time."
+ },
+ {
+  "id": 237,
+  "topic": "Radiography",
+  "q": "The last-image-hold function in fluoroscopy:",
+  "options": [
+   "Increases dose",
+   "Reduces dose by displaying the last frame without exposure",
+   "Increases the field size",
+   "Records on film"
+  ],
+  "answer": 1,
+  "explain": "It lets the operator review the image with no further radiation."
+ },
+ {
+  "id": 238,
+  "topic": "Radiography",
+  "q": "In digital subtraction angiography (DSA), the mask image is:",
+  "options": [
+   "An image with a lead mask",
+   "A post-processed grid image",
+   "An image acquired before the contrast agent is injected",
+   "An image of the contrast only"
+  ],
+  "answer": 2,
+  "explain": "Subtracting it from contrast images isolates the vessels."
+ },
+ {
+  "id": 239,
+  "topic": "Radiography",
+  "q": "The cumulative timer in fluoroscopy sounds an alarm after:",
+  "options": [
+   "30 seconds",
+   "30 minutes",
+   "2 hours",
+   "5 minutes"
+  ],
+  "answer": 3,
+  "explain": "It reminds the operator of the cumulative fluoroscopy time."
+ },
+ {
+  "id": 240,
+  "topic": "Radiography",
+  "q": "The usual maximum entrance exposure rate for normal-mode fluoroscopy is:",
+  "options": [
+   "10 R/min (about 88 mGy/min)",
+   "1 R/min",
+   "100 R/min",
+   "0.1 R/min"
+  ],
+  "answer": 0,
+  "explain": "High-level-control modes may allow up to 20 R/min (about 176 mGy/min)."
+ },
+ {
+  "id": 241,
+  "topic": "Radiography",
+  "q": "The minimum source-to-skin distance for fixed fluoroscopic units is:",
+  "options": [
+   "5 cm",
+   "38 cm (15 in)",
+   "15 cm",
+   "100 cm"
+  ],
+  "answer": 1,
+  "explain": "It prevents high skin doses."
+ },
+ {
+  "id": 242,
+  "topic": "Radiography",
+  "q": "In a fluoroscopy suite, the under-couch tube configuration usually gives the operator:",
+  "options": [
+   "Higher scatter exposure to the eyes",
+   "No scatter exposure",
+   "Lower scatter exposure to the head and chest",
+   "No benefit"
+  ],
+  "answer": 2,
+  "explain": "Scatter is highest near the entrance surface, which is below the table."
+ },
+ {
+  "id": 243,
+  "topic": "Radiography",
+  "q": "The best way for staff to reduce their dose during fluoroscopy is to:",
+  "options": [
+   "Stand right at the table side without a lead apron",
+   "Reduce the lead thickness",
+   "Use the highest mA",
+   "Increase distance from the patient and use shielding"
+  ],
+  "answer": 3,
+  "explain": "Time, distance and shielding are the three basic principles."
+ },
+ {
+  "id": 244,
+  "topic": "Radiography",
+  "q": "A wire mesh test is used to check:",
+  "options": [
+   "Screen-film contact",
+   "Focal spot size",
+   "kVp accuracy",
+   "Timer accuracy"
+  ],
+  "answer": 0,
+  "explain": "Areas of poor contact appear as blurred regions on the image of the mesh."
+ },
+ {
+  "id": 245,
+  "topic": "Radiography",
+  "q": "A star test pattern, pinhole or slit camera is used to measure the:",
+  "options": [
+   "Timer",
+   "Focal spot size",
+   "kVp",
+   "HVL"
+  ],
+  "answer": 1,
+  "explain": "These quality control tests determine the focal spot size and its blooming."
+ },
+ {
+  "id": 246,
+  "topic": "Radiography",
+  "q": "The accuracy of the kVp of an X-ray unit is usually acceptable within:",
+  "options": [
+   "±50%",
+   "±0.1%",
+   "±5-10%",
+   "±25%"
+  ],
+  "answer": 2,
+  "explain": "Tolerances vary by guideline, but typically are within 5-10%."
+ },
+ {
+  "id": 247,
+  "topic": "Radiography",
+  "q": "Reproducibility (consistency) of X-ray output under repeated identical exposures is acceptable if the coefficient of variation is less than:",
+  "options": [
+   "0.5 (50%)",
+   "0.25 (25%)",
+   "1.0 (100%)",
+   "0.05 (5%)"
+  ],
+  "answer": 3,
+  "explain": "Output should be consistent from one exposure to another."
+ },
+ {
+  "id": 248,
+  "topic": "Radiography",
+  "q": "A reject (repeat) analysis programme is used to:",
+  "options": [
+   "Identify the causes of repeated radiographs and reduce unnecessary dose",
+   "Increase the number of exposures",
+   "Decrease staff",
+   "Calibrate kVp"
+  ],
+  "answer": 0,
+  "explain": "It is a quality assurance tool that includes positioning errors and exposure errors."
+ },
+ {
+  "id": 249,
+  "topic": "Radiography",
+  "q": "Lead aprons for staff in diagnostic radiology should have a minimum of:",
+  "options": [
+   "0.01 mm lead equivalent",
+   "0.25 mm lead equivalent",
+   "5 mm lead equivalent",
+   "No lead"
+  ],
+  "answer": 1,
+  "explain": "0.25 mm is the minimum, 0.35-0.5 mm is common."
+ }
+]

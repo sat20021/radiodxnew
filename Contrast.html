@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioDx Contrast Lab — Accurate Clinical Timing Simulator v9.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/contrast.css">
+</head>
+<body class="min-h-screen flex flex-col selection:bg-orange-500 selection:text-white" style="--bolus-color: #ff6b00;">
+
+    <!-- Header -->
+    <header class="glass-card border-b border-slate-800 px-6 py-3.5 flex flex-wrap justify-between items-center shadow-2xl z-20">
+        <div class="flex items-center space-x-3">
+            <div id="header-icon-bg" class="bg-gradient-to-tr from-amber-500 via-orange-600 to-red-600 p-2.5 rounded-2xl shadow-lg shadow-orange-500/30">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+            </div>
+            <div>
+                <h1 class="text-lg font-extrabold tracking-tight text-white flex items-center gap-2">
+                    RadioDx Contrast Lab
+                    <span id="header-badge" class="text-[10px] bg-orange-500/20 text-orange-400 border border-orange-500/30 px-2.5 py-0.5 rounded-full font-mono font-semibold">ACCURATE CLINICAL TIMING v9.0</span>
+                </h1>
+                <p class="text-[11px] text-slate-400">Practically Calibrated Contrast Bolus Transit Engine</p>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-1.5 glass-card p-1 rounded-2xl text-xs">
+            <span class="text-slate-400 font-medium px-2.5">Focus View:</span>
+            <button onclick="setAnatomicalView('full')" id="btn-view-full" class="px-3 py-1.5 rounded-xl bg-sky-600 text-white font-semibold shadow-md transition">Full Body</button>
+            <button onclick="setAnatomicalView('head')" id="btn-view-head" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white transition">Head & Neck</button>
+            <button onclick="setAnatomicalView('chest')" id="btn-view-chest" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white transition">Chest / Heart</button>
+            <button onclick="setAnatomicalView('abdomen')" id="btn-view-abdomen" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white transition">Abdomen / Pelvis</button>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-4 p-4 lg:p-6 max-w-[1920px] mx-auto w-full">
+
+        <!-- Left Column: Controls & Injector -->
+        <div class="lg:col-span-3 flex flex-col space-y-4">
+            
+            <div class="glass-card rounded-2xl p-2 shadow-2xl flex space-x-2">
+                <button onclick="switchCategory('arterial')" id="cat-arterial" class="flex-1 py-2 px-3 rounded-xl bg-red-600/90 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span> Arterial CTA
+                </button>
+                <button onclick="switchCategory('venous')" id="cat-venous" class="flex-1 py-2 px-3 rounded-xl bg-slate-900 text-slate-300 font-bold text-xs hover:text-white transition flex items-center justify-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-blue-400"></span> Venous Phase
+                </button>
+            </div>
+
+            <!-- Protocol List -->
+            <div class="glass-card rounded-2xl p-4 shadow-2xl">
+                <h2 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2" id="protocol-category-title">
+                    <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    Arterial CTA Protocols
+                </h2>
+                <div class="space-y-2" id="pathway-buttons"></div>
+            </div>
+
+            <!-- Injector Parameters -->
+            <div class="glass-card rounded-2xl p-4 shadow-2xl flex-1 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center gap-2">
+                        <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                        Power Injector Setup
+                    </h2>
+
+                    <div class="space-y-3 text-xs">
+                        <div>
+                            <div class="flex justify-between text-slate-300 mb-1">
+                                <span>Contrast Volume (mL)</span>
+                                <span id="val-vol" class="font-mono text-orange-400 font-bold">85 mL</span>
+                            </div>
+                            <input type="range" id="inp-vol" min="40" max="150" value="85" step="5" oninput="updateCalculator()" class="w-full bg-slate-900 h-1.5 rounded-lg cursor-pointer">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-slate-300 mb-1">
+                                <span>Flow Rate (mL/s)</span>
+                                <span id="val-rate" class="font-mono text-orange-400 font-bold">4.5 mL/s</span>
+                            </div>
+                            <input type="range" id="inp-rate" min="2.0" max="7.0" value="4.5" step="0.5" oninput="updateCalculator()" class="w-full bg-slate-900 h-1.5 rounded-lg cursor-pointer">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-slate-300 mb-1">
+                                <span>Iodine Concentration</span>
+                                <span id="val-conc" class="font-mono text-orange-400 font-bold">350 mg I/mL</span>
+                            </div>
+                            <select id="inp-conc" onchange="updateCalculator()" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl p-2 text-slate-200 text-xs shadow-inner">
+                                <option value="300">300 mg I/mL (Omnipaque 300)</option>
+                                <option value="350" selected>350 mg I/mL (Omnipaque 350)</option>
+                                <option value="370">370 mg I/mL (Ultravist 370)</option>
+                                <option value="400">400 mg I/mL (Iomeron 400)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-slate-300 mb-1">
+                                <span>Saline Flush (mL)</span>
+                                <span id="val-saline" class="font-mono text-sky-400 font-bold">40 mL</span>
+                            </div>
+                            <input type="range" id="inp-saline" min="0" max="60" value="40" step="5" oninput="updateCalculator()" class="w-full accent-sky-500 bg-slate-900 h-1.5 rounded-lg cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Metrics -->
+                <div class="mt-4 pt-3 border-t border-slate-800 grid grid-cols-2 gap-2 text-center text-xs">
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800/80">
+                        <div class="text-[10px] text-slate-400">Injection Duration</div>
+                        <div id="calc-duration" class="text-sm font-bold text-white font-mono">18.9 s</div>
+                    </div>
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800/80">
+                        <div class="text-[10px] text-slate-400">Iodine Delivery Rate</div>
+                        <div id="calc-idr" class="text-sm font-bold text-amber-400 font-mono">1.58 g I/s</div>
+                    </div>
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800/80">
+                        <div class="text-[10px] text-slate-400">Total Iodine Mass</div>
+                        <div id="calc-mass" class="text-sm font-bold text-orange-400 font-mono">29.8 g I</div>
+                    </div>
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800/80">
+                        <div class="text-[10px] font-bold text-emerald-400">Aortic Arch Arrival</div>
+                        <div id="calc-peaktime" class="text-sm font-extrabold text-emerald-400 font-mono">14.8 s</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center Column: SVG Canvas -->
+        <div class="lg:col-span-6 glass-card rounded-2xl p-4 shadow-2xl flex flex-col justify-between relative overflow-hidden">
+            
+            <div class="absolute top-4 left-4 z-10 flex flex-col space-y-2 pointer-events-none">
+                <div class="bg-slate-900/90 backdrop-blur-xl border border-slate-700/60 p-3 rounded-2xl shadow-2xl">
+                    <div class="text-xs font-bold text-white uppercase tracking-wider" id="view-title">Full Body Pro-Vascular View</div>
+                    <div class="text-[10px] text-slate-400" id="view-subtitle">Anatomically Accurate Projections</div>
+                </div>
+                
+                <div class="bg-slate-900/90 backdrop-blur-xl border border-slate-700/60 p-3 rounded-2xl shadow-2xl flex items-center space-x-3">
+                    <div id="clock-pulse-dot" class="w-3.5 h-3.5 rounded-full bg-orange-500 animate-ping"></div>
+                    <div>
+                        <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Elapsed Time:</div>
+                        <div id="live-time-display" class="text-xl font-extrabold text-orange-400 font-mono">0.0 s</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SVG Human Body -->
+            <div class="w-full flex-1 flex items-center justify-center relative min-h-[540px] overflow-hidden">
+                <svg id="humanBodySvg" viewBox="0 0 500 900" class="h-full max-h-[740px] w-auto svg-container">
+                    <defs>
+                        <linearGradient id="dynamicBolusGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop id="grad-stop-1" offset="0%" stop-color="#ea580c" stop-opacity="0" />
+                            <stop id="grad-stop-2" offset="25%" stop-color="#f97316" stop-opacity="0.9" />
+                            <stop id="grad-stop-3" offset="100%" stop-color="#fde047" stop-opacity="1" />
+                        </linearGradient>
+
+                        <filter id="proOrganGlow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="4" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+
+                    <!-- Silhouette -->
+                    <g id="bodySilhouette" class="fill-slate-900/40 stroke-slate-700/50" stroke-width="1.2">
+                        <path d="M250 35 C 225 35, 205 48, 205 80 C 205 110, 222 125, 222 140 C 205 152, 175 168, 152 188 C 132 208, 112 252, 98 322 C 88 362, 82 412, 78 462 C 72 502, 95 515, 105 462 C 115 412, 125 352, 135 302 C 135 332, 142 422, 142 482 C 142 542, 152 642, 162 722 C 172 802, 182 862, 202 872 C 212 872, 218 852, 212 802 C 202 722, 202 602, 212 522 C 222 522, 232 522, 250 522 C 268 522, 278 522, 288 522 C 298 602, 298 722, 288 802 C 282 852, 288 872, 298 872 C 318 862, 328 802, 338 722 C 348 642, 358 542, 358 482 C 358 422, 365 332, 365 302 C 375 352, 385 412, 395 462 C 405 515, 428 502, 422 462 C 418 412, 412 362, 402 322 C 388 252, 368 208, 348 188 C 325 168, 295 152, 278 140 C 278 125, 295 110, 295 80 C 295 48, 275 35, 250 35 Z" />
+                    </g>
+
+                    <!-- Organs -->
+                    <g id="organs" class="opacity-40" filter="url(#proOrganGlow)">
+                        <path id="lung-right" d="M 182 195 C 158 218, 152 268, 168 318 C 182 338, 210 328, 215 298 C 215 248, 205 195, 182 195 Z" fill="#0b132b" stroke="#334155" stroke-width="1.8"/>
+                        <path id="lung-left" d="M 318 195 C 342 218, 348 268, 332 318 C 318 338, 290 328, 285 298 C 285 248, 295 195, 318 195 Z" fill="#0b132b" stroke="#334155" stroke-width="1.8"/>
+                        <path id="heart-organ" d="M 235 248 C 218 238, 208 258, 218 278 C 228 298, 248 312, 258 312 C 272 312, 278 288, 268 268 C 258 248, 245 248, 235 248 Z" fill="#450a0a" stroke="#ef4444" stroke-width="1.8"/>
+                    </g>
+
+                    <!-- VASCULAR SYSTEM -->
+                    <g id="vascular-system">
+                        <g id="venous-network">
+                            <path id="v-cubital" class="vessel-vein" d="M 110 440 L 128 380 L 145 310" />
+                            <circle cx="110" cy="440" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+                            <path class="vessel-vein" d="M 390 440 L 372 380 L 355 310" opacity="0.5" />
+                            <path id="v-subclavian" class="vessel-vein" d="M 145 310 Q 180 250, 232 230" />
+                            <path id="v-svc" class="vessel-vein" d="M 235 230 L 235 265" stroke-width="6" />
+                            <path id="v-ra-rv" class="vessel-vein" d="M 235 265 C 230 275, 235 295, 242 295" stroke-width="6" />
+                            <path id="v-pa-right" class="vessel-vein" d="M 242 295 Q 210 280, 182 270" stroke-width="4" />
+                            <path id="v-pa-left" class="vessel-vein" d="M 242 295 Q 270 280, 318 270" stroke-width="4" />
+                            <path class="vessel-vein" d="M 240 300 L 240 500" stroke-width="4.5" />
+                        </g>
+
+                        <g id="pulmonary-bed">
+                            <path class="vessel-capillary" d="M 182 270 C 158 250, 158 290, 182 305" />
+                            <path class="vessel-capillary" d="M 318 270 C 342 250, 342 290, 318 305" />
+                        </g>
+
+                        <g id="arterial-network">
+                            <path id="a-pv-right" class="vessel-artery" d="M 182 305 Q 220 300, 252 290" stroke-width="4" />
+                            <path id="a-aortic-arch" class="vessel-artery" d="M 252 290 C 255 258, 245 218, 255 208 C 265 198, 272 218, 260 238 L 260 500" stroke-width="6" />
+                            <path id="a-carotid-left" class="vessel-artery" d="M 258 212 L 260 110 L 265 68" stroke-width="3" />
+                            <path class="vessel-artery" d="M 235 68 C 220 58, 250 48, 250 58 C 250 48, 280 58, 265 68 Z" stroke-width="2" />
+                            <path id="a-celiac" class="vessel-artery" d="M 260 358 Q 282 348, 302 362" stroke-width="3.5" />
+                            <path id="a-renal-left" class="vessel-artery" d="M 260 392 L 298 398" stroke-width="3.5" />
+                            <path id="a-iliac-left" class="vessel-artery" d="M 260 500 L 290 562 L 302 702 L 312 862" stroke-width="4.5" />
+                            <path class="vessel-artery" d="M 260 500 L 210 562 L 198 702 L 188 862" stroke-width="4.5" />
+                        </g>
+                    </g>
+
+                    <g id="contrast-animator">
+                        <path id="bolusPathTracer" class="bolus-tracer" d="" />
+                        <circle id="bolusHeadMarker" class="bolus-head" cx="-50" cy="-50" r="7.5" />
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Controls -->
+            <div class="glass-card rounded-2xl p-3 mt-2 shadow-2xl space-y-2">
+                <div class="flex items-center space-x-3">
+                    <button onclick="togglePlay()" id="btn-play" class="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white p-2.5 rounded-xl font-bold flex items-center justify-center transition shadow-lg shadow-orange-500/20 w-28">
+                        <svg id="icon-play" class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6V4z"/></svg>
+                        <span id="lbl-play">Play</span>
+                    </button>
+                    <button onclick="restartAnimation()" class="glass-card hover:bg-slate-800 text-slate-300 p-2.5 rounded-xl transition">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                    </button>
+
+                    <div class="flex-1 flex flex-col justify-center px-2">
+                        <input type="range" id="anim-scrubber" min="0" max="100" value="0" step="0.1" oninput="onScrubberInput(this.value)" class="w-full bg-slate-900 h-2.5 rounded-lg cursor-pointer">
+                    </div>
+
+                    <div class="flex items-center space-x-1 glass-card p-1 rounded-xl text-xs">
+                        <button onclick="setSpeed(0.5)" id="speed-05" class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">0.5x</button>
+                        <button onclick="setSpeed(1.0)" id="speed-10" class="px-2.5 py-1 rounded-lg bg-orange-500 text-white font-bold shadow-md">1.0x</button>
+                        <button onclick="setSpeed(2.0)" id="speed-20" class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">2.0x</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Timeline -->
+        <div class="lg:col-span-3 flex flex-col space-y-4">
+            
+            <div class="glass-card rounded-2xl p-4 shadow-2xl">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-xl bg-orange-500/10 text-orange-400 border border-orange-500/20" id="stage-badge">Stage 1 / 4</span>
+                    <span class="text-xs font-mono text-slate-400 font-semibold" id="stage-progress-pct">0.0 s</span>
+                </div>
+                <h3 class="text-base font-bold text-white mb-1" id="stage-title">Peripheral Venous Injection</h3>
+                <p class="text-xs text-slate-300 leading-relaxed" id="stage-desc">
+                    Contrast enters antecubital arm vein via power injector.
+                </p>
+            </div>
+
+            <div class="glass-card rounded-2xl p-4 shadow-2xl space-y-3 flex-1">
+                <h2 class="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center justify-between">
+                    <span class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Clinical Transit Timeline
+                    </span>
+                    <span class="text-[10px] text-orange-400 font-mono font-bold" id="timeline-category-label">Exact Sec</span>
+                </h2>
+
+                <div class="space-y-2 text-xs" id="timeline-list"></div>
+            </div>
+
+            <div class="glass-card rounded-2xl p-3.5 text-[11px] text-slate-400 leading-normal border border-slate-800">
+                <span class="font-bold text-emerald-400 block mb-1">Accurate Practical Rule:</span>
+                Arm-to-Aorta transit time is ~14–16s at 4.5 mL/s. Higher flow rate shifts bolus arrival earlier by ~1.5–2.5 seconds.
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JS Logic -->
+<script src="js/contrast.js"></script>
+</body>
+</html>
