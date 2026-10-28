@@ -1,1 +1,3 @@
 # radiodxnew
+
+The mock exam can be opened directly from `mock-test/index.html`. Its data is bundled in `mock-test/mock-data.js` so the browser does not need to fetch JSON over `file://`. Expand an exam in the sidebar to choose a paper; paper links, question counts, and completion indicators are generated from the exam data. After changing `questions.json` or `papers.json`, run `node mock-test/build-mock-data.js` from this folder to rebuild the bundle.

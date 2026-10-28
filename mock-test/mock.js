@@ -1,4 +1,4 @@
-/* RadioDx Physics Practice: papers from papers.json, questions from questions.json */
+/* RadioDx Physics Practice: papers and questions from mock-data.js */
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
@@ -26,11 +26,19 @@
   /* ---------- sidebar, top progress, right panel ---------- */
   function nav() {
     const R = load(), done = P.filter(p => R.some(r => r.paper === p.id)).length;
+    const activeExam = EX.find(e => e.papers.some(p => cur && p.id === cur.id));
     $('prog').innerHTML = `<b>${Math.round(100 * done / P.length)}% COMPLETE</b> &bull; ${done}/${P.length} Steps<div class="bar"><i style="width:${100 * done / P.length}%"></i></div>`;
     $('nav').innerHTML = `<div class="nh">RadioDx | Physics Practice</div>
       <button class="ni ${!cur ? 'on' : ''}" data-p="">How to use mock exams</button>` +
-      EX.map(e => `<div class="eh">${esc(e.title)}</div>` + e.papers.map(p =>
-        `<button class="ni ${cur && cur.id === p.id ? 'on' : ''}" data-p="${p.id}"><span class="dot ${R.some(r => r.paper === p.id) ? 'done' : ''}"></span>${esc(p.title)}<small>(${pQs(p).length} questions / ${mins(p)} minutes)</small></button>`).join('')).join('');
+      EX.map((e, i) => `<details class="exam-group" ${activeExam ? activeExam.id === e.id ? 'open' : '' : i === 0 ? 'open' : ''}>
+        <summary class="exam-title"><span class="exam-chevron" aria-hidden="true"></span><span>${esc(e.title)}</span><small>${e.papers.length} papers</small></summary>
+        <div class="paper-list">${e.papers.map(p =>
+          `<button class="paper-link ${cur && cur.id === p.id ? 'on' : ''}" data-p="${esc(p.id)}">
+            <span class="dot ${R.some(r => r.paper === p.id) ? 'done' : ''}" aria-hidden="true"></span>
+            <span class="paper-info"><span class="paper-name">${esc(p.title)}</span><small>${pQs(p).length} questions · ${mins(p)} min</small></span>
+            ${R.some(r => r.paper === p.id) ? '<span class="paper-check" aria-label="Completed">&#10003;</span>' : ''}
+          </button>`).join('')}</div>
+      </details>`).join('');
     $('nav').querySelectorAll('[data-p]').forEach(b => b.onclick = () => { $('nav').classList.remove('open'); b.dataset.p ? openPaper(P.find(p => p.id === b.dataset.p)) : home(); });
   }
   function side(r) {
@@ -49,7 +57,7 @@
     R.forEach(r => Object.entries(r.topics || {}).forEach(([k, v]) => { t[k] = t[k] || [0, 0]; t[k][0] += v[0]; t[k][1] += v[1]; }));
     const rows = Object.entries(t).sort((a, b) => a[1][0] / a[1][1] - b[1][0] / b[1][1]).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${v[0]}/${v[1]}</td><td>${Math.round(100 * v[0] / v[1])}%</td></tr>`).join('');
     $('main').innerHTML = `<h1>How to use mock exams</h1>${crumb('How to use mock exams')}
-      <div class="card"><ol><li>Choose a paper from the list on the left.</li><li>Press <b>Start Quiz</b>. The timer starts and your answers are saved automatically.</li>
+      <div class="card"><ol><li>Expand an exam in the sidebar and choose a paper.</li><li>Press <b>Start Quiz</b>. The timer starts and your answers are saved automatically.</li>
       <li>Use the question numbers to jump around. <b>Review Question</b> marks a question to revisit.</li><li><b>Quiz Summary</b> shows answered, unanswered and marked questions, and lets you submit.</li>
       <li>After submitting you see your score, time, topic-wise results and an explanation for every question.</li></ol></div>
       <h2>Your topic accuracy</h2>${rows ? `<table><tr><th>Topic</th><th>Correct</th><th>Accuracy</th></tr>${rows}</table><div class="row"><button class="btn out" id="clr">Clear history</button></div>` : '<p class="muted">No attempts yet.</p>'}`;
@@ -159,7 +167,10 @@
 
   /* ---------- start ---------- */
   $('menu').onclick = () => $('nav').classList.toggle('open');
-  Promise.all(['questions.json', 'papers.json'].map(f => fetch(f).then(r => { if (!r.ok) throw 0; return r.json(); })))
-    .then(([q, p]) => { Q = q; EX = p.exams; P = EX.flatMap(e => e.papers); home(); })
-    .catch(() => { $('main').innerHTML = '<div class="err"><b>Questions could not be loaded.</b><br>If you opened this file by double-clicking, the browser blocks the .json files. Open the live site, or use VS Code "Live Server".</div>'; });
+  const data = window.RadioDxMockData;
+  if (!data || !Array.isArray(data.questions) || !data.papers || !Array.isArray(data.papers.exams)) {
+    $('main').innerHTML = '<div class="err"><b>Mock exam data could not be loaded.</b><br>Make sure mock-data.js is present beside this page.</div>';
+    return;
+  }
+  Q = data.questions; EX = data.papers.exams; P = EX.flatMap(e => e.papers); home();
 })();
