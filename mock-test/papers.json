@@ -9,7 +9,10 @@
      "title": "Paper 1: Matter & Radiation",
      "topics": [
       "Atomic Structure",
-      "Interactions"
+      "Interactions",
+      "Atomic Physics",
+      "Nuclear Physics",
+      "X-ray Physics"
      ]
     },
     {
@@ -17,7 +20,8 @@
      "title": "Paper 2: Radiography & Fluoroscopy",
      "topics": [
       "X-ray Production",
-      "Radiography"
+      "Radiography",
+      "Digital Imaging"
      ]
     },
     {
@@ -46,14 +50,16 @@
      "id": "p6",
      "title": "Paper 6: MRI",
      "topics": [
-      "MRI"
+      "MRI",
+      "MRI Physics"
      ]
     },
     {
      "id": "p7",
      "title": "Paper 7: Ultrasound",
      "topics": [
-      "Ultrasound"
+      "Ultrasound",
+      "Ultrasound Physics"
      ]
     }
    ]

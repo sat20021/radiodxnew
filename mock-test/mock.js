@@ -31,7 +31,7 @@
     $('nav').innerHTML = `<div class="nh">RadioDx | Physics Practice</div>
       <button class="ni ${!cur ? 'on' : ''}" data-p="">How to use mock exams</button>` +
       EX.map((e, i) => `<details class="exam-group" ${activeExam ? activeExam.id === e.id ? 'open' : '' : i === 0 ? 'open' : ''}>
-        <summary class="exam-title"><span class="exam-chevron" aria-hidden="true"></span><span>${esc(e.title)}</span><small>${e.papers.length} papers</small></summary>
+        <summary class="exam-title"><span class="exam-chevron" aria-hidden="true"></span><span>${esc(e.title)}</span><small> · ${e.papers.length} papers</small></summary>
         <div class="paper-list">${e.papers.map(p =>
           `<button class="paper-link ${cur && cur.id === p.id ? 'on' : ''}" data-p="${esc(p.id)}">
             <span class="dot ${R.some(r => r.paper === p.id) ? 'done' : ''}" aria-hidden="true"></span>

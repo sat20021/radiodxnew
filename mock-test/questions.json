@@ -3225,5 +3225,965 @@
   ],
   "answer": 1,
   "explain": "0.25 mm is the minimum, 0.35-0.5 mm is common."
+ },
+ {
+  "id": 250,
+  "topic": "Atomic Physics",
+  "subtopic": "Atomic Structure",
+  "q": "The number of protons in the nucleus determines the chemical identity of an atom.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The atomic number, which equals the number of protons, determines the element."
+ },
+ {
+  "id": 251,
+  "topic": "Atomic Physics",
+  "subtopic": "Isotopes",
+  "q": "Isotopes have the same mass number.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Isotopes have the same atomic number but different mass numbers."
+ },
+ {
+  "id": 252,
+  "topic": "Atomic Physics",
+  "subtopic": "Nuclear Structure",
+  "q": "All atoms of the same element have the same number of neutrons.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Atoms of the same element can have different numbers of neutrons."
+ },
+ {
+  "id": 253,
+  "topic": "Atomic Physics",
+  "subtopic": "Atomic Number",
+  "q": "Atomic number is determined by the number of protons and neutrons.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Atomic number is determined only by the number of protons."
+ },
+ {
+  "id": 254,
+  "topic": "Atomic Physics",
+  "subtopic": "Nuclear Forces",
+  "q": "The strong nuclear force overcomes electrostatic repulsion between protons in the nucleus.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The strong nuclear force holds nucleons together despite electrostatic repulsion."
+ },
+ {
+  "id": 255,
+  "topic": "Nuclear Physics",
+  "subtopic": "Beta Decay",
+  "q": "Beta-minus decay converts a neutron into a proton, emitting a beta particle and an antineutrino.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "In beta-minus decay, a neutron changes into a proton, an electron and an antineutrino."
+ },
+ {
+  "id": 256,
+  "topic": "Nuclear Physics",
+  "subtopic": "Beta Decay",
+  "q": "Beta-plus decay increases the atomic number of the element by one.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Beta-plus decay converts a proton into a neutron, decreasing atomic number by one."
+ },
+ {
+  "id": 257,
+  "topic": "Nuclear Physics",
+  "subtopic": "Alpha Decay",
+  "q": "Alpha decay releases a hydrogen particle from the nucleus.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "An alpha particle is a helium nucleus containing two protons and two neutrons."
+ },
+ {
+  "id": 258,
+  "topic": "Nuclear Physics",
+  "subtopic": "Electron Capture",
+  "q": "Electron capture and beta-plus decay are competing processes in proton-rich nuclei.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Both processes convert a proton into a neutron."
+ },
+ {
+  "id": 259,
+  "topic": "Nuclear Physics",
+  "subtopic": "Beta Decay",
+  "q": "Beta-minus decay results in a net increase in the mass number of the atom.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Mass number remains unchanged because one neutron becomes one proton."
+ },
+ {
+  "id": 260,
+  "topic": "X-ray Physics",
+  "subtopic": "X-ray Spectrum",
+  "q": "The X-ray spectrum produced by an X-ray tube consists of both continuous and discrete radiation.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Bremsstrahlung produces a continuous spectrum, while characteristic radiation produces discrete peaks."
+ },
+ {
+  "id": 261,
+  "topic": "X-ray Physics",
+  "subtopic": "Characteristic Radiation",
+  "q": "Increasing kVp increases the average energy of the characteristic X-ray produced at the anode.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Characteristic photon energy depends on the difference in electron binding energies, not kVp."
+ },
+ {
+  "id": 262,
+  "topic": "X-ray Physics",
+  "subtopic": "Bremsstrahlung",
+  "q": "The peak intensity of the Bremsstrahlung distribution lies near the maximum photon energy.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "The spectrum generally has its highest intensity below the maximum photon energy."
+ },
+ {
+  "id": 263,
+  "topic": "X-ray Physics",
+  "subtopic": "Filtration",
+  "q": "Added filtration reduces the proportion of high-energy photons in the beam.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Filtration preferentially removes low-energy photons."
+ },
+ {
+  "id": 264,
+  "topic": "X-ray Physics",
+  "subtopic": "Beam Hardening",
+  "q": "Beam hardening from filtration increases skin dose.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Removing low-energy photons generally reduces unnecessary superficial skin dose."
+ },
+ {
+  "id": 265,
+  "topic": "Digital Imaging",
+  "subtopic": "Bit Depth",
+  "q": "Bit depth determines the dynamic range of a digital detector.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Bit depth determines the number of possible grey levels; detector dynamic range also depends on detector characteristics."
+ },
+ {
+  "id": 266,
+  "topic": "Digital Imaging",
+  "subtopic": "Grey Levels",
+  "q": "An 8-bit image allows for 256 grey levels.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The number of grey levels is 2^8 = 256."
+ },
+ {
+  "id": 267,
+  "topic": "Digital Imaging",
+  "subtopic": "Spatial Resolution",
+  "q": "Increasing bit depth improves inherent spatial resolution.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Bit depth affects contrast resolution, not inherent spatial resolution."
+ },
+ {
+  "id": 268,
+  "topic": "Digital Imaging",
+  "subtopic": "Image File Size",
+  "q": "Bit depth has minimal influence on image file size.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Higher bit depth increases the amount of data stored per pixel."
+ },
+ {
+  "id": 269,
+  "topic": "Digital Imaging",
+  "subtopic": "Radiation Dose",
+  "q": "A higher bit depth automatically lowers the radiation dose required for image acquisition.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Bit depth alone does not determine the radiation dose."
+ },
+ {
+  "id": 270,
+  "topic": "MRI Physics",
+  "subtopic": "Magnetic Resonance",
+  "q": "A nucleus with an even number of protons and an odd number of neutrons can exhibit magnetic resonance.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Nuclei with non-zero nuclear spin can exhibit magnetic resonance."
+ },
+ {
+  "id": 271,
+  "topic": "MRI Physics",
+  "subtopic": "Larmor Frequency",
+  "q": "The Larmor frequency increases with increasing static magnetic field strength.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Larmor frequency is proportional to magnetic field strength: f = γB0."
+ },
+ {
+  "id": 272,
+  "topic": "MRI Physics",
+  "subtopic": "Larmor Frequency",
+  "q": "At a magnetic field strength of 3 T, the Larmor frequency of hydrogen is approximately 64 MHz.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "For hydrogen, the Larmor frequency at 3 T is approximately 127.7 MHz."
+ },
+ {
+  "id": 273,
+  "topic": "MRI Physics",
+  "subtopic": "Magnetization",
+  "q": "At thermal equilibrium, the transverse magnetic moments of individual protons add coherently to produce net transverse magnetization.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "At equilibrium, the net magnetization is longitudinal; transverse components cancel."
+ },
+ {
+  "id": 274,
+  "topic": "MRI Physics",
+  "subtopic": "Longitudinal Magnetization",
+  "q": "Increasing static magnetic field strength increases equilibrium longitudinal magnetization.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "A stronger field increases the population difference between the lower and higher energy spin states."
+ },
+ {
+  "id": 275,
+  "topic": "MRI Physics",
+  "subtopic": "K-space",
+  "q": "K-space is a mathematical space where spatial frequency information is stored during MR data acquisition.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "K-space stores spatial frequency data used to reconstruct the MRI image."
+ },
+ {
+  "id": 276,
+  "topic": "MRI Physics",
+  "subtopic": "K-space",
+  "q": "Truncating the peripheral regions of k-space while retaining the centre primarily reduces image contrast.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Peripheral k-space contains high spatial-frequency information and its removal reduces spatial detail."
+ },
+ {
+  "id": 277,
+  "topic": "MRI Physics",
+  "subtopic": "K-space",
+  "q": "Each point in k-space corresponds to a specific pixel in the final MRI image.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Each k-space point contributes spatial-frequency information to the entire reconstructed image."
+ },
+ {
+  "id": 278,
+  "topic": "MRI Physics",
+  "subtopic": "K-space",
+  "q": "MRI k-space data needs to be complex in order to represent both magnitude and phase.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Complex data contains both real and imaginary components, representing magnitude and phase."
+ },
+ {
+  "id": 279,
+  "topic": "MRI Physics",
+  "subtopic": "Spatial Encoding",
+  "q": "Doubling the number of acquired phase-encoding steps while maintaining a constant field of view improves spatial resolution.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Increasing the phase-encoding matrix improves spatial resolution in that direction."
+ },
+ {
+  "id": 280,
+  "topic": "MRI Physics",
+  "subtopic": "Frequency Encoding",
+  "q": "Frequency encoding determines spatial location along one axis of the MRI image.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The frequency-encoding gradient spatially encodes signal along one image axis."
+ },
+ {
+  "id": 281,
+  "topic": "MRI Physics",
+  "subtopic": "Frequency Encoding",
+  "q": "The frequency-encoding gradient is applied during readout of the MR signal.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The readout gradient is applied while the MR signal is sampled."
+ },
+ {
+  "id": 282,
+  "topic": "MRI Physics",
+  "subtopic": "Field of View",
+  "q": "Doubling frequency-encoding gradient strength while maintaining constant receiver bandwidth halves the field of view in the frequency-encoding direction.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "For fixed receiver bandwidth, increasing readout gradient strength reduces frequency-direction FOV."
+ },
+ {
+  "id": 283,
+  "topic": "MRI Physics",
+  "subtopic": "Receiver Bandwidth",
+  "q": "Increasing sampling rate increases sampled receiver bandwidth and reduces dwell time.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Higher sampling rate means a shorter time interval between consecutive samples."
+ },
+ {
+  "id": 284,
+  "topic": "MRI Physics",
+  "subtopic": "Echo Planar Imaging",
+  "q": "Frequency encoding is not used in echo-planar imaging.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "EPI uses rapid gradient switching, including frequency-encoding readout gradients."
+ },
+ {
+  "id": 285,
+  "topic": "MRI Physics",
+  "subtopic": "T2 Weighting",
+  "q": "On T2-weighted images, tissues with long T2 times generally appear bright.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Long T2 tissues retain more transverse magnetization and generally produce higher signal."
+ },
+ {
+  "id": 286,
+  "topic": "MRI Physics",
+  "subtopic": "Spin Echo",
+  "q": "Increasing TR while maintaining a long TE generally reduces T1 weighting in conventional spin-echo imaging.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Longer TR reduces T1 saturation effects and allows T2 differences to contribute more strongly."
+ },
+ {
+  "id": 287,
+  "topic": "MRI Physics",
+  "subtopic": "Susceptibility",
+  "q": "Iron-related susceptibility effects generally produce greater signal loss on T2-weighted spin-echo images than on T2-weighted gradient-echo images.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Gradient-echo sequences are generally more sensitive to susceptibility effects."
+ },
+ {
+  "id": 288,
+  "topic": "MRI Physics",
+  "subtopic": "T2 Relaxation",
+  "q": "A tissue with a T2 relaxation time of 100 ms retains approximately 37% of its initial transverse magnetization after 100 ms.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "After one T2 time constant, approximately 37% of the initial transverse magnetization remains."
+ },
+ {
+  "id": 289,
+  "topic": "MRI Physics",
+  "subtopic": "Spin Echo",
+  "q": "A conventional spin-echo sequence with short TR and long TE produces exclusively T2-weighted contrast.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Short TR introduces T1 weighting; the resulting contrast is not exclusively T2-weighted."
+ },
+ {
+  "id": 290,
+  "topic": "MRI Physics",
+  "subtopic": "Steady State",
+  "q": "A steady state cannot exist when longitudinal magnetization has not fully recovered between successive RF excitation pulses.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "A steady state can exist even when longitudinal magnetization has not fully recovered."
+ },
+ {
+  "id": 291,
+  "topic": "MRI Physics",
+  "subtopic": "Gradient Echo",
+  "q": "Spoiled gradient-echo sequences commonly use short TRs and low flip angles.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Short TR and low flip angles help maintain practical steady-state longitudinal magnetization."
+ },
+ {
+  "id": 292,
+  "topic": "MRI Physics",
+  "subtopic": "Gradient Echo",
+  "q": "Spoiled gradient-echo and balanced SSFP sequences both deliberately preserve coherent residual transverse magnetization.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Spoiled GRE destroys residual transverse coherence, whereas balanced SSFP preserves it."
+ },
+ {
+  "id": 293,
+  "topic": "MRI Physics",
+  "subtopic": "Balanced SSFP",
+  "q": "Balanced steady-state free precession sequences are insensitive to field inhomogeneities.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Balanced SSFP is sensitive to off-resonance and field inhomogeneity."
+ },
+ {
+  "id": 294,
+  "topic": "MRI Physics",
+  "subtopic": "Steady State",
+  "q": "Achieving a true steady state requires multiple RF excitations.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The magnetization approaches a steady-state condition over repeated RF excitations."
+ },
+ {
+  "id": 295,
+  "topic": "MRI Physics",
+  "subtopic": "Inversion Recovery",
+  "q": "Suppression in STIR and FLAIR is based on the T2 relaxation time of tissues.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "STIR and FLAIR use inversion recovery and select an inversion time to null a target tissue."
+ },
+ {
+  "id": 296,
+  "topic": "MRI Physics",
+  "subtopic": "STIR",
+  "q": "STIR sequences are commonly used in musculoskeletal imaging to highlight oedema.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "STIR suppresses fat signal and makes fluid-rich oedema conspicuous."
+ },
+ {
+  "id": 297,
+  "topic": "MRI Physics",
+  "subtopic": "STIR",
+  "q": "STIR provides chemical-selective fat suppression and preserves gadolinium-enhancing tissue signal.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "STIR is inversion-recovery based, not chemical-selective fat suppression."
+ },
+ {
+  "id": 298,
+  "topic": "MRI Physics",
+  "subtopic": "FLAIR",
+  "q": "FLAIR sequences are typically acquired with long TR and TE values.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "FLAIR is a long-TR, long-TE inversion-recovery sequence."
+ },
+ {
+  "id": 299,
+  "topic": "MRI Physics",
+  "subtopic": "Inversion Recovery",
+  "q": "For a tissue with T1 of 1000 ms, the approximate inversion time for signal nulling is 1440 ms.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "For ideal inversion recovery, null time is approximately 0.69 × T1, or 690 ms."
+ },
+ {
+  "id": 300,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Sound Propagation",
+  "q": "A 5 MHz ultrasound wave travels faster in soft tissue than a 4 MHz wave.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Sound speed in a given medium is independent of ultrasound frequency."
+ },
+ {
+  "id": 301,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Sound Propagation",
+  "q": "Ultrasound waves travel faster in air than in soft tissue.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Sound travels much faster in soft tissue than in air."
+ },
+ {
+  "id": 302,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Frequency and Penetration",
+  "q": "The higher the ultrasound frequency, the deeper the penetration.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Higher frequencies undergo greater attenuation and generally have less penetration."
+ },
+ {
+  "id": 303,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Wavelength",
+  "q": "When a 5 MHz ultrasound wave enters a tissue where sound travels 20% faster, its wavelength decreases by approximately 20%.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Frequency remains constant and wavelength increases when sound speed increases."
+ },
+ {
+  "id": 304,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Frequency",
+  "q": "The frequency of an ultrasound wave depends on the speed of sound in the medium.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "The transmitted frequency is determined by the source and remains constant across an interface."
+ },
+ {
+  "id": 305,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Refraction",
+  "q": "Refraction can occur even when the ultrasound beam is perpendicular to the interface.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "At normal incidence, the beam does not change direction."
+ },
+ {
+  "id": 306,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Refraction",
+  "q": "The amount of refraction depends solely on the acoustic impedance difference between two tissues.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Refraction depends on the angle of incidence and the difference in sound speeds."
+ },
+ {
+  "id": 307,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Refraction",
+  "q": "Refraction changes the direction of the transmitted ultrasound beam but not its frequency.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Frequency remains constant across the interface, while direction and wavelength may change."
+ },
+ {
+  "id": 308,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Snell's Law",
+  "q": "Snell's Law can be applied to describe refraction in ultrasound.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Snell's Law relates the incident and refracted angles to sound speeds."
+ },
+ {
+  "id": 309,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Imaging Artifacts",
+  "q": "Refraction has no impact on where echoes appear on ultrasound images.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Refraction can cause misregistration and other imaging artifacts."
+ },
+ {
+  "id": 310,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Transducer Arrays",
+  "q": "Conventional 1D array transducers permit electronic focusing in both imaging and elevational planes.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Conventional 1D arrays provide limited control in the elevational plane."
+ },
+ {
+  "id": 311,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Transducer Arrays",
+  "q": "1.5D arrays use multiple rows of elements to allow partial control of slice thickness.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Multiple element rows provide partial elevational focusing."
+ },
+ {
+  "id": 312,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Grating Lobes",
+  "q": "Increasing transducer element spacing from half a wavelength to one wavelength reduces the risk of grating lobes.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Larger element spacing increases the risk of grating lobes during beam steering."
+ },
+ {
+  "id": 313,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Beam Steering",
+  "q": "Beam steering is not possible with a 1D array.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "A 1D phased array can electronically steer the beam in its imaging plane."
+ },
+ {
+  "id": 314,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Curvilinear Transducers",
+  "q": "Most standard curvilinear probes used in abdominal imaging are 2D arrays.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Conventional curvilinear probes are generally 1D arrays."
+ },
+ {
+  "id": 315,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Frame Rate",
+  "q": "Increasing imaging depth reduces frame rate.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Greater depth increases echo return time and limits the achievable frame rate."
+ },
+ {
+  "id": 316,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Temporal Resolution",
+  "q": "Shallower depth settings increase the potential temporal resolution of the scan.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Shallower imaging depth allows faster pulse repetition and potentially higher frame rates."
+ },
+ {
+  "id": 317,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Axial Resolution",
+  "q": "Increasing displayed imaging depth directly reduces axial resolution.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Axial resolution is primarily determined by spatial pulse length."
+ },
+ {
+  "id": 318,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Frame Rate",
+  "q": "At fixed imaging depth, doubling the number of scan lines per frame doubles the maximum achievable frame rate.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "More scan lines require more transmissions and generally reduce frame rate."
+ },
+ {
+  "id": 319,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Focal Zones",
+  "q": "Using two independently transmitted focal zones instead of one approximately halves the frame rate when other parameters remain unchanged.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Multiple focal zones require additional transmissions for each scan line."
+ },
+ {
+  "id": 320,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Pulsed Wave Doppler",
+  "q": "Pulsed wave Doppler requires only one transducer element to alternate between transmitting and receiving.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "A single element can transmit a pulse and then receive returning echoes."
+ },
+ {
+  "id": 321,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Spectral Doppler",
+  "q": "Spectral waveform from pulsed wave Doppler provides velocity and flow direction information.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "The spectral Doppler display represents blood-flow velocities and their direction."
+ },
+ {
+  "id": 322,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Doppler Aliasing",
+  "q": "At a pulse repetition frequency of 5 kHz, a Doppler frequency shift of 3 kHz can be measured without aliasing.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "The Nyquist limit is PRF/2 = 2.5 kHz. A 3 kHz shift exceeds this limit."
+ },
+ {
+  "id": 323,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Spectral Broadening",
+  "q": "Increasing the size of the pulsed-wave Doppler sample volume invariably reduces spectral broadening.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "A larger sample volume may include a wider range of velocities and increase spectral broadening."
+ },
+ {
+  "id": 324,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Doppler PRF",
+  "q": "Increasing the depth of the pulsed-wave Doppler sample volume can reduce the maximum unambiguous measurable velocity.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Greater depth limits the achievable PRF because of the longer echo return time."
+ },
+ {
+  "id": 325,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Cavitation",
+  "q": "Stable cavitation involves sustained oscillation of gas bubbles without bubble collapse.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Stable cavitation involves oscillation without violent collapse."
+ },
+ {
+  "id": 326,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Mechanical Index",
+  "q": "An ultrasound beam with a peak rarefactional pressure of 2 MPa and a centre frequency of 4 MHz has a mechanical index of approximately 1.0.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "MI = peak rarefactional pressure / square root of frequency = 2 / √4 = 1."
+ },
+ {
+  "id": 327,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Mechanical Index",
+  "q": "Two ultrasound exposures with identical mechanical indices have the same cavitation risk.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Cavitation risk also depends on factors such as tissue properties, gas nuclei and exposure conditions."
+ },
+ {
+  "id": 328,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Contrast-Enhanced Ultrasound",
+  "q": "The highest mechanical index values are typically encountered in B-mode contrast-enhanced ultrasound imaging.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "explain": "Contrast-enhanced ultrasound commonly uses low-MI techniques to preserve microbubbles."
+ },
+ {
+  "id": 329,
+  "topic": "Ultrasound Physics",
+  "subtopic": "Mechanical Index",
+  "q": "At a fixed ultrasound frequency, reducing transmitted pressure amplitude reduces the mechanical index.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "explain": "Mechanical index is proportional to peak rarefactional pressure."
  }
 ]
