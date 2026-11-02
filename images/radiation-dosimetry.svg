@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Radiation dosimetry meter</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#031b2e"/><stop offset="1" stop-color="#0b4564"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect x="210" y="45" width="220" height="270" rx="26" fill="#082b44" stroke="#36c8eb" stroke-width="4"/>
+  <rect x="240" y="72" width="160" height="115" rx="12" fill="#dffaff"/>
+  <path d="M265 150a55 55 0 0 1 110 0" fill="none" stroke="#91cad5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M320 148l31-43" stroke="#0aa5e8" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="320" cy="148" r="8" fill="#063753"/>
+  <text x="320" y="175" text-anchor="middle" fill="#0a5676" font-family="Arial,sans-serif" font-size="16" font-weight="700">DOSE</text>
+  <circle cx="270" cy="230" r="12" fill="#12c3f1"/><circle cx="320" cy="230" r="12" fill="#12c3f1"/><circle cx="370" cy="230" r="12" fill="#12c3f1"/>
+  <path d="M285 277h70" stroke="#75e8fa" stroke-width="8" stroke-linecap="round"/>
+</svg>

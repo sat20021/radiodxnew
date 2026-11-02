@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">X-ray tube and emitted X-ray beam</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#031b2e"/><stop offset="1" stop-color="#0b4564"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <path d="M90 90h220q35 0 35 35v110q0 35-35 35H90q-35 0-35-35V125q0-35 35-35Z" fill="#082b44" stroke="#45d4f4" stroke-width="4"/>
+  <path d="M110 135h70l35 45-35 45h-70" fill="none" stroke="#baf5ff" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M230 135l-35 90" stroke="#0aa5e8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M310 180h235" stroke="#18c9f2" stroke-width="9" stroke-linecap="round"/>
+  <path d="M520 150l40 30-40 30" fill="none" stroke="#baf5ff" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M355 180l165-84v168Z" fill="#0aa5e8" fill-opacity=".12"/>
+  <circle cx="450" cy="180" r="6" fill="#e1fbff"/>
+</svg>

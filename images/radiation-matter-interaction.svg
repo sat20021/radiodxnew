@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">X-ray beam interacting with matter</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#031b2e"/><stop offset="1" stop-color="#0b4564"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <path d="M50 180h185" stroke="#18c9f2" stroke-width="10" stroke-linecap="round"/>
+  <path d="M216 157l38 23-38 23" fill="none" stroke="#9bf1ff" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="340" cy="180" r="74" fill="#0b3550" stroke="#23c9ef" stroke-width="3"/>
+  <circle cx="340" cy="180" r="13" fill="#a5f2ff"/>
+  <circle cx="340" cy="180" r="38" fill="none" stroke="#82eaff" stroke-opacity=".6" stroke-width="2"/>
+  <circle cx="340" cy="142" r="8" fill="#0aa5e8"/><circle cx="378" cy="180" r="8" fill="#0aa5e8"/>
+  <circle cx="302" cy="180" r="8" fill="#0aa5e8"/><circle cx="340" cy="218" r="8" fill="#0aa5e8"/>
+  <path d="M414 135l130-62M414 180h166M414 225l130 62" fill="none" stroke="#79e6ff" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+  <circle cx="560" cy="65" r="9" fill="#b5f6ff"/><circle cx="592" cy="180" r="9" fill="#b5f6ff"/><circle cx="560" cy="295" r="9" fill="#b5f6ff"/>
+</svg>

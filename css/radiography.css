@@ -28,3 +28,83 @@ li{margin-bottom:6px}
 .back{display:inline-block;margin-top:34px;padding:11px 26px;background:var(--navy);color:#fff;text-decoration:none;border-radius:8px;font-weight:600}
 :focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
 @media (max-width:600px){body{font-size:16px}h1{font-size:2rem}.lead{font-size:1.15rem}}
+
+.topic-page .site-header{position:static}
+.topic-page main.topic-main{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 24px;
+}
+.topic-page main.topic-main .topic-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:24px;
+}
+.topic-page main.topic-main .topic-grid .topic-card{
+  display:block;
+  min-width:0;
+  overflow:hidden;
+  color:inherit;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:0 6px 20px rgba(3,35,58,.09);
+  text-decoration:none;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.topic-page main.topic-main .topic-grid .topic-card:hover,
+.topic-page main.topic-main .topic-grid .topic-card:focus-visible{
+  transform:translateY(-6px);
+  box-shadow:0 14px 30px rgba(3,35,58,.15);
+}
+.topic-page .card-img{
+  aspect-ratio:16/9;
+  overflow:hidden;
+  position:relative;
+}
+.topic-page .card-img img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .25s ease;
+}
+.topic-page .topic-card:hover .card-img img,
+.topic-page .topic-card:focus-visible .card-img img{transform:scale(1.04)}
+.topic-page .badge{
+  position:absolute;
+  top:12px;
+  left:12px;
+  display:grid;
+  width:34px;
+  height:34px;
+  place-items:center;
+  color:#fff;
+  background:#0aa5e8;
+  border-radius:50%;
+  font-size:.8rem;
+  font-weight:800;
+  line-height:1;
+}
+.topic-page .card-body{padding:16px 18px 18px}
+.topic-page .card-body h3{
+  margin:0 0 7px;
+  color:var(--navy);
+  font-size:1.08rem;
+  line-height:1.35;
+}
+.topic-page .card-body p{
+  margin:0 0 14px;
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.5;
+}
+.topic-page .explore{
+  color:#0aa5e8;
+  font-weight:700;
+}
+
+@media (prefers-reduced-motion:reduce){
+  .topic-page .card-img img{transition:none}
+}

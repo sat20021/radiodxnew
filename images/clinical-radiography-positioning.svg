@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Clinical radiography positioning</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#031b2e"/><stop offset="1" stop-color="#0b4564"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect x="355" y="45" width="202" height="270" rx="12" fill="#0a304b" stroke="#32c9ed" stroke-width="4"/>
+  <rect x="375" y="65" width="162" height="230" rx="6" fill="#d9f6fb"/>
+  <circle cx="456" cy="111" r="25" fill="#537d8c"/>
+  <path d="M456 139v91M424 165l32 21 32-21M456 229l-25 43M456 229l25 43" fill="none" stroke="#537d8c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M92 101h130M92 130h102M92 159h114" stroke="#71e2f5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M211 231h82M252 190v82" stroke="#0aa5e8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="252" cy="231" r="42" fill="none" stroke="#0aa5e8" stroke-width="3" stroke-dasharray="7 7"/>
+</svg>

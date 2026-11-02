@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Radiation physics: electromagnetic waves</title>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#031b2e"/><stop offset="1" stop-color="#0b4564"/></linearGradient>
+    <linearGradient id="beam"><stop stop-color="#16c9f4" stop-opacity=".12"/><stop offset=".5" stop-color="#16c9f4"/><stop offset="1" stop-color="#16c9f4" stop-opacity=".12"/></linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <circle cx="320" cy="180" r="118" fill="none" stroke="#77e6ff" stroke-opacity=".15" stroke-width="2"/>
+  <circle cx="320" cy="180" r="78" fill="none" stroke="#77e6ff" stroke-opacity=".25" stroke-width="2"/>
+  <path d="M56 180h53l26-60 38 120 37-120 38 120 37-120 38 120 37-120 38 120 26-60h157" fill="none" stroke="url(#beam)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="320" cy="180" r="9" fill="#d9fbff"/>
+  <circle cx="320" cy="180" r="18" fill="none" stroke="#0aa5e8" stroke-width="3"/>
+</svg>

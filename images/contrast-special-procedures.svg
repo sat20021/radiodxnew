@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Contrast imaging and special procedures</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#031b2e"/><stop offset="1" stop-color="#0b4564"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <circle cx="320" cy="180" r="118" fill="#082b44" stroke="#36c8eb" stroke-width="3"/>
+  <path d="M320 91v49M320 220v49M231 180h49M360 180h49M257 117l35 35M348 208l35 35M383 117l-35 35M292 208l-35 35" stroke="#89eaff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M320 140c-22 0-36 17-36 40 0 16 8 29 18 42 8 11 11 19 11 31h14c0-12 3-20 11-31 10-13 18-26 18-42 0-23-14-40-36-40Z" fill="#0aa5e8" fill-opacity=".32" stroke="#9cf1ff" stroke-width="3"/>
+  <path d="M320 149v91M304 169h32M304 190h32M304 211h32" stroke="#baf5ff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="320" cy="180" r="5" fill="#fff"/>
+</svg>

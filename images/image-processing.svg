@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Digital radiographic image processing</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#031b2e"/><stop offset="1" stop-color="#0b4564"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect x="80" y="58" width="192" height="244" rx="14" fill="#082b44" stroke="#36c8eb" stroke-width="3"/>
+  <rect x="103" y="82" width="146" height="196" rx="7" fill="#cdeff6"/>
+  <path d="M145 116h62v126h-62z" fill="#183f57"/>
+  <path d="M176 122v114M145 158h62M145 198h62" stroke="#8bd8e8" stroke-width="5" opacity=".8"/>
+  <path d="M302 180h60" stroke="#14c2eb" stroke-width="8" stroke-linecap="round"/>
+  <path d="M348 158l24 22-24 22" fill="none" stroke="#baf5ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="392" y="58" width="168" height="244" rx="14" fill="#082b44" stroke="#36c8eb" stroke-width="3"/>
+  <g fill="#c8f7ff">
+    <rect x="414" y="82" width="34" height="34" rx="5"/><rect x="459" y="82" width="34" height="34" rx="5" opacity=".75"/><rect x="504" y="82" width="34" height="34" rx="5" opacity=".5"/>
+    <rect x="414" y="127" width="34" height="34" rx="5" opacity=".7"/><rect x="459" y="127" width="34" height="34" rx="5" opacity=".45"/><rect x="504" y="127" width="34" height="34" rx="5" opacity=".8"/>
+    <rect x="414" y="172" width="34" height="34" rx="5" opacity=".45"/><rect x="459" y="172" width="34" height="34" rx="5" opacity=".85"/><rect x="504" y="172" width="34" height="34" rx="5" opacity=".6"/>
+  </g>
+  <path d="M417 244h115M417 263h82" stroke="#18c9f2" stroke-width="7" stroke-linecap="round"/>
+</svg>

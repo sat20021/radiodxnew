@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Radiographic X-ray machine</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#031b2e"/><stop offset="1" stop-color="#0b4564"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <path d="M90 300h460" stroke="#76d9ed" stroke-opacity=".5" stroke-width="5" stroke-linecap="round"/>
+  <rect x="121" y="69" width="170" height="116" rx="16" fill="#0b3550" stroke="#36c8eb" stroke-width="4"/>
+  <rect x="146" y="92" width="120" height="69" rx="8" fill="#dffaff"/>
+  <path d="M206 185v97M167 282h78M291 130h112v17H291M394 130v86" fill="none" stroke="#72e1f4" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M344 146l50 69 44 17" fill="none" stroke="#0aa5e8" stroke-width="8" stroke-linecap="round"/>
+  <rect x="384" y="209" width="145" height="18" rx="8" fill="#dffaff"/>
+  <path d="M429 228v55M491 228v55" stroke="#36c8eb" stroke-width="8"/>
+  <circle cx="150" cy="303" r="13" fill="#0aa5e8"/><circle cx="263" cy="303" r="13" fill="#0aa5e8"/>
+</svg>
