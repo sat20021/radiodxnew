@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=radiation-matter-interaction.html">
+  <title>Opening lesson | RadioDx Academy</title>
+</head>
+<body>
+  <p>This lesson has moved. <a id="lesson-link" href="radiation-matter-interaction.html">Continue to Radiation–Matter Interaction</a>.</p>
+  <script>
+    const destination = new URL("radiation-matter-interaction.html", window.location.href);
+    const topic = new URLSearchParams(window.location.search).get("topic");
+    if (topic) {
+      destination.searchParams.set("topic", topic);
+    }
+    document.getElementById("lesson-link").href = destination.href;
+    window.location.replace(destination.href);
+  </script>
+</body>
+</html>

@@ -3,27 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Radiation-matter interaction learning page.">
-  <title>Radiation-matter interaction | RadioDx Academy</title>
+  <meta name="description" content="A structured guide to radiation–matter interaction for radiography students.">
+  <title>Radiation–Matter Interaction | RadioDx Academy</title>
   <link rel="stylesheet" href="css/topic-pages.css">
+  <link rel="stylesheet" href="css/radiation-matter-interaction.css">
 </head>
-<body class="topic-page">
-  <header class="site-header">
+<body class="topic-page interaction-library">
+  <header class="site-header lesson-header">
     <a class="site-brand" href="index.html">RadioDx <span>ACADEMY</span></a>
     <nav aria-label="Main navigation"><a href="index.html">Home</a></nav>
   </header>
 
-  <main class="topic-main">
-    <a class="breadcrumb" href="Radiography.html">← Back to Radiography</a>
-    <div class="page-intro">
-      <p class="eyebrow">RADIOGRAPHY TOPIC</p>
-      <h1>Radiation-matter interaction</h1>
-    </div>
+  <main class="lesson-shell">
+    <details class="lesson-sidebar" id="lesson-sidebar" open>
+      <summary class="sidebar-heading">
+        <span class="sidebar-heading-copy">
+          <span class="eyebrow">RADIOGRAPHY</span>
+          <span class="sidebar-title">Radiation–Matter Interaction</span>
+        </span>
+        <span class="sidebar-toggle" aria-hidden="true"></span>
+      </summary>
+      <div class="sidebar-content">
+        <label class="sidebar-search">
+          <span class="visually-hidden">Search lesson topics</span>
+          <input id="sidebar-search" type="search" placeholder="Find a topic…" autocomplete="off">
+        </label>
+        <nav class="lesson-navigation" id="lesson-navigation" aria-label="Lesson topics"></nav>
+        <p class="sidebar-empty" id="sidebar-empty" hidden>No matching topics.</p>
+        <a class="sidebar-back" href="Radiography.html">← Back to Radiography</a>
+      </div>
+    </details>
 
-    <section class="content-space" aria-label="Radiation-matter interaction content">
-      <p class="content-hint">Add your text, images, and bullet points here.</p>
-      <!-- Add lesson headings, text, images, and lists inside this section. -->
-    </section>
+    <article class="lesson-article" id="lesson-article" aria-live="polite">
+      <nav class="breadcrumbs" id="lesson-breadcrumbs" aria-label="Breadcrumb"></nav>
+      <header class="article-header">
+        <p class="eyebrow" id="article-category">RADIATION PHYSICS</p>
+        <p class="article-number" id="article-number"></p>
+        <h1 id="article-title">Fundamentals of Interaction</h1>
+        <p class="article-deck" id="article-description"></p>
+        <div class="article-meta">
+          <span class="author-avatar" aria-hidden="true">R</span>
+          <span><strong>RadioDx Academy</strong><span>Radiography learning series</span></span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span>Updated 04 Nov 2026</span>
+        </div>
+      </header>
+
+      <div class="article-body" id="article-body"></div>
+      <nav class="lesson-pager" id="lesson-pager" aria-label="Lesson navigation"></nav>
+    </article>
   </main>
+  <script src="js/radiation-matter-interaction-data.js"></script>
+  <script src="js/radiation-matter-interaction.js"></script>
 </body>
 </html>
