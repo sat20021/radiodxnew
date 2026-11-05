@@ -3,6 +3,9 @@
 
   const overview = window.radiationMatterOverview;
   const topics = window.radiationMatterTopics;
+  const advancedTopics = window.radiationMatterAdvancedTopics.map(function (lesson) {
+    return Object.assign({ isAdvanced: true }, lesson);
+  });
   const sidebar = document.getElementById("lesson-sidebar");
   const navigation = document.getElementById("lesson-navigation");
   const search = document.getElementById("sidebar-search");
@@ -14,9 +17,9 @@
   const breadcrumbs = document.getElementById("lesson-breadcrumbs");
   const articleBody = document.getElementById("article-body");
   const pager = document.getElementById("lesson-pager");
-  const allLessons = [overview].concat(topics);
+  const allLessons = [overview].concat(topics, advancedTopics);
   const topicId = new URLSearchParams(window.location.search).get("topic");
-  const selectedLesson = allLessons.find(function (lesson) {
+  const selectedLesson = [overview].concat(topics).find(function (lesson) {
     return lesson.id === topicId;
   }) || overview;
   const selectedIndex = allLessons.indexOf(selectedLesson);
@@ -32,8 +35,11 @@
   }
 
   function topicHref(lesson) {
-    return lesson.id === overview.id
-      ? "radiation-matter-interaction.html"
+    if (lesson.id === overview.id) {
+      return "radiation-matter-interaction.html";
+    }
+    return lesson.isAdvanced
+      ? "radiation-matter-advanced.html?topic=" + encodeURIComponent(lesson.id)
       : "radiation-matter-interaction.html?topic=" + encodeURIComponent(lesson.id);
   }
 
@@ -43,14 +49,25 @@
       topicHref(lesson),
       "lesson-nav-link"
     );
-    link.dataset.search = (lesson.title + " " + (lesson.keywords || "")).toLocaleLowerCase();
+    const plainNumber = lesson.id === overview.id ? "" : String(index);
+    const number = plainNumber ? plainNumber.padStart(2, "0") : "";
+    link.dataset.search = [
+      lesson.title,
+      lesson.keywords || "",
+      number,
+      plainNumber,
+      number ? "#" + number : "",
+      plainNumber ? "#" + plainNumber : "",
+      number ? "topic " + number : "",
+      plainNumber ? "topic " + plainNumber : ""
+    ].join(" ").toLocaleLowerCase();
     if (lesson.id === overview.id) {
       link.classList.add("overview-link");
     } else {
-      const number = document.createElement("span");
-      number.className = "nav-number";
-      number.textContent = String(index).padStart(2, "0");
-      link.prepend(number);
+      const numberLabel = document.createElement("span");
+      numberLabel.className = "nav-number";
+      numberLabel.textContent = number;
+      link.prepend(numberLabel);
     }
     if (lesson.id === selectedLesson.id) {
       link.classList.add("is-current");
@@ -62,6 +79,9 @@
   addNavItem(overview, 0);
   topics.forEach(function (lesson, index) {
     addNavItem(lesson, index + 1);
+  });
+  advancedTopics.forEach(function (lesson, index) {
+    addNavItem(lesson, topics.length + index + 1);
   });
 
   function addParagraph(parent, text, className) {
@@ -164,7 +184,8 @@
   articleCategory.textContent = selectedLesson.category || "COURSE OVERVIEW";
   articleNumber.textContent = selectedLesson.id === overview.id
     ? "COURSE OVERVIEW"
-    : "TOPIC " + String(selectedIndex).padStart(2, "0") + " / " + String(topics.length).padStart(2, "0");
+    : "TOPIC " + String(selectedIndex).padStart(2, "0") + " / " +
+      String(topics.length + advancedTopics.length).padStart(2, "0");
   addBreadcrumbLink("Home", "index.html");
   addBreadcrumbLink("Radiography", "Radiography.html");
   if (selectedLesson.id !== overview.id) {

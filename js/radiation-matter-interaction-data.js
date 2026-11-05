@@ -18,7 +18,7 @@ window.radiationMatterOverview = {
         "Differential attenuation creates the pattern of transmitted radiation that forms the image. Photoelectric absorption contributes to subject contrast, while Compton scatter can add unwanted exposure at the detector and reduce contrast.",
         "The same energy transfers that enable imaging also deposit energy in tissue. Understanding the balance between transmission, absorption, and scatter helps explain beam quality, image quality, and radiation protection."
       ],
-      callout: "Explore the topics in order, or use the lesson search to jump directly to a concept."
+      callout: "Explore the 30 topics in order, or use the lesson search to jump directly to a concept."
     }
   ]
 };
@@ -448,5 +448,83 @@ window.radiationMatterTopics = [
         callout: "Use these principles to explain how an image is formed, why scatter lowers contrast, and why radiation protection is essential."
       }
     ]
+  }
+];
+
+window.radiationMatterAdvancedTopics = [
+  {
+    id: "thomson-scattering",
+    title: "Thomson scattering",
+    keywords: "elastic coherent Rayleigh low energy wavelength photon"
+  },
+  {
+    id: "compton-scattering",
+    title: "Compton scattering",
+    keywords: "incoherent recoil electron scatter energy transfer image fog"
+  },
+  {
+    id: "compton-wavelength-shift",
+    title: "Compton wavelength shift",
+    keywords: "delta lambda photon angle energy wavelength"
+  },
+  {
+    id: "photon-absorption-photoelectric-effect",
+    title: "Photon absorption (photoelectric effect)",
+    keywords: "photoelectric photon inner shell photoelectron binding energy"
+  },
+  {
+    id: "characteristic-radiation",
+    title: "Characteristic radiation",
+    keywords: "fluorescence electron vacancy shell photon"
+  },
+  {
+    id: "auger-effect",
+    title: "Auger effect",
+    keywords: "Auger electron low Z vacancy ionization"
+  },
+  {
+    id: "photoelectric-absorption-atomic-number",
+    title: "Photoelectric absorption and atomic number",
+    keywords: "photoelectric Z dependence contrast iodine barium"
+  },
+  {
+    id: "high-energy-interactions-pair-production",
+    title: "High-energy interactions (pair production)",
+    keywords: "pair production electron positron threshold high energy"
+  },
+  {
+    id: "photonuclear-interactions",
+    title: "Photonuclear interactions",
+    keywords: "photodisintegration neutron nucleus high energy"
+  },
+  {
+    id: "secondary-radiation-electron-interactions",
+    title: "Secondary radiation and electron interactions",
+    keywords: "secondary products ionizing electrons radiation"
+  },
+  {
+    id: "bremsstrahlung-production",
+    title: "Bremsstrahlung production",
+    keywords: "braking radiation electron target X-ray continuous spectrum"
+  },
+  {
+    id: "characteristic-x-ray-production",
+    title: "Characteristic X-ray production",
+    keywords: "target electron shell tungsten K alpha beta"
+  },
+  {
+    id: "electron-excitation-ionization",
+    title: "Electron excitation and ionization",
+    keywords: "excitation ionization shell electron atom"
+  },
+  {
+    id: "secondary-electron-energy-transfer",
+    title: "Secondary electron energy transfer",
+    keywords: "collisional radiative stopping power LET bremsstrahlung"
+  },
+  {
+    id: "electron-positron-annihilation",
+    title: "Electron–positron annihilation",
+    keywords: "annihilation 511 keV photons PET positron"
   }
 ];
