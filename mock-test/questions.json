@@ -4185,5 +4185,305 @@
   ],
   "answer": 0,
   "explain": "Mechanical index is proportional to peak rarefactional pressure."
+ },
+ {
+  "id": 330,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q1.png",
+  "options": [
+   "Left atrium",
+   "Left ventricle",
+   "Right atrium",
+   "Right ventricle"
+  ],
+  "answer": 3,
+  "explain": "The arrow is on the anterior chamber, to the patient's right of the interventricular septum. That is the right ventricle."
+ },
+ {
+  "id": 331,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q2.png",
+  "options": [
+   "Ascending aorta",
+   "Left pulmonary artery",
+   "Right pulmonary artery",
+   "Superior vena cava"
+  ],
+  "answer": 0,
+  "explain": "The round, brightly enhancing structure in the centre of the mediastinum is the ascending aorta."
+ },
+ {
+  "id": 332,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q3.png",
+  "options": [
+   "Esophagus",
+   "Left mainstem bronchi",
+   "Right mainstem bronchi",
+   "Trachea"
+  ],
+  "answer": 1,
+  "explain": "The arrow is on the air-filled bronchus on the patient's left (image right) at the carinal level."
+ },
+ {
+  "id": 333,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q4.png",
+  "options": [
+   "Aorta",
+   "Descending aorta",
+   "Inferior vena cava",
+   "Superior vena cava"
+  ],
+  "answer": 2,
+  "explain": "The structure entering the right side of the heart at the lowest posterior-right border is the IVC."
+ },
+ {
+  "id": 334,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q5.png",
+  "options": [
+   "Esophagus",
+   "Left mainstem bronchi",
+   "Right mainstem bronchi",
+   "Trachea"
+  ],
+  "answer": 2,
+  "explain": "The arrow is on the air-filled bronchus on the patient's right (image left)."
+ },
+ {
+  "id": 335,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q6.png",
+  "options": [
+   "Ascending aorta",
+   "Inferior vena cava",
+   "Right pulmonary artery",
+   "Superior vena cava"
+  ],
+  "answer": 3,
+  "explain": "The small round vessel to the patient's right of the ascending aorta is the SVC."
+ },
+ {
+  "id": 336,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q7.png",
+  "options": [
+   "Ascending aorta",
+   "Descending aorta",
+   "Inferior vena cava",
+   "Superior vena cava"
+  ],
+  "answer": 1,
+  "explain": "The round vessel just left-anterior of the vertebral body is the descending (thoracic) aorta."
+ },
+ {
+  "id": 337,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q8.png",
+  "options": [
+   "Left atrium",
+   "Left ventricle",
+   "Right atrium",
+   "Right ventricle"
+  ],
+  "answer": 0,
+  "explain": "The large enhancing chamber lying posteriorly, directly in front of the descending aorta, is the left atrium."
+ },
+ {
+  "id": 338,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which bone is the arrow pointing to?",
+  "image": "images/ct-q9.png",
+  "options": [
+   "Clavicle",
+   "Rib",
+   "Scapula",
+   "Sternum"
+  ],
+  "answer": 3,
+  "explain": "The midline anterior chest wall bone is the sternum."
+ },
+ {
+  "id": 339,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which vertebra is the arrow pointing to?",
+  "image": "images/ct-q10.png",
+  "options": [
+   "Cervical",
+   "Lumbar",
+   "Sacrum",
+   "Thoracic"
+  ],
+  "answer": 3,
+  "explain": "Ribs articulate with the vertebra in this chest slice, which identifies it as thoracic."
+ },
+ {
+  "id": 340,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q11.png",
+  "options": [
+   "Left atrium",
+   "Left ventricle",
+   "Right atrium",
+   "Right ventricle"
+  ],
+  "answer": 1,
+  "explain": "The arrow is on the chamber to the patient's left of the interventricular septum, which is the left ventricle."
+ },
+ {
+  "id": 341,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q12.png",
+  "options": [
+   "Ascending aorta",
+   "Left ventricle",
+   "Right atrium",
+   "Superior vena cava"
+  ],
+  "answer": 0,
+  "explain": "The round, brightly enhancing structure at the centre of the heart at this level is the aortic root/ascending aorta."
+ },
+ {
+  "id": 342,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q13.png",
+  "options": [
+   "Left ventricle",
+   "Right atrium",
+   "Right ventricle",
+   "Superior vena cava"
+  ],
+  "answer": 1,
+  "explain": "The chamber on the patient's right side of the heart, next to the aortic root, is the right atrium."
+ },
+ {
+  "id": 343,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q14.png",
+  "options": [
+   "Left anterior descending artery (LAD)",
+   "Left circumflex",
+   "Right anterior descending artery (RAD)",
+   "Right coronary artery (RCA)"
+  ],
+  "answer": 1,
+  "explain": "The vessel runs in the left atrioventricular groove along the lateral wall of the heart. That is the left circumflex artery. Note: there is no 'right anterior descending artery' in normal anatomy."
+ },
+ {
+  "id": 344,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q15.png",
+  "options": [
+   "Left ventricle",
+   "Right atrium",
+   "Right ventricle",
+   "Superior vena cava"
+  ],
+  "answer": 2,
+  "explain": "The arrow is on the anterior chamber curving to the patient's left of the aortic root, which is the right ventricular outflow region."
+ },
+ {
+  "id": 345,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q16.png",
+  "options": [
+   "Epicardial fat",
+   "Interventricular septum",
+   "Myocardium",
+   "Pericardium"
+  ],
+  "answer": 1,
+  "explain": "The darker band between the two ventricles is the interventricular septum."
+ },
+ {
+  "id": 346,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q17.png",
+  "options": [
+   "Left pulmonary artery",
+   "Pulmonary trunk",
+   "Right pulmonary artery",
+   "Pulmonary vein"
+  ],
+  "answer": 1,
+  "explain": "The large vessel anterior and to the left of the ascending aorta, which continues into the pulmonary arteries, is the pulmonary trunk."
+ },
+ {
+  "id": 347,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q18.png",
+  "options": [
+   "Left pulmonary artery",
+   "Pulmonary trunk",
+   "Right pulmonary artery",
+   "Pulmonary vein"
+  ],
+  "answer": 2,
+  "explain": "The branch passing behind the ascending aorta towards the patient's right is the right pulmonary artery."
+ },
+ {
+  "id": 348,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q19.png",
+  "options": [
+   "Left pulmonary artery",
+   "Pulmonary trunk",
+   "Right pulmonary artery",
+   "Pulmonary vein"
+  ],
+  "answer": 0,
+  "explain": "The branch of the pulmonary trunk heading towards the patient's left hilum is the left pulmonary artery."
+ },
+ {
+  "id": 349,
+  "topic": "CT",
+  "subtopic": "Chest & Heart Anatomy",
+  "q": "Which anatomy structure is the arrow pointing to?",
+  "image": "images/ct-q20.png",
+  "options": [
+   "Aortic arch",
+   "Ascending aorta",
+   "Descending aorta",
+   "Superior vena cava"
+  ],
+  "answer": 1,
+  "explain": "At the level of the pulmonary trunk, the round vessel in the centre-right of the mediastinum is the ascending aorta."
  }
 ]

@@ -108,7 +108,7 @@
       <div class="pal">${pal}</div>
       <div class="leg"><span><i style="background:#dbe8fb;border:1px solid #2b5fb5"></i>Review</span><span><i style="background:#e4f6ec;border:1px solid var(--ok)"></i>Answered</span></div>
       <div class="row sp"><button class="btn out" id="rv">${S.rv[S.i] ? '&#9873; Unmark Review' : '&#9873; Review Question'}</button><button class="btn" id="sum">Quiz Summary</button></div>
-      <div class="card"><p class="qn">${S.i + 1}. Question</p><p>${esc(q.q)}</p>
+      <div class="card"><p class="qn">${S.i + 1}. Question</p><p>${esc(q.q)}</p>${q.image ? `<img class="qimg" src="${esc(q.image)}" alt="Question image">` : ''}
         ${q.options.map((o, k) => `<button class="opt ${k === a ? 'sel' : ''}" data-k="${k}"><span class="r"></span>${esc(o)}</button>`).join('')}
         <div class="row sp"><button class="btn out" id="prev" ${S.i ? '' : 'disabled'}>&larr; Previous</button><button class="btn" id="next">${last ? 'Quiz Summary' : 'Next Question &rarr;'}</button></div></div>
       <div class="foot"><i>&#10003;</i> Question ${S.i + 1} of ${S.qs.length} &bull; Autosaved</div>`;
@@ -160,7 +160,7 @@
     const { qs, ans } = LAST;
     $('main').innerHTML = `<h1>Review: ${esc(cur.title)}</h1>` + qs.map((q, i) => {
       const st = ans[i] == null ? '' : ans[i] === q.answer ? 'ok' : 'bad';
-      return `<div class="rev ${st}"><b>${i + 1}. ${esc(q.q)}</b><br>Your answer: ${ans[i] == null ? 'Skipped' : esc(q.options[ans[i]])}<br>Correct answer: ${esc(q.options[q.answer])}<br><span class="muted">${esc(q.explain)}</span></div>`;
+      return `<div class="rev ${st}"><b>${i + 1}. ${esc(q.q)}</b><br>${q.image ? `<img class="qimg" src="${esc(q.image)}" alt="Question image">` : ''}Your answer: ${ans[i] == null ? 'Skipped' : esc(q.options[ans[i]])}<br>Correct answer: ${esc(q.options[q.answer])}<br><span class="muted">${esc(q.explain)}</span></div>`;
     }).join('') + '<div class="row"><button class="btn" id="bk">Back to results</button></div>';
     $('bk').onclick = result;
   }
